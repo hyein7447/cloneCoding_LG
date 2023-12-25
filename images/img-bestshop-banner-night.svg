@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="149" viewBox="0 0 160 149">
+    <defs>
+        <clipPath id="1bf2qvpfya">
+            <path data-name="Clip 2" d="M0 0h27.729v148.809H0z" style="fill:none"/>
+        </clipPath>
+        <clipPath id="h4exgtwbtb">
+            <path data-name="Clip 9" d="M0 0h86.037v63.335H0z" style="fill:none"/>
+        </clipPath>
+    </defs>
+    <g data-name="Group 33">
+        <g data-name="Group 3">
+            <path data-name="Clip 2" d="M0 0h27.729v148.809H0z" style="fill:none" transform="translate(132.271 .191)"/>
+            <g data-name="Group 3" style="clip-path:url(#1bf2qvpfya)" transform="translate(132.271 .191)">
+                <path data-name="Fill 1" d="m10.633 85.812 16.943-74.946a6.2 6.2 0 0 0-2.907-6.709L19.442 0 0 86v160.8l19.192-.166a3.1 3.1 0 0 0 3.075-3.1v-5.265a3.1 3.1 0 0 0-3.1-3.1h-5.435a3.1 3.1 0 0 1-3.1-3.1z" style="fill:#b4b4b4"/>
+            </g>
+        </g>
+        <path data-name="Fill 4" d="M0 85.665 18.792 2.542A3.262 3.262 0 0 1 21.974 0h79.348a3.261 3.261 0 0 1 3.178 3.98L86.037 85.665z" transform="translate(49.081)" style="fill:#e6e6e6"/>
+        <path data-name="Fill 6" d="M62.009 57.787 74.218 3.781A3.1 3.1 0 0 0 71.2 0H15.309a3.1 3.1 0 0 0-3.022 2.416L.078 56.421A3.1 3.1 0 0 0 3.1 60.2h55.886a3.1 3.1 0 0 0 3.022-2.415" transform="translate(63.589 12.9)" style="fill:#fff"/>
+        <g data-name="Group 10">
+            <path data-name="Clip 9" d="M0 0h86.037v63.335H0z" style="fill:none" transform="translate(49.081 85.665)"/>
+            <g data-name="Group 10" style="clip-path:url(#h4exgtwbtb)" transform="translate(49.081 85.665)">
+                <path data-name="Fill 8" d="M86.037 161.137H3.3a3.294 3.294 0 0 1-3.3-3.294V0h86.037z" style="fill:#d2d2d2"/>
+            </g>
+        </g>
+        <path data-name="Fill 11" d="m91.785 33.55-2.305-.043-3.35 19 2.305.044z"/>
+        <path data-name="Fill 13" d="m95.139 33.613-1.919-.036-3.35 19 1.919.037z"/>
+        <path data-name="Fill 15" d="m97.922 33.665-1.15-.022-3.35 19 1.147.022z"/>
+        <path data-name="Fill 17" d="m101.194 33.727-1.919-.036-3.35 19 1.919.037z"/>
+        <path data-name="Fill 19" d="m104.153 33.783-1.375-.026-3.35 19 1.375.027z"/>
+        <path data-name="Fill 21" d="m111.594 33.921-5.363-.1-3.35 19 5.362.1z"/>
+        <path data-name="Fill 23" d="m115.145 33.989-1.919-.036-3.35 19 1.919.037z"/>
+        <path data-name="Fill 25" d="M7.993.146.207 0 0 1.339l6.4.12-1.054 5.226 1.384.026z" transform="translate(112.305 29.721)" style="fill:#8e2770"/>
+        <path data-name="Fill 27" d="M2.39.026 1.015 0 0 6.564l7.777.146.207-1.339-6.4-.12z" transform="translate(81.176 50.068)" style="fill:#8e2770"/>
+        <path data-name="Fill 29" d="M9.039.146 1.262 0 0 6.565l1.375.026 1.056-5.227 6.4.12z" transform="translate(84.564 29.219)" style="fill:#8e2770"/>
+        <path data-name="Fill 31" d="M8.8.026 7.416 0l-.807 5.227-6.4-.121L0 6.444l7.787.145z" transform="translate(107.86 50.69)" style="fill:#8e2770"/>
+    </g>
+    <g data-name="Group 44">
+        <path data-name="Fill 34" d="M23.308 28.139a15.794 15.794 0 0 1-9.084-26.754.823.823 0 0 0-.872-1.341A19.323 19.323 0 1 0 37.5 25a.823.823 0 0 0-1.316-.909 15.782 15.782 0 0 1-12.875 4.045" transform="translate(8.889 8.787)" style="fill:#ffc800"/>
+        <path data-name="Fill 36" d="m10.059 3.5-2.871-.43a.412.412 0 0 1-.308-.223L5.574.227a.413.413 0 0 0-.738 0l-1.305 2.62a.41.41 0 0 1-.308.223L.351 3.5a.412.412 0 0 0-.226.7l2.086 2.018a.411.411 0 0 1 .12.364l-.479 2.86a.412.412 0 0 0 .6.432l2.561-1.36a.415.415 0 0 1 .387 0l2.56 1.36a.412.412 0 0 0 .6-.432l-.481-2.861a.411.411 0 0 1 .12-.364L10.285 4.2a.412.412 0 0 0-.226-.7" transform="translate(0 43.794)" style="fill:#ffc800"/>
+        <path data-name="Fill 38" d="M6.438 2.239 4.6 1.965a.264.264 0 0 1-.2-.143L3.568.146a.263.263 0 0 0-.472 0L2.26 1.822a.264.264 0 0 1-.2.143l-1.835.274a.264.264 0 0 0-.144.45L1.415 3.98a.26.26 0 0 1 .077.232l-.306 1.831a.262.262 0 0 0 .382.275l1.639-.868a.266.266 0 0 1 .248 0l1.639.869a.263.263 0 0 0 .384-.275l-.307-1.832a.263.263 0 0 1 .077-.232l1.334-1.291a.263.263 0 0 0-.144-.45" transform="translate(14.703 52.852)" style="fill:#ffc800"/>
+        <path data-name="Fill 40" d="M14.7 3.561H1.781a1.781 1.781 0 1 1 0-3.561H14.7a1.781 1.781 0 1 1 0 3.561" transform="translate(109.277 94.238)" style="fill:#e6e6e6"/>
+        <path data-name="Fill 42" d="M14.7 3.561H1.781a1.781 1.781 0 1 1 0-3.561H14.7a1.781 1.781 0 1 1 0 3.561" transform="translate(109.277 101.36)" style="fill:#e6e6e6"/>
+    </g>
+</svg>
