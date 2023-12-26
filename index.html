@@ -11,7 +11,93 @@
     <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
-    <div class="h_bg">
+    <!-- 검색 눌렀을 때 나오는 팝업 -->
+    <div class="serch_pop_up">
+        <a href="#"><img src="#" alt="닫기 버튼"></a>
+        <div class="search">
+            <form action="#" method="get" id="search_frm">
+                <fieldset>
+                    <legend class="skip">검색창</legend>
+                    <input type="text" name="user_serach_box" id="user_serach_box" placeholder="검색어를 입력해주세요.">
+                    <button type="button" id="search_icon"><img src="#" alt="검색하기"></button>
+                </fieldset>
+            </form>
+            <div class="search_sub">
+                <div class="left">
+                    <h2>인기 검색어</h2>
+                    <ol>
+                        <li>
+                            <a href="#">
+                                <span class="ranking_num">1.</span>
+                                <span class="keyword">냉장고</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="ranking_num">2.</span>
+                                <span class="keyword">노트북</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="ranking_num">3.</span>
+                                <span class="keyword">세탁기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="ranking_num">4.</span>
+                                <span class="keyword">TV</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="ranking_num">5.</span>
+                                <span class="keyword">청소기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="ranking_num">6.</span>
+                                <span class="keyword">가습기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="ranking_num">7.</span>
+                                <span class="keyword">식기세척기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="ranking_num">8.</span>
+                                <span class="keyword">건조기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="ranking_num">9.</span>
+                                <span class="keyword">김치냉장고</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="ranking_num">10.</span>
+                                <span class="keyword">공기청정기</span>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+                <div class="right">
+                    <h2>이번시즌,많이 검색했어요!</h2>
+                    <a href="#">올 한 해 사랑받은 LG 베스트 인기 제품을 만나보세요!</a>
+                    <a href="#">의류 건조기 자가 관리 방법을 알고 싶어요!</a>
+                    <a href="#">[공기청정기] 겨울철 미세먼지가 농도가 높아요</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="h_bg">
         <header>
             <div class="header_top">
                 <h1><a href="./index.html"><img src="#" alt="LG전자"></a></h1>
@@ -31,7 +117,18 @@
                         <a href="#" class="user_cart"><img src="#" alt="장바구니"></a>
                         <a href="#" class="m_menu"><img src="#" alt="전체메뉴열기"></a> <!-- 모바일용 햄버거바 (숨김처리) -->
                     </div>
-                    <a href="#">회사소개</a>
+                    <div class="company_info">
+                        <a href="#">회사소개</a>
+                        <div class="company_sub">
+                            <a href="#">기업정보</a>
+                            <a href="#">인재채용</a>
+                            <a href="#">투자자정보</a>
+                            <a href="#">준법경영</a>
+                            <a href="#">ESG 경영</a>
+                            <a href="#">뉴스<img src="#" alt="뉴스 페이지 이동"></a>
+                            <a href="#">열린구매<img src="#" alt="열린구매 페이지 이동"></a>
+                        </div>
+                    </div>
                     <a href="#">B2B<img src="#" alt=""></a>
                 </div>
             </div>
@@ -630,9 +727,6 @@
                                         </div>
                                         <div class="lnb_btm_right"> <!-- 케어용품/소모품의 오른쪽 자바스크립트 이미지 -->
                                             <a href="#"><img src="" alt="상품으로가기"><span>휘센타워 에어커버 할인 프로모션</span></a>
-                                            <a href="#"><img src="#" alt="상품으로가기"><span>특가 Zone</span></a>
-                                            <button type="button" class="previous_btn"></button> <!-- 광고 이미지 이전 버튼  -->
-                                            <button type="button" class="next_btn"></button> <!-- 광고 이미지 다음 버튼 -->
                                         </div>
                                     </div>
                                 </div>
@@ -981,14 +1075,15 @@
                         <li><a href="#"><img src="#" alt="LET'S GRAM"></a></li>
                     </ul>
                 </nav>
-                <button type="button" class="previous_btn"><img src="#" alt="이전버튼"></button> <!-- 태블릿 사이즈에서 나타나는 전체메뉴 이전, 다음 버튼 -->
-                <button type="button" class="next_btn"><img src="#" alt="다음버튼"></button>
+                <!-- 태블릿 사이즈에서 나타나는 전체메뉴 이전, 다음 버튼 -->
+                <a href="#" class="previous_btn"><img src="#" alt="이전버튼"></a>
+                <a href="#" class="next_btn"><img src="#" alt="다음버튼"></a>
             </div>
         </header>
     </div>
     <main>
         <div class="container">
-            <div class="main_bnr">
+            <section class="main_bnr">
                 <ul class="main_bnr_item">
                     <li>
                         <a href="#">
@@ -1059,13 +1154,15 @@
                     <button type="button" id="stop_btn"><img src="#" alt="일시정지"></button>
                     <div class="right_btn">
                         <div class="page_btn">
-                            <button type="button" id="page_previous_btn"><img src="#" alt="이전으로"></button>
-                            <button type="button" id="page_next_btn"><img src="#" alt="다음으로"></button>
+                            <button type="button" class="previous_btn"><img src="#" alt="이전으로"></button>
+                            <span class="present_page">1/</span>
+                            <span class="all_page">11</span>
+                            <button type="button" class="next_btn"><img src="#" alt="다음으로"></button>
                         </div>
                         <button type="button" id="play_btn"></button>
                     </div>
                 </div>
-            </div>
+            </section>
             <ul class="small_menu">
                 <li>
                     <a href="#">
@@ -1132,13 +1229,13 @@
                 <a href="#" class="bnr1">
                     <img src="#" alt="LG gram pro 사전 예약 판매">
                     <span class="d_day">
-                        <span>06</span>
+                        <span class="day">06</span>
                         <span>DAYS</span>
-                        <span>06</span>
+                        <span class="hour">06</span>
                         <span>:</span>
-                        <span>15</span>
+                        <span class="minute">15</span>
                         <span>:</span>
-                        <span>46</span>
+                        <span class="second">46</span>
                     </span>
                 </a>
                 <a href="#" class="bnr2">
@@ -1155,7 +1252,7 @@
                 </a>
             </section>
             <section class="sale_item">
-                <h2>지금 주목해야 할 제품</h2>
+                <h1>지금 주목해야 할 제품</h1>
                 <p>놓치기 아쉬운 특별한 가격</p>
                 <div class="items">
                     <a href="#" class="item1">
@@ -1163,9 +1260,9 @@
                             <img src="#" alt="LG 그램 Fold">
                         </div>
                         <div class="item_info">
-                            <h3>LG그램 Fold<em>인텔 코어i5 13세대</em></h3>
-                            <p>17X90R-GA50K</p>
-                            <p>39,990,000원</p>
+                            <h2><span>LG그램 Fold</span>인텔 코어i5 13세대</h2>
+                            <p class="item_number">17X90R-GA50K</p>
+                            <p class="item_price">39,990,000원</p>
                         </div>
                     </a>
                     <a href="#" class="item2">
@@ -1173,9 +1270,9 @@
                             <img src="#" alt="LG 퓨리케어 자연기화 가습기">
                         </div>
                         <div class="item_info">
-                            <h3>LG 퓨리케어 자연기화 가습기</h3>
-                            <p>HW500DAS</p>
-                            <p>349,000원</p>
+                            <h2>LG 퓨리케어 자연기화 가습기</h2>
+                            <p class="item_number">HW500DAS</p>
+                            <p class="item_price">349,000원</p>
                         </div>
                     </a>
                     <a href="#" class="item3">
@@ -1183,19 +1280,20 @@
                             <img src="#" alt="LG 디오스 오브제컬렉션 김치톡톡">
                         </div>
                         <div class="item_info">
-                            <h3>LG 디오스 오브제컬렉션 김치톡톡·<em>327L·1등급</em></h3>
-                            <p>17X90R-GA50K</p>
-                            <p>39,990,000원</p>
+                            <h2><span>LG 디오스 오브제컬렉션 김치톡톡·</span>327L·1등급</h2>
+                            <p class="item_number">17X90R-GA50K</p>
+                            <p class="item_price">39,990,000원</p>
                         </div>
                     </a>
                     <a href="#" class="item4">
                         <div class="item_img">
                             <img src="#" alt="LG 트롬 오브제컬렉션 워시타워">
+                            <span>닷컴 ONLY</span>
                         </div>
                         <div class="item_info">
-                            <h3>LG 트롬 오브제컬렉션 워시타워 컴팩트·<em>13/10kg</em></h3>
-                            <p>W10WAN</p>
-                            <p>2,390,000원</p>
+                            <h2><span>LG 트롬 오브제컬렉션 워시타워 컴팩트·</span>13/10kg</h2>
+                            <p class="item_number">W10WAN</p>
+                            <p class="item_price">2,390,000원</p>
                         </div>
                     </a>
                     <a href="#" class="item5">
@@ -1203,9 +1301,9 @@
                             <img src="#" alt="LG 울트라 HD TV (스탠드형)">
                         </div>
                         <div class="item_info">
-                            <h3>LG 울트라 HD TV (스탠드형)<em>189cm</em></h3>
-                            <p>75UR8300NNA</p>
-                            <p>1,790,000원</p>
+                            <h2><span>LG 울트라 HD TV (스탠드형)</span>189cm</h2>
+                            <p class="item_number">75UR8300NNA</p>
+                            <p ckass="item_price">1,790,000원</p>
                         </div>
                     </a>
                     <a href="#" class="item6">
@@ -1213,9 +1311,9 @@
                             <img src="#" alt="LG 전자레인지">
                         </div>
                         <div class="item_info">
-                            <h3>LG 전자레인지·<em>20L</em></h3>
-                            <p>MW20GDN</p>
-                            <p>144,000원</p>
+                            <h2><span>LG 전자레인지·</span>20L</h2>
+                            <p class="item_number">MW20GDN</p>
+                            <p class="item_price">144,000원</p>
                         </div>
                     </a>
                     <a href="#" class="item7">
@@ -1223,19 +1321,20 @@
                             <img src="#" alt="LG 디오스 오브제컬렉션 식기세척기">
                         </div>
                         <div class="item_info">
-                            <h3>LG 디오스 오브제컬렉션 식기세척기·<em>빌트인전용·12인용</em></h3>
-                            <p>DUBJ4EL</p>
-                            <p>1,383,000원</p>
+                            <h2><span>LG 디오스 오브제컬렉션 식기세척기·</span>빌트인전용·12인용</h2>
+                            <p class="item_number">DUBJ4EL</p>
+                            <p class="item_price">1,383,000원</p>
                         </div>
                     </a>
                     <a href="#" class="item8">
                         <div class="item_img">
                             <img src="#" alt="LG 퓨리케어 360˚ 공기청정기 플러스">
+                            <span>닷컴 ONLY</span>
                         </div>
                         <div class="item_info">
-                            <h3>LG 퓨리케어 360˚ 공기청정기 플러스·<em>97㎡·2등급</em></h3>
-                            <p>AS283DWFL</p>
-                            <p>869,000원</p>
+                            <h2><span>LG 퓨리케어 360˚ 공기청정기 플러스·</span>97㎡·2등급</h2>
+                            <p class="item_number">AS283DWFL</p>
+                            <p class="item_price">869,000원</p>
                         </div>
                     </a>
                     <a href="#" class="item9">
@@ -1243,9 +1342,9 @@
                             <img src="#" alt="LG 코드제로 R5흡입 전용">
                         </div>
                         <div class="item_info">
-                            <h3>LG 코드제로 R5·<em>흡입 전용</em></h3>
-                            <p>R560BL</p>
-                            <p>349,000원</p>
+                            <h2><span>LG 코드제로 R5·</span>흡입 전용</h2>
+                            <p class="item_number">R560BL</p>
+                            <p class="item_price">349,000원</p>
                         </div>
                     </a>
                     <a href="#" class="item10">
@@ -1253,9 +1352,9 @@
                             <img src="#" alt="LG 올레드 TV (벽걸이형)">
                         </div>
                         <div class="item_info">
-                            <h3>LG 올레드 TV (벽걸이형)·<em>B3·194cm</em></h3>
-                            <p>OLED77B3SNA</p>
-                            <p>5,890,000원</p>
+                            <h2><span>LG 올레드 TV (벽걸이형)·</span>B3·194cm</h2>
+                            <p class="item_number">OLED77B3SNA</p>
+                            <p class="item_price">5,890,000원</p>
                         </div>
                     </a>
                     <a href="#" class="item11">
@@ -1263,9 +1362,9 @@
                             <img src="#" alt="LG 디오스 오브제컬렉션 김치톡톡">
                         </div>
                         <div class="item_info">
-                            <h3>LG 디오스 오브제컬렉션 김치톡톡·<em>402L·3등급</em></h3>
-                            <p>Z402MEE153</p>
-                            <p>2,060,000원</p>
+                            <h2><span>LG 디오스 오브제컬렉션 김치톡톡·</span>402L·3등급</h2>
+                            <p class="item_number">Z402MEE153</p>
+                            <p class="item_price">2,060,000원</p>
                         </div>
                     </a>
                     <a href="#" class="item12">
@@ -1273,9 +1372,9 @@
                             <img src="#" alt="LG 통돌이 세탁기">
                         </div>
                         <div class="item_info">
-                            <h3>LG 통돌이 세탁기·<em>16kg</em></h3>
-                            <p>TR16DK</p>
-                            <p>500,000원</p>
+                            <h2><span>LG 통돌이 세탁기·</span>16kg</h2>
+                            <p class="item_number">TR16DK</p>
+                            <p class="item_price">500,000원</p>
                         </div>
                     </a>
                     <a href="#" class="item13">
@@ -1283,9 +1382,9 @@
                             <img src="#" alt="LG 디오스 오브제컬렉션 매직스페이스">
                         </div>
                         <div class="item_info">
-                            <h3>LG 디오스 오브제컬렉션 매직스페이스·<em>870L·1등급</em></h3>
-                            <p>T873MHH111</p>
-                            <p>2,000,000원</p>
+                            <h2><span>LG 디오스 오브제컬렉션 매직스페이스·</span>870L·1등급</h2>
+                            <p class="item_number">T873MHH111</p>
+                            <p class="item_price">2,000,000원</p>
                         </div>
                     </a>
                     <a href="#" class="item14">
@@ -1293,9 +1392,9 @@
                             <img src="#" alt="LG 디오스 인덕션 빌트인">
                         </div>
                         <div class="item_info">
-                            <h3>LG 디오스 인덕션 빌트인</h3>
-                            <p>BEI3GQUO</p>
-                            <p>801,000원</p>
+                            <h2>LG 디오스 인덕션 빌트인</h2>
+                            <p class="item_number">BEI3GQUO</p>
+                            <p class="item_price">801,000원</p>
                         </div>
                     </a>
                     <a href="#" class="item15">
@@ -1303,9 +1402,9 @@
                             <img src="#" alt="LG 휘센 오브제컬렉션 칸 2in1">
                         </div>
                         <div class="item_info">
-                            <h3>LG 휘센 오브제컬렉션 칸 2in1·<em>58.5+18.7㎡</em></h3>
-                            <p>FQ18HDKHA2</p>
-                            <p>1,920,000원</p>
+                            <h2><span>LG 휘센 오브제컬렉션 칸 2in1·</span>58.5+18.7㎡</h2>
+                            <p class="item_number">FQ18HDKHA2</p>
+                            <p class="item_price">1,920,000원</p>
                         </div>
                     </a>
                 </div>
@@ -1313,383 +1412,331 @@
             <section class="best_item">
                 <div class="title">
                     <div class="title_left">
-                        <h2>베스트랭킹</h2>
+                        <h1>베스트랭킹</h1>
                         <p>LGE.COM 인기 제품 추천</p>
                     </div>
-                    <div class="title_right">
-                        <a href="#">더보기<img src="#" alt="더보기 바로가기"></a>
-                    </div>
+                    <a href="#" class="more">더보기<img src="#" alt="더보기 바로가기"></a>
                 </div>
                 <div class="icon">
                     <div class="page_btn">
-                        <button type="button" class="previous_btn"><img src="#" alt="이전버튼"></button> <!-- 처음에는 숨겨져있음 -->
-                        <button type="button" class="next_btn"><img src="#" alt="다음버튼"></button>
+                        <a href="#" class="previous_btn"><img src="#" alt="이전버튼"></a><!-- 처음에는 숨겨져있음 -->
+                        <a href="#" class="next_btn"><img src="#" alt="다음버튼"></a>
                     </div>
-                    <ul class="icon_items">
-                        <li class="item">
-                            <a href="#">
-                                <span><img src="#" alt="김치냉장고"></span>
-                                <span>김치냉장고</span>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="#">
-                                <span><img src="#" alt="TV"></span>
-                                <span>TV</span>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="#">
-                                <span><img src="#" alt="워시타워"></span>
-                                <span>워시타워</span>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="#">
-                                <span><img src="#" alt="공기청정기"></span>
-                                <span>공기청정기</span>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="#">
-                                <span><img src="#" alt="노트북/태블릿"></span>
-                                <span>노트북/태블릿</span>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="#">
-                                <span><img src="#" alt="냉장고"></span>
-                                <span>냉장고</span>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="#">
-                                <span><img src="#" alt="세탁기"></span>
-                                <span>세탁기</span>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="#">
-                                <span><img src="#" alt="청소기"></span>
-                                <span>청소기</span>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="#">
-                                <span><img src="#" alt="에어컨"></span>
-                                <span>에어컨</span>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="#">
-                                <span><img src="#" alt="모니터"></span>
-                                <span>모니터</span>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="#">
-                                <span><img src="#" alt="의류관리기"></span>
-                                <span>의류관리기</span>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="#">
-                                <span><img src="#" alt="의류건조기"></span>
-                                <span>의류건조기</span>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="#">
-                                <span><img src="#" alt="광파오븐 / 전자레인지"></span>
-                                <span>광파오븐 / 전자레인지</span>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="#">
-                                <span><img src="#" alt="전자레인지"></span>
-                                <span>전자레인지</span>
-                            </a>
-                        </li>
-                        <li class="envet_item1">
-                            <a href="#">
-                                <span>혼수/이사 패키지</span>
-                                <img src="#" alt=""> <!-- 밑에 화살표 이미지처리 -->
-                            </a>
-                        </li>
-                        <li class="envet_item2">
-                            <a href="#">
-                                <span>1인 가구 필수가전</span>
-                                <img src="#" alt=""> <!-- 밑에 화살표 이미지처리 -->
-                            </a>
-                        </li>
-                        <li class="envet_item3">
-                            <a href="#">
-                                <span>베스트 추천선물</span>
-                                <img src="#" alt=""> <!-- 밑에 화살표 이미지처리 -->
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="slide_icon">
+                        <ul class="icon_items">
+                            <li class="item">
+                                <a href="#">
+                                    <span><img src="#" alt="김치냉장고"></span>
+                                    <span>김치냉장고</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <span><img src="#" alt="TV"></span>
+                                    <span>TV</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <span><img src="#" alt="워시타워"></span>
+                                    <span>워시타워</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <span><img src="#" alt="공기청정기"></span>
+                                    <span>공기청정기</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <span><img src="#" alt="노트북/태블릿"></span>
+                                    <span>노트북/태블릿</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <span><img src="#" alt="냉장고"></span>
+                                    <span>냉장고</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <span><img src="#" alt="세탁기"></span>
+                                    <span>세탁기</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <span><img src="#" alt="청소기"></span>
+                                    <span>청소기</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <span><img src="#" alt="에어컨"></span>
+                                    <span>에어컨</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <span><img src="#" alt="모니터"></span>
+                                    <span>모니터</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <span><img src="#" alt="의류관리기"></span>
+                                    <span>의류관리기</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <span><img src="#" alt="의류건조기"></span>
+                                    <span>의류건조기</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <span><img src="#" alt="광파오븐 / 전자레인지"></span>
+                                    <span>광파오븐 / 전자레인지</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <span><img src="#" alt="전자레인지"></span>
+                                    <span>전자레인지</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="event_items">
+                            <li>
+                                <a href="#">
+                                    <span>혼수/이사 패키지</span>
+                                    <img src="#" alt=""> <!-- 밑에 화살표 이미지처리 -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>1인 가구 필수가전</span>
+                                    <img src="#" alt=""> <!-- 밑에 화살표 이미지처리 -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>베스트 추천선물</span>
+                                    <img src="#" alt=""> <!-- 밑에 화살표 이미지처리 -->
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- 아이템 총 14개 -->
-                <div class="content1">
-                    <ol>
-                        <li class="no1">
-                            <a href="#">
-                                <div class="content_img">
-                                    <img src="#" alt="LG 디오스 오브제컬렉션 김치톡톡">
-                                </div>
-                                <div class="content_badge">
-                                    <span>다품목할인</span>
-                                    <span>2023년 출시</span>
-                                </div>
-                                <div class="content_info">
-                                    <h3>LG 디오스 오브제컬렉션 김치톡톡·<em>402L·3등급</em></h3>
-                                    <p class="item_number">Z402MTE153</p>
-                                    <p class="price">1,960,000원</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="no2">
-                            <a href="#">
-                                <div class="content_img">
-                                    <img src="#" alt="LG 디오스 오브제컬렉션 김치톡톡">
-                                </div>
-                                <div class="content_badge">
-                                    <span>다품목할인</span>
-                                    <span>2023년 출시</span>
-                                </div>
-                                <div class="content_info">
-                                    <h3>LG 디오스 오브제컬렉션 김치톡톡·<em>402L·3등급</em></h3>
-                                    <p class="item_number">Z407MWW143</p>
-                                    <p class="price">1,930,000</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="no3">
-                            <a href="#">
-                                <div class="content_img">
-                                    <img src="#" alt="LG 디오스 오브제컬렉션 김치톡톡">
-                                </div>
-                                <div class="content_badge">
-                                    <span>다품목할인</span>
-                                    <span>2023년 출시</span>
-                                </div>
-                                <div class="content_info">
-                                    <h3>LG 디오스 오브제컬렉션 김치톡톡·<em>402L·3등급</em></h3>
-                                    <p class="item_number">Z402MWW153</p>
-                                    <p class="price">1,960,000원</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ol>
+                <div class="content">
+                    <div class="lanking1">
+                        <a href="#">
+                            <p class="lanking_num">1</p>
+                            <div class="lankin_img">
+                                <img src="#" alt="LG 디오스 오브제컬렉션 김치톡톡">
+                            </div>
+                            <div class="content_badge">
+                                <span>다품목할인</span>
+                                <span>2023년 출시</span>
+                            </div>
+                            <h2><span>LG 디오스 오브제컬렉션 김치톡톡·</span>402L·3등급</h2>
+                            <p class="item_number">Z402MTE153</p>
+                            <p class="item_price">1,960,000원</p>
+                        </a>
+                    </div>
+                    <div class="lanking2">
+                        <a href="#">
+                            <p class="lanking_num">2</p>
+                            <div class="lankin_img">
+                                <img src="#" alt="LG 디오스 오브제컬렉션 김치톡톡">
+                            </div>
+                            <div class="content_badge">
+                                <span>다품목할인</span>
+                                <span>2023년 출시</span>
+                            </div>
+                            <h2><span>LG 디오스 오브제컬렉션 김치톡톡·</span>402L·3등급</h2>
+                            <p class="item_number">Z407MWW143</p>
+                            <p class="item_price">1,930,000</p>
+                        </a>
+                    </div>
+                    <div class="lanking3">
+                        <a href="#">
+                            <p class="lanking_num">3</p>
+                            <div class="lankin_img">
+                                <img src="#" alt="LG 디오스 오브제컬렉션 김치톡톡">
+                            </div>
+                            <div class="content_badge">
+                                <span>다품목할인</span>
+                                <span>2023년 출시</span>
+                            </div>
+                            <h2><span>LG 디오스 오브제컬렉션 김치톡톡·</span>402L·3등급</h2>
+                            <p class="item_number">Z402MWW153</p>
+                            <p class="item_price">1,960,000원</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="content2">
-                    <ol>
-                        <li class="no1">
-                            <a href="#">
-                                <div class="content_img">
-                                    <img src="#" alt="LG 스탠바이미">
-                                </div>
-                                <div class="content_badge">
-                                    <span>다품목할인</span>
-                                    <span>2023년 출시</span>
-                                </div>
-                                <div class="content_info">
-                                    <h3>LG 스탠바이미·<em>68cm</em></h3>
-                                    <p class="item_number">27ART10DKPL</p>
-                                    <p class="price">1,090,000원</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="no2">
-                            <a href="#">
-                                <div class="content_img">
-                                    <img src="#" alt="LG 디오스 오브제컬렉션 김치톡톡">
-                                </div>
-                                <div class="content_badge">
-                                    <span>2023년 출시</span>
-                                </div>
-                                <div class="content_info">
-                                    <h3>LG 울트라 HD TV (스탠드형)·<em>138cm</em></h3>
-                                    <p class="item_number">55UR8300ENA</p>
-                                    <p class="price">930,000원</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="no3">
-                            <a href="#">
-                                <div class="content_img">
-                                    <img src="#" alt="LG 디오스 오브제컬렉션 김치톡톡">
-                                </div>
-                                <div class="content_badge">
-                                    <span>2023년 출시</span>
-                                </div>
-                                <div class="content_info">
-                                    <h3>LG 울트라 HD TV (벽걸이형)·<em>189cm</em></h3>
-                                    <p class="item_number">Z402MWW153</p>
-                                    <p class="price">1,790,000원</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ol>
+                <div class="content">
+                    <div class="lanking1">
+                        <a href="#">
+                            <p class="lanking_num">1</p>
+                            <div class="lankin_img">
+                                <img src="#" alt="LG 스탠바이미">
+                            </div>
+                            <div class="content_badge">
+                                <span>다품목할인</span>
+                                <span>2023년 출시</span>
+                            </div>
+                            <h2><span>LG 스탠바이미·</span>68cm</h2>
+                            <p class="item_number">27ART10DKPL</p>
+                            <p class="item_price">1,090,000원</p>
+                        </a>
+                    </div>
+                    <div class="lanking2">
+                        <a href="#">
+                            <p class="lanking_num">2</p>
+                            <div class="lankin_img">
+                                <img src="#" alt="LG 울트라 HD TV (스탠드형)">
+                            </div>
+                            <div class="content_badge">
+                                <span>2023년 출시</span>
+                            </div>
+                            <h2><span>LG 울트라 HD TV (스탠드형)·</span>138cm</h2>
+                            <p class="item_number">27ART10DKPL</p>
+                            <p class="item_price">1,090,000원</p>
+                        </a>
+                    </div>
+                    <div class="lanking3">
+                        <a href="#">
+                            <p class="lanking_num">3</p>
+                            <div class="lankin_img">
+                                <img src="#" alt="LG 울트라 HD TV (벽걸이형)">
+                            </div>
+                            <div class="content_badge">
+                                <span>2023년 출시</span>
+                            </div>
+                            <h2><span>LG 울트라 HD TV (벽걸이형)·</span>189cm</h2>
+                            <p class="item_number">Z402MWW153</p>
+                            <p class="item_price">1,790,000원</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="content3">
-                    <ol>
-                        <li class="no1">
-                            <a href="#">
-                                <div class="content_img">
-                                    <img src="#" alt="LG 트롬 오브제컬렉션 워시타워">
-                                </div>
-                                <div class="content_badge">
-                                    <span>2023년 출시</span>
-                                </div>
-                                <div class="content_info">
-                                    <h3>LG 트롬 오브제컬렉션 워시타워·<em>24/20kg</em></h3>
-                                    <p class="item_number">W20WHN</p>
-                                    <p class="price">2,750,000원</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="no2">
-                            <a href="#">
-                                <div class="content_img">
-                                    <img src="#" alt="LG 트롬 워시타워">
-                                </div>
-                                <div class="content_badge">
-                                    <span>2023년 출시</span>
-                                </div>
-                                <div class="content_info">
-                                    <h3>LG 트롬 워시타워·<em>24/20kg</em></h3>
-                                    <p class="item_number">W20WD</p>
-                                    <p class="price">2,880,000원</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="no3">
-                            <a href="#">
-                                <div class="content_img">
-                                    <img src="#" alt="LG 트롬 오브제컬렉션 워시타워">
-                                </div>
-                                <div class="content_badge">
-                                    <span>다품목할인</span>
-                                </div>
-                                <div class="content_info">
-                                    <h3>LG 트롬 오브제컬렉션 워시타워·<em>24/20kg</em></h3>
-                                    <p class="item_number">W20EGZ</p>
-                                    <p class="price">3,200,000원</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ol>
+                <div class="content">
                 </div>
-                <div class="content4">
-                    <ol>
-                        <li class="no1">
-                            <a href="#">
-                                <div class="content_img">
-                                    <img src="#" alt="LG 트롬 오브제컬렉션 워시타워">
-                                </div>
-                                <div class="content_badge">
-                                    <span>2023년 출시</span>
-                                </div>
-                                <div class="content_info">
-                                    <h3>LG 트롬 오브제컬렉션 워시타워·<em>24/20kg</em></h3>
-                                    <p class="item_number">W20WHN</p>
-                                    <p class="price">2,750,000원</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="no2">
-                            <a href="#">
-                                <div class="content_img">
-                                    <img src="#" alt="LG 트롬 워시타워">
-                                </div>
-                                <div class="content_badge">
-                                    <span>2023년 출시</span>
-                                </div>
-                                <div class="content_info">
-                                    <h3>LG 트롬 워시타워·<em>24/20kg</em></h3>
-                                    <p class="item_number">W20WD</p>
-                                    <p class="price">2,880,000원</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="no3">
-                            <a href="#">
-                                <div class="content_img">
-                                    <img src="#" alt="LG 트롬 오브제컬렉션 워시타워">
-                                    <span>닷컴ONLY</span>
-                                </div>
-                                <div class="content_badge">
-                                    <span>다품목할인</span>
-                                </div>
-                                <div class="content_info">
-                                    <h3>LG 트롬 오브제컬렉션 워시타워·<em>24/20kg</em></h3>
-                                    <p class="item_number">W20EGZ</p>
-                                    <p class="price">3,200,000원</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ol>
+                <div class="content">
                 </div>
             </section>
             <section class="event_item"> <!-- 아이템 총3개 -->
                 <div class="event_title">
-                    <div class="event_title_left">
-                        <h2>감사를 전하는 연말 선물</h2>
+                    <div class="title_left">
+                        <h1>감사를 전하는 연말 선물</h1>
                         <p>12월 선물 가전 추천</p>
                     </div>
-                    <div class="event_title_right">
-                        <a href="#">더보기<img src="#" alt="더보기 바로가기"></a>
+                    <a href="#" class="more">더보기<img src="#" alt="더보기 바로가기"></a>
+                </div>
+                <div class="contnet">
+                    <div class="item_left">
+                        <a href="#">
+                            <div class="item_img">
+                                <img src="#" alt="LG 퓨리케어 오브제컬렉션 하이드로타워">
+                            </div>
+                            <div class="item_info">
+                                <h2>LG 퓨리케어 오브제컬렉션 하이드로타워</h2>
+                                <p class="item_number">HY703RWAAH</p>
+                                <p class="item_price">1,390,000원</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item_right">
+                        <div class="item_top">
+                            <a href="#">
+                                <div class="item_img">
+                                    <img src="#" alt="LG 퓨리케어 오브제컬렉션 에어로타워">
+                                </div>
+                                <div class="item_info">
+                                    <h2><span>LG 퓨리케어 오브제컬렉션 에어로타워 (온풍 겸용) + 무빙휠 세트·</span>18.4㎡</h2>
+                                    <p class="item_number">FS063PSCCM</p>
+                                    <p class="item_price">929,000원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item_bottom">
+                            <a href="#">
+                                <div class="item_img">
+                                    <img src="#" alt="LG 스타일러">
+                                </div>
+                                <div class="item_info">
+                                    <h2><span>LG 스타일러·</span>3벌+바지 1벌</h2>
+                                    <p class="item_number">S3TF</p>
+                                    <p class="item_price">1,260,000원</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <a href="#" class="item1">
-                    <div class="item_img">
-                        <img src="#" alt="LG 퓨리케어 오브제컬렉션 하이드로타워">
+            </section>
+            <section class="category_item"> <!-- 아이템 총10개 -->
+                <h1>워시타워 카테고리에서 좋아할 만한 제품</h1>
+                <div class="content">
+                    <div class="item">
+                        <a href="#">
+                            <div class="item_img">
+                                <img src="#" alt="LG 트롬 오브제컬렉션 워시타워">
+                            </div>
+                            <div class="item_info">
+                                <h2>LG 트롬 오브제컬렉션 워시타워 컴팩트 + LG 스타일러</h2>
+                                <p class="item_number">W10WAN-3WGM</p>
+                                <p class="item_price">3,150,000원</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="item_info">
-                        <h3 class="event_item_name">LG 퓨리케어 오브제컬렉션 하이드로타워</h3>
-                        <p class="event_item_number">HY703RWAAH</p>
-                        <p class="event_item_price">1,390,000원</p>
-                    </div>
-                </a>
+                </div>
             </section>
             <section class="brand_item"> <!-- 아이템 총6개 -->
-                <h2>브랜드 쇼룸</h2>
+                <h1>브랜드 쇼룸</h1>
                 <div class="page_btn">
-                    <button type="button" class="previous_btn"><img src="#" alt=""></button>
-                    <button type="button" class="next_btn"><img src="#" alt=""></button>
+                    <a href="#" class="previous_btn"><img src="#" alt="이전버튼"></a> <!-- 처음에는 숨김처리 -->
+                    <a href="#" class="next_btn"><img src="#" alt="다음버튼"></a>
                 </div>
-                <div class="item1">
-                    <a href="#">
-                        <img src="#" alt="lg signature">
-                        <span>LG SIGNATURE</span>
-                    </a>
+                <div class="content">
+                    <div class="item">
+                        <a href="#">
+                            <img src="#" alt="lg signature">
+                            <span>LG SIGNATURE</span>
+                        </a>
+                    </div>
                 </div>
             </section>
             <section class="latest_item"> <!-- 아이템 총9개 -->
-                <h2>최신 제품 소식</h2>
-                <div class="contents">
-                    <a href="#" class="item1">
-                        <img src="#" alt="LG그램 PRO">
-                        <span>LG 그램 Pro</span>
+                <h1>최신 제품 소식</h1>
+                <div class="content">
+                    <a href="#" class="item">
+                        <div class="item_img">
+                            <img src="#" alt="LG그램 PRO">
+                        </div>
+                        <h2>LG 그램 Pro</h2>
                     </a>
                 </div>
             </section>
-            <section class="review">
+            <section class="review"> <!-- 리뷰 총4개 -->
                 <div class="title">
-                    <h2>슬기로운 가전 생활</h2>
-                    <a href="#">더보기<img src="#" alt="더보기 바로가기"></a>
+                    <h1>슬기로운 가전 생활</h1>
+                    <a href="#" class="more">더보기<img src="#" alt="더보기 바로가기"></a>
                 </div>
                 <a href="#" class="review">
-                    <p class="review_img"><img src="#" alt="리뷰이미지"></p>
-                    <p><span>고객리뷰</span></p>
-                    <p>ooo님의 스타일러 후기</p>
+                    <div class="item_img">
+                        <img src="#" alt="리뷰이미지">
+                    </div>
+                    <p class="user_review"><span>고객리뷰</span></p>
+                    <h2>crea** 님의 스타일러 후기</h2>
                 </a>
             </section>
         </div>
     </main>
-    <a href="https://chat.lge.co.kr/" target="_blank"><img src="#" alt="챗봇상담"></a> <!-- 챗봇상담 아이콘 -->
-    <a href=".header_top"><img src="#" alt="상단으로 이동"></a> <!-- 상단이동 아이콘 -->
+    <a href="#" target="_blank"><img src="#" alt="챗봇상담"></a> <!-- 챗봇상담 아이콘 -->
+    <a href="#h_bg"><img src="#" alt="상단으로 이동"></a> <!-- 상단이동 아이콘 -->
 </body>
 </html>
