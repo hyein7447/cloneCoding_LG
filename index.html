@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
-    <header>
-        <div class="h_bg">
+    <div class="h_bg">
+        <header>
             <div class="header_top">
                 <h1><a href="./index.html"><img src="#" alt="LG전자"></a></h1>
                 <div class="user_icon">
@@ -619,8 +619,8 @@
                                     <div class="lnb_btm_right"> <!-- 케어용품/소모품의 오른쪽 자바스크립트 이미지 -->
                                         <a href="#"><img src="" alt="상품으로가기"><span>휘센타워 에어커버 할인 프로모션</span></a>
                                         <a href="#"><img src="#" alt="상품으로가기"><span>특가 Zone</span></a>
-                                        <button type="button" id="ad_previous_btn"></button> <!-- 광고 이미지 이전 버튼  -->
-                                        <button type="button" id="ad_next_btn"></button> <!-- 광고 이미지 다음 버튼 -->
+                                        <button type="button" class="previous_btn"></button> <!-- 광고 이미지 이전 버튼  -->
+                                        <button type="button" class="next_btn"></button> <!-- 광고 이미지 다음 버튼 -->
                                     </div>
                                 </div>
                             </div>
@@ -958,11 +958,11 @@
                         <li><a href="#"><img src="#" alt="LET'S GRAM"></a></li>
                     </ul>
                 </nav>
-                <button type="button" id="previous_btn"><img src="#" alt="이전버튼"></button> <!-- 태블릿 사이즈에서 나타나는 전체메뉴 이전, 다음 버튼 -->
-                <button type="button" id="next_btn"><img src="#" alt="다음버튼"></button>
+                <button type="button" class="previous_btn"><img src="#" alt="이전버튼"></button> <!-- 태블릿 사이즈에서 나타나는 전체메뉴 이전, 다음 버튼 -->
+                <button type="button" class="next_btn"><img src="#" alt="다음버튼"></button>
             </div>
-        </div>
-    </header>
+        </header>
+    </div>
     <main>
         <div class="container">
             <ul class="main_bnr">
@@ -1239,8 +1239,8 @@
                 </div>
                 <div class="icon">
                     <div class="page_btn">
-                        <button type="button" id="previous_btn"><img src="#" alt="이전버튼"></button> <!-- 처음에는 숨겨져있음 -->
-                        <button type="button" id="next_btn"><img src="#" alt="다음버튼"></button>
+                        <button type="button" class="previous_btn"><img src="#" alt="이전버튼"></button> <!-- 처음에는 숨겨져있음 -->
+                        <button type="button" class="next_btn"><img src="#" alt="다음버튼"></button>
                     </div>
                     <ul class="icon_items">
                         <li class="item">
@@ -1574,8 +1574,8 @@
             <section class="brand_item"> <!-- 아이템 총6개 -->
                 <h2>브랜드 쇼룸</h2>
                 <div class="page_btn">
-                    <button type="button" id="brand_previous_btn"><img src="#" alt=""></button>
-                    <button type="button" id="brand_next_btn"><img src="#" alt=""></button>
+                    <button type="button" class="previous_btn"><img src="#" alt=""></button>
+                    <button type="button" class="next_btn"><img src="#" alt=""></button>
                 </div>
                 <div class="item1">
                     <a href="#">
@@ -1583,6 +1583,26 @@
                         <span>LG SIGNATURE</span>
                     </a>
                 </div>
+            </section>
+            <section class="latest_item"> <!-- 아이템 총9개 -->
+                <h2>최신 제품 소식</h2>
+                <div class="contents">
+                    <a href="#" class="item1">
+                        <img src="#" alt="LG그램 PRO">
+                        <span>LG 그램 Pro</span>
+                    </a>
+                </div>
+            </section>
+            <section class="review">
+                <div class="title">
+                    <h2>슬기로운 가전 생활</h2>
+                    <a href="#">더보기<img src="#" alt="더보기 바로가기"></a>
+                </div>
+                <a href="#" class="review">
+                    <p class="review_img"><img src="#" alt="리뷰이미지"></p>
+                    <p><span>고객리뷰</span></p>
+                    <p>ooo님의 스타일러 후기</p>
+                </a>
             </section>
         </div>
     </main>
