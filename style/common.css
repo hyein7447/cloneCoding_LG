@@ -1,5 +1,5 @@
 /* 검색 팝업 */
-.search_pop_up {}
+.search_pop_up {display: none;}
 .search_pop_up a {}
 .search_pop_up .search {}
 .search_pop_up .search #search_frm {}
@@ -19,7 +19,7 @@
 .search_pop_up .search .search_sub .right a {}
 /* header top */
 #h_bg {}
-#h_bg header {}
+#h_bg header {width: 1312px; margin: 0 auto;}
 #h_bg header .header_top {}
 #h_bg header .header_top h1 {}
 #h_bg header .header_top h1 a {}
@@ -63,6 +63,11 @@
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb h2 {}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb h2 a {}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb h2 a img {}
+/* 이벤트/멤버십, 베스트샵 lnb_btm 공통 디자인 선택자 */
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb p {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb p a {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb p a img {}
+
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb > a {}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb .tag {}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right {}
@@ -71,3 +76,17 @@
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .ad_img span{}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right a span {}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right a img {}
+/* lnb_btm_3 right 추가 배너 */
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .add_bnr {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .add_bnr img {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .add_bnr span {}
+#h_bg header .header_bottom nav .gnb_right {}
+#h_bg header .header_bottom nav .gnb_right li {}
+#h_bg header .header_bottom nav .gnb_right li a {}
+#h_bg header .header_bottom nav .gnb_right li a img {}
+/* 태블릿 사이즈에서 나타나는 전체메뉴 이전,다음 버튼 */
+#h_bg header .header_bottom .page_btn {display: none;}
+#h_bg header .header_bottom .page_btn .previous_btn {}
+#h_bg header .header_bottom .page_btn .previous_btn img {}
+#h_bg header .header_bottom .page_btn .next_btn {}
+#h_bg header .header_bottom .page_btn .next_btn img {}
