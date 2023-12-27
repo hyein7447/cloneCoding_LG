@@ -1,0 +1,73 @@
+/* 검색 팝업 */
+.search_pop_up {}
+.search_pop_up a {}
+.search_pop_up .search {}
+.search_pop_up .search #search_frm {}
+.search_pop_up .search #search_frm fieldset {}
+.search_pop_up .search #search_frm fieldset #user_serach_box {}
+.search_pop_up .search #search_frm fieldset #search_icon {}
+.search_pop_up .search .search_sub {}
+.search_pop_up .search .search_sub .left {}
+.search_pop_up .search .search_sub .left h2 {}
+.search_pop_up .search .search_sub .left ol {}
+.search_pop_up .search .search_sub .left ol li {}
+.search_pop_up .search .search_sub .left ol li a {}
+.search_pop_up .search .search_sub .left ol li a .ranking_num {}
+.search_pop_up .search .search_sub .left ol li a .keyword {}
+.search_pop_up .search .search_sub .right {}
+.search_pop_up .search .search_sub .right h2 {}
+.search_pop_up .search .search_sub .right a {}
+/* header top */
+#h_bg {}
+#h_bg header {}
+#h_bg header .header_top {}
+#h_bg header .header_top h1 {}
+#h_bg header .header_top h1 a {}
+#h_bg header .header_top h1 a img {}
+#h_bg header .header_top .header_right {}
+#h_bg header .header_top .header_right .user_icon {}
+#h_bg header .header_top .header_right .user_icon a {}
+#h_bg header .header_top .header_right .user_icon a img {}
+#h_bg header .header_top .header_right .user_icon .user_page {}
+#h_bg header .header_top .header_right .user_icon .user_page .user_login {}
+#h_bg header .header_top .header_right .user_icon .user_page .user_login img {}
+#h_bg header .header_top .header_right .user_icon .user_page .user_login_sub {}
+#h_bg header .header_top .header_right .user_icon .user_page .user_login_sub a {}
+#h_bg header .header_top .header_right .user_icon .user_cart {}
+#h_bg header .header_top .header_right .user_icon .user_cart img {}
+#h_bg header .header_top .header_right .user_icon .m_menu {display:none;} /* 모바일용 햄버거바 (숨김처리) */
+#h_bg header .header_top .header_right .company_info {}
+#h_bg header .header_top .header_right .company_info a {}
+#h_bg header .header_top .header_right .company_info .company_sub {}
+#h_bg header .header_top .header_right .company_info .company_sub a {}
+#h_bg header .header_top .header_right .company_info .company_sub a img {}
+#h_bg header .header_top .header_right > a {}
+#h_bg header .header_top .header_right > a img {}
+/* header bottom */
+#h_bg header .header_bottom {}
+#h_bg header .header_bottom nav {}
+#h_bg header .header_bottom nav .gnb_left {}
+#h_bg header .header_bottom nav .gnb_left li {}
+#h_bg header .header_bottom nav .gnb_left li a {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap {}
+/* 상단 서브 메뉴 한 줄 */
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top a {}
+/* 고객지원, 이벤트/멤버십, 스토리, 베스트샵 공통 선택자*/
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top h2 {}
+/* lnb btm 공통 선택자 */
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb h2 {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb h2 a {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb h2 a img {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb > a {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb .tag {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .ad_img {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .ad_img img {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .ad_img span{}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right a span {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right a img {}
