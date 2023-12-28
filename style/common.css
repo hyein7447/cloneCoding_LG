@@ -19,33 +19,54 @@
 .search_pop_up .search .search_sub .right a {}
 /* header top */
 #h_bg {}
-#h_bg header {width: 1312px; margin: 0 auto;}
-#h_bg header .header_top {}
+#h_bg header {width: 1312px; height: 66px; margin: 0 auto;}
+#h_bg header .header_top {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    margin: 18px 0;
+
+}
 #h_bg header .header_top h1 {}
 #h_bg header .header_top h1 a {}
 #h_bg header .header_top h1 a img {}
-#h_bg header .header_top .header_right {}
-#h_bg header .header_top .header_right .user_icon {}
-#h_bg header .header_top .header_right .user_icon a {}
+#h_bg header .header_top .header_right {
+    display: flex; flex-flow: row nowrap; align-items: center;
+}
+#h_bg header .header_top .header_right .user_icon {
+    display: flex; flex-flow: row nowrap;
+
+}
+#h_bg header .header_top .header_right .user_icon a {
+    padding-right: 25px;
+}
 #h_bg header .header_top .header_right .user_icon a img {}
 #h_bg header .header_top .header_right .user_icon .user_page {}
 #h_bg header .header_top .header_right .user_icon .user_page .user_login {}
-#h_bg header .header_top .header_right .user_icon .user_page .user_login img {}
-#h_bg header .header_top .header_right .user_icon .user_page .user_login_sub {}
+#h_bg header .header_top .header_right .user_icon .user_page .user_login img {width: 24px; height: 24px;}
+/* 로그인 오픈시 */
+#h_bg header .header_top .header_right .user_icon .user_page .user_login_sub {display: none;}
 #h_bg header .header_top .header_right .user_icon .user_page .user_login_sub a {}
 #h_bg header .header_top .header_right .user_icon .user_cart {}
-#h_bg header .header_top .header_right .user_icon .user_cart img {}
+#h_bg header .header_top .header_right .user_icon .user_cart img {width: 24px; height: 24px;}
 #h_bg header .header_top .header_right .user_icon .m_menu {display:none;} /* 모바일용 햄버거바 (숨김처리) */
 #h_bg header .header_top .header_right .company_info {}
-#h_bg header .header_top .header_right .company_info a {}
-#h_bg header .header_top .header_right .company_info .company_sub {}
+#h_bg header .header_top .header_right .company_info a {
+    font-size: 0.875rem; line-height: 24px; padding: 0 15px; 
+}
+/* 회사소개 오픈시 */
+#h_bg header .header_top .header_right .company_info .company_sub {display: none;}
 #h_bg header .header_top .header_right .company_info .company_sub a {}
 #h_bg header .header_top .header_right .company_info .company_sub a img {}
-#h_bg header .header_top .header_right > a {}
-#h_bg header .header_top .header_right > a img {}
+#h_bg header .header_top .header_right > a {
+    font-size: 0.875rem; display: inline-block; text-align: center;
+}
+#h_bg header .header_top .header_right > a img {
+}
 /* header bottom */
-#h_bg header .header_bottom {}
-#h_bg header .header_bottom nav {}
+#h_bg header .header_bottom {
+}
+#h_bg header .header_bottom nav {
+    
+}
 #h_bg header .header_bottom nav .gnb_left {}
 #h_bg header .header_bottom nav .gnb_left li {}
 #h_bg header .header_bottom nav .gnb_left li a {}
@@ -90,3 +111,7 @@
 #h_bg header .header_bottom .page_btn .previous_btn img {}
 #h_bg header .header_bottom .page_btn .next_btn {}
 #h_bg header .header_bottom .page_btn .next_btn img {}
+
+main {display: none;}
+footer {display: none;}
+.bottom_icon {display: none;}
