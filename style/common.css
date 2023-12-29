@@ -116,12 +116,6 @@
 #h_bg header .header_top .header_right > a {
     font-size: 0.875rem; display: inline-block; text-align: center;
 }
-#h_bg header .header_top .header_right > a::before {
-    /*  font-size: 0.875rem; display: inline-block; text-align: center;
-    content: ''; display:inline-block;
-    width: 1px; height: 14px; background-color: #aaa;
-    margin: 0 25px 0 25px; */
-}
 #h_bg header .header_top .header_right > a img {
 }
 /* header bottom */
@@ -132,7 +126,7 @@
     align-items: center; height: 40px;
 }
 #h_bg header .header_bottom nav .gnb_left {
-    display: flex; flex-flow: row nowrap;
+    display: flex; flex-flow: row nowrap; position: relative;
 }
 #h_bg header .header_bottom nav .gnb_left li {
     padding: 7px 24px 12px 0; position: relative;
@@ -150,11 +144,18 @@
 
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg {
-    display: none; /* gnb css 완성할 때 까지 가리기 */
+    /* display: none; */
+    
 }
-#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap {
+    display: flex; flex-flow: row nowrap; background-color: aqua;
+    position: absolute; top: 40px; width: 100%;
+
+}
 /* 상단 서브 메뉴 한 줄 */
-#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top {
+    display: flex; flex-flow: row nowrap;
+}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top a {}
 /* 고객지원, 이벤트/멤버십, 스토리, 베스트샵 공통 선택자*/
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top h2 {}
