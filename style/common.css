@@ -161,7 +161,9 @@
 /* 고객지원, 이벤트/멤버십, 스토리, 베스트샵 공통 선택자*/
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top h2 {}
 /* lnb btm 공통 선택자 */
-#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm {
+    display: none;
+}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left {}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb {}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb h2 {}
