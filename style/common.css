@@ -145,16 +145,17 @@
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg {
     /* display: none; */
+    position: absolute; top: 40px; width: 100%;
+
     
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap {
-    display: flex; flex-flow: row nowrap; background-color: aqua;
-    position: absolute; top: 40px; width: 100%;
+    display: flex; flex-flow: row nowrap;
 
 }
 /* 상단 서브 메뉴 한 줄 */
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top {
-    display: flex; flex-flow: row nowrap;
+    display: flex; flex-flow: row nowrap; background-color: aqua;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top a {}
 /* 고객지원, 이벤트/멤버십, 스토리, 베스트샵 공통 선택자*/
