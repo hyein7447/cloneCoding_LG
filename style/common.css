@@ -120,16 +120,17 @@
 }
 /* header bottom */
 #h_bg header .header_bottom {
+    background-color: red; position: relative;
 }
 #h_bg header .header_bottom nav {
     display: flex; flex-flow: row nowrap;
     align-items: center; height: 40px;
 }
 #h_bg header .header_bottom nav .gnb_left {
-    display: flex; flex-flow: row nowrap; position: relative;
+    display: flex; flex-flow: row nowrap;
 }
 #h_bg header .header_bottom nav .gnb_left li {
-    padding: 7px 24px 12px 0; position: relative;
+    padding: 7px 24px 12px 0;
 }
 #h_bg header .header_bottom nav .gnb_left li > a {
     font-weight: 500; 
@@ -143,9 +144,12 @@
     content: ''; display: inline-block;
 
 }
+#h_bg header .header_bottom nav .gnb_left li:nth-child(1) .lnb_bg
+{display: block;}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg {
     /* display: none; */
-    position: absolute; top: 40px; width: 100%;
+    position: absolute; top: 40px; width: 100%; display: none; /* 카테고리별
+    디자인 시 편하게 보기위해 가리는용 */
 
     
 }
@@ -156,14 +160,21 @@
 /* 상단 서브 메뉴 한 줄 */
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top {
     display: flex; flex-flow: row nowrap; background-color: aqua;
+    border: 1px solid #ccc;
+    width: 100%; padding: 25px 40px;
 }
-#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top a {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top a {
+    margin-right: 20px; background-color: yellow;
+    font-size: 0.875rem; text-align: left;
+}
 /* 고객지원, 이벤트/멤버십, 스토리, 베스트샵 공통 선택자*/
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top h2 {}
 /* lnb btm 공통 선택자 */
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm {
-    display: none;
+    display: none; 
 }
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_1
+{display: block;}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left {}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb {}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb h2 {}
