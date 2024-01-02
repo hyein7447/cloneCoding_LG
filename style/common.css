@@ -168,7 +168,7 @@
     background-color: mediumvioletred; width: 100%; display: none;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left {
-    background-color: bisque; width: 78%; margin: 28px 0 40px;
+    background-color: bisque; width: 65%; margin: 28px 0 40px;
     display: grid;
     grid-template-areas:
     'lnb1 lnb3 lnb5'
@@ -182,13 +182,13 @@
 display: block;}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb {
     background-color: pink;  display: block;  width: 100%; display: flex; flex-flow: column nowrap;
-    margin-bottom: 32px; 
+    margin-bottom: 32px;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb h2 {
     padding-bottom: 16px;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb h2 a {
-    font-weight: 600; display: block; 
+    font-weight: 600; display: inline-block; 
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb > a {
     padding: 8px 18px 0 0 ; font-size: 0.875rem; line-height: 24px; 
@@ -206,13 +206,15 @@ display: block;}
     font-size: 0.875rem;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right {
-    background-color: orange; margin: 28px 0 64px 0; width:26%;
+    background-color: orange; margin: 28px 0 64px 0; width:35%; padding: 0 10px;
+    text-align: center;
+    
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .ad_img {
     width: 100%;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .ad_img img {
-    width:100%; border-radius: 18px;
+    /* width:100%; */ border-radius: 18px;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .ad_img span{
     font-size: 1.125rem; font-weight: 800; line-height: 28px; margin: 16px 0 20px 0; display: block;
@@ -221,7 +223,7 @@ display: block;}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .link {
     font-size: 0.875rem; font-weight: 800; line-height: 20px;
     background-color: #fdf2ff; padding: 10px 13px 10px 16px; display: block;
-    border-radius: 6px; height: 40px; width: 100%;
+    border-radius: 6px; height: 40px; width: 100%; text-align: start;
     margin-top: 18px;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right a em {
@@ -238,7 +240,7 @@ display: block;}
 }
 #h_bg header .header_bottom nav .gnb_right li .right4 {padding-right: 0;}
 /* btm 개별 선택자 */
-#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_3{
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_5{
     display: flex;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_2 .lnb_btm_left {
@@ -253,13 +255,42 @@ display: block;}
     display: flex; flex-flow: row nowrap;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_3 .lnb_btm_left .col1 {
-    display: flex; flex-flow: column nowrap; 
+    display: flex; flex-flow: column nowrap; width: 100%;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_3 .lnb_btm_left .col2 {
-    display: flex; flex-flow: column nowrap;
+    display: flex; flex-flow: column nowrap; width: 100%;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_3 .lnb_btm_left .col3 {
+    display: flex; flex-flow: column nowrap; width: 100%;
+}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_4 .lnb_btm_left {
+}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_4 .lnb_btm_left .col1 {
     display: flex; flex-flow: column nowrap;
+}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_4 .lnb_btm_left .col1 {
+    display: flex; flex-flow: column nowrap;
+}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_4 .lnb_btm_left .col1 {
+    display: flex; flex-flow: column nowrap;
+}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_5 .lnb_btm_left {}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_5 .lnb_btm_left .col1 {
+    display: flex; flex-flow: column nowrap;
+}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_5 .lnb_btm_left .col2 {
+    display: flex; flex-flow: column nowrap;
+}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_5 .lnb_btm_left .col3 {
+    display: flex; flex-flow: column nowrap;
+}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_5 .lnb_btm_left .col3 .tag {
+    width: 90px; 
+}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_5 .lnb_btm_left .col3 .tag a {
+    color: #666; border: 1px solid #ddd; border-radius: 8px;
+    font-weight: 500; padding: 7px 8px; margin-bottom: 8px; display: block;
+    font-size: 0.875rem; text-align: center;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb h2 a img {}
 /* 이벤트/멤버십, 베스트샵 lnb_btm 공통 디자인 선택자 */
@@ -269,16 +300,16 @@ display: block;}
 
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right a img {}
 /* lnb_btm_3 right 추가 배너 */
-#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .add_bnr {
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .ad_bnr {
     background-color: #f4f4f4; border-radius: 8px; width: 100%; height: 110px;
     display: flex; flex-flow: row nowrap; justify-content: space-between;
-    padding: 0 36px 0 40px; align-items: center;
+    padding: 0 30px 0 30px; align-items: center;
 }
-#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .add_bnr img {
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .ad_bnr img {
     
 }
-#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .add_bnr span {
-    font-size: 1.25rem; font-weight: 500;
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .ad_bnr span {
+    font-weight: 600;
 }
 #h_bg header .header_bottom nav .gnb_right li {}
 #h_bg header .header_bottom nav .gnb_right li a img {
