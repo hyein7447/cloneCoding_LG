@@ -143,7 +143,7 @@
 #h_bg header .header_bottom nav .gnb_left li:nth-child(1) .lnb_bg
 {display: block;}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg {
-    position: absolute; top: 40px; width: 100%; display: none; 
+    position: absolute; top: 40px; width: 100%; /* display: none; */ 
     /* 카테고리별 디자인 시 편하게 보기위해 가리는용 */
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap {
@@ -168,7 +168,7 @@
     background-color: mediumvioletred; width: 100%; display: none;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left {
-    background-color: bisque; width: 65%; margin: 28px 0 40px;
+    background-color: bisque; width: calc(100% - 400px); margin: 28px 0 40px;
     display: grid;
     grid-template-areas:
     'lnb1 lnb3 lnb5'
@@ -206,15 +206,15 @@ display: block;}
     font-size: 0.875rem;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right {
-    background-color: orange; margin: 28px 0 64px 0; width:35%; padding: 0 10px;
-    text-align: center;
+    background-color: orange; margin: 28px 0 64px 0; width:400px; padding: 0 10px;
+    text-align: center; 
     
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .ad_img {
     width: 100%;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .ad_img img {
-    /* width:100%; */ border-radius: 18px;
+    width:100%; border-radius: 18px;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .ad_img span{
     font-size: 1.125rem; font-weight: 800; line-height: 28px; margin: 16px 0 20px 0; display: block;
@@ -240,7 +240,7 @@ display: block;}
 }
 #h_bg header .header_bottom nav .gnb_right li .right4 {padding-right: 0;}
 /* btm 개별 선택자 */
-#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_5{
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_1 {
     display: flex;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_2 .lnb_btm_left {
