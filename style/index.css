@@ -1,0 +1,224 @@
+main {}
+/* 메인 배너 */
+main .container {}
+main .container .main_bnr {}
+main .container .main_bnr .main_bnr_item {}
+main .container .main_bnr .main_bnr_item li {}
+/* 메인배너 공통 */
+main .container .main_bnr .main_bnr_item li a {}
+main .container .main_bnr .main_bnr_item li a h2 {}
+main .container .main_bnr .main_bnr_item li a p {}
+main .container .main_bnr .main_bnr_item li a video {}
+/* 메인배너 배경 개별 */
+main .container .main_bnr .main_bnr_item li .main_bnr1 {
+    background-image: url(../images/main_bnr/);
+}
+main .container .main_bnr .main_bnr_item li .main_bnr2 {}
+main .container .main_bnr .main_bnr_item li .main_bnr3 {}
+main .container .main_bnr .main_bnr_item li .main_bnr4 {}
+main .container .main_bnr .main_bnr_item li .main_bnr5 {}
+main .container .main_bnr .main_bnr_item li .main_bnr6 {}
+main .container .main_bnr .main_bnr_item li .main_bnr7 {}
+main .container .main_bnr .main_bnr_item li .main_bnr8 {}
+main .container .main_bnr .main_bnr_item li .main_bnr9 {}
+main .container .main_bnr .main_bnr_item li .main_bnr10 {}
+main .container .main_bnr .main_bnr_item li .main_bnr11 {}
+main .container .main_bnr .main_bnr_item li .main_bnr12 {}
+/* 메인 배너 버튼 */
+main .container .main_bnr .active_btn {}
+main .container .main_bnr .active_btn #stop_btn {}
+main .container .main_bnr .active_btn #stop_btn img {}
+main .container .main_bnr .active_btn .right_btn {}
+main .container .main_bnr .active_btn .right_btn .page_btn {}
+main .container .main_bnr .active_btn .right_btn .page_btn .previous_btn {}
+main .container .main_bnr .active_btn .right_btn .page_btn .previous_btn img {}
+main .container .main_bnr .active_btn .right_btn .page_btn .present_page {}
+main .container .main_bnr .active_btn .right_btn .page_btn .all_page {}
+main .container .main_bnr .active_btn .right_btn .page_btn .next_btn {}
+main .container .main_bnr .active_btn .right_btn .page_btn .next_btn img {}
+main .container .main_bnr .active_btn .right_btn .play_btn {}
+main .container .main_bnr .active_btn .right_btn .play_btn img {}
+/* small 메뉴 bar */
+main .container .small_menu {}
+main .container .small_menu li {}
+main .container .small_menu li a {}
+main .container .small_menu li a img {}
+main .container .small_menu li a span {}
+/* 서브 배너 */
+main .container .sub_bnr {}
+main .container .sub_bnr .bnr1 {}
+main .container .sub_bnr .bnr1 img {}
+main .container .sub_bnr .bnr1 .d_day {}
+main .container .sub_bnr .bnr1 .d_day .day {}
+main .container .sub_bnr .bnr1 .d_day .hour {}
+main .container .sub_bnr .bnr1 .d_day .minute {}
+main .container .sub_bnr .bnr1 .d_day .second {}
+main .container .sub_bnr .bnr1 .d_day span {}
+main .container .sub_bnr .bnr2 {}
+main .container .sub_bnr .bnr2 .sub_bnr_text {}
+main .container .sub_bnr .bnr2 .sub_bnr_text h2 {}
+main .container .sub_bnr .bnr2 .sub_bnr_text p {}
+main .container .sub_bnr .bnr2 .sub_bnr_text p img {}
+main .container .sub_bnr .bnr3 {}
+main .container .sub_bnr .bnr3 .sub_bnr_text {}
+main .container .sub_bnr .bnr3 .sub_bnr_text h2 {}
+main .container .sub_bnr .bnr3 .sub_bnr_text p {}
+main .container .sub_bnr .bnr3 .sub_bnr_text p img {}
+/* 지금 주목해야 할 제품 */
+main .container .sale_item {}
+main .container .sale_item h1 {}
+main .container .sale_item p {}
+main .container .sale_item .content {}
+main .container .sale_item .content .item {}
+main .container .sale_item .content .item .item_img {}
+main .container .sale_item .content .item .item_img img {}
+main .container .sale_item .content .item .item_img img span {}
+main .container .sale_item .content .item .item_info {}
+main .container .sale_item .content .item .item_info h2 {}
+main .container .sale_item .content .item .item_info h2 span {}
+main .container .sale_item .content .item .item_info .item_number {}
+main .container .sale_item .content .item .item_info .item_price {}
+/* 베스트 랭킹 */
+main .container .best_item {}
+/* 베스트 랭킹 상단 타이틀 */
+main .container .best_item .title {}
+main .container .best_item .title .title_left {}
+main .container .best_item .title .title_left h1 {}
+main .container .best_item .title .title_left p {}
+main .container .best_item .title .more {}
+main .container .best_item .title .more img {}
+/* 베스트 랭킹 하단 아이콘 */
+main .container .best_item .icon {}
+/* 베스트 랭킹 하단 아이콘 (양 옆 페이지 버튼)*/
+main .container .best_item .icon .page_btn {}
+main .container .best_item .icon .page_btn .previous_btn {} /* 처음에는 숨겨져있음 */
+main .container .best_item .icon .page_btn .previous_btn img {}
+main .container .best_item .icon .page_btn .next_btn {}
+main .container .best_item .icon .page_btn .next_btn img {}
+/* 베스트 랭킹 하단 아이콘 (슬라이드 아이콘)*/
+main .container .best_item .icon .slide_icon {}
+main .container .best_item .icon .slide_icon .icon_items {}
+main .container .best_item .icon .slide_icon .icon_items .item {}
+main .container .best_item .icon .slide_icon .icon_items .item a {}
+main .container .best_item .icon .slide_icon .icon_items .item a span {}
+main .container .best_item .icon .slide_icon .icon_items .item a span img {}
+main .container .best_item .icon .slide_icon .icon_items .item a .icon_name {}
+/* 베스트 랭킹 하단 아이콘 (슬라이드 아이콘 혼수이사/1인가구/베스트추천)*/
+main .container .best_item .icon .slide_icon .icon_items .event_items {}
+main .container .best_item .icon .slide_icon .icon_items .event_items li {}
+main .container .best_item .icon .slide_icon .icon_items .event_items li a {}
+main .container .best_item .icon .slide_icon .icon_items .event_items li a span {}
+main .container .best_item .icon .slide_icon .icon_items .event_items li a img {}
+/* 카테고리별 랭킹 */
+main .container .best_item .content_box {}
+main .container .best_item .content_box .content_item {}
+main .container .best_item .content_box .content_item .lanking {}
+main .container .best_item .content_box .content_item .lanking a {}
+main .container .best_item .content_box .content_item .lanking a .lanking_num {}
+main .container .best_item .content_box .content_item .lanking a .lanking_img {}
+main .container .best_item .content_box .content_item .lanking a .lanking_img img {}
+main .container .best_item .content_box .content_item .lanking a .content_badge {}
+main .container .best_item .content_box .content_item .lanking a .content_badge span {}
+main .container .best_item .content_box .content_item .lanking a .h2 {}
+main .container .best_item .content_box .content_item .lanking a .h2 span {}
+main .container .best_item .content_box .content_item .lanking a .item_number {}
+main .container .best_item .content_box .content_item .lanking a .item_price {}
+main .container .event_item {}
+main .container .event_item .event_title {}
+main .container .event_item .event_title .title_left {}
+main .container .event_item .event_title .title_left h1 {}
+main .container .event_item .event_title .title_left p {}
+main .container .event_item .event_title .more {}
+main .container .event_item .event_title .more img {}
+main .container .event_item .content {}
+main .container .event_item .content .item_left {}
+main .container .event_item .content .item_left a {}
+main .container .event_item .content .item_left a .item_img {}
+main .container .event_item .content .item_left a .item_img img {}
+main .container .event_item .content .item_left a .item_info {}
+main .container .event_item .content .item_left a .item_info h2 {}
+main .container .event_item .content .item_left a .item_info .item_number {}
+main .container .event_item .content .item_left a .item_info .item_price {}
+main .container .event_item .content .item_right {}
+main .container .event_item .content .item_right .item_top {}
+main .container .event_item .content .item_right .item_top a {}
+main .container .event_item .content .item_right .item_top a .item_img {}
+main .container .event_item .content .item_right .item_top a .item_img img {}
+main .container .event_item .content .item_right .item_top a .item_info {}
+main .container .event_item .content .item_right .item_top a .item_info h2 {}
+main .container .event_item .content .item_right .item_top a .item_info h2 span {}
+main .container .event_item .content .item_right .item_top a .item_info .item_number {}
+main .container .event_item .content .item_right .item_top a .item_info .item_price {}
+main .container .event_item .content .item_right .item_bottom {}
+main .container .event_item .content .item_right .item_bottom a {}
+main .container .event_item .content .item_right .item_bottom a .item_img {}
+main .container .event_item .content .item_right .item_bottom a .item_img img {}
+main .container .event_item .content .item_right .item_bottom a .item_info {}
+main .container .event_item .content .item_right .item_bottom a .item_info h2 {}
+main .container .event_item .content .item_right .item_bottom a .item_info h2 span {}
+main .container .event_item .content .item_right .item_bottom a .item_info .item_number {}
+main .container .event_item .content .item_right .item_bottom a .item_info .item_price {}
+/* 브랜드 쇼룸 */
+main .container .brand_item {}
+main .container .brand_item h1 {}
+main .container .brand_item .page_btn {} /* 처음에는 숨김처리 */
+main .container .brand_item .page_btn .previous_btn {}
+main .container .brand_item .page_btn .previous_btn img {}
+main .container .brand_item .page_btn .next_btn {}
+main .container .brand_item .page_btn .next_btn img {}
+main .container .brand_item .content {}
+main .container .brand_item .content .item {}
+main .container .brand_item .content .item p {}
+main .container .brand_item .content .item p img {}
+main .container .brand_item .content .item h2 {}
+/* 최신 제품 소식 */
+main .container .latest_item {}
+main .container .latest_item h1 {}
+main .container .latest_item .content {}
+main .container .latest_item .content .item {}
+main .container .latest_item .content .item .item_img {}
+main .container .latest_item .content .item .item_img img {}
+main .container .latest_item .content .item h2 {}
+/* 슬기로운 가전 생활 */
+main .container .review {}
+main .container .review .title {}
+main .container .review .title h1 {}
+main .container .review .title .more {}
+main .container .review .title .more img {}
+main .container .review .content {}
+main .container .review .content .item {}
+main .container .review .content .item .item_img {}
+main .container .review .content .item .item_img img {}
+main .container .review .content .item .user_review {}
+main .container .review .content .item .user_review span {}
+main .container .review .content .item .h2 {}
+/* bottom 배너 */
+main .container .bottom_bnr {}
+main .container .bottom_bnr a {}
+main .container .bottom_bnr a h2 {}
+main .container .bottom_bnr a p {}
+main .container .bottom_bnr a p img {}
+/* 놓치면 아쉬운 혜택 */
+main .container .benefit_item {}
+main .container .benefit_item .title {}
+main .container .benefit_item .title h1 {}
+main .container .benefit_item .title .more {}
+main .container .benefit_item .title .more img {}
+main .container .benefit_item .content {}
+main .container .benefit_item .content a {}
+main .container .benefit_item .content a .item_img {}
+main .container .benefit_item .content a .item_img img{}
+main .container .benefit_item .content a .h2 {}
+/* 베스트샵 이용 안내 */
+main .container .service_bg {}
+main .container .service_bg .service {}
+main .container .service_bg .service .content {}
+main .container .service_bg .service .content .left {}
+main .container .service_bg .service .content .left h1 {}
+main .container .service_bg .service .content .left p {}
+main .container .service_bg .service .content .right {}
+main .container .service_bg .service .content .right .list {}
+main .container .service_bg .service .content .right .list a {}
+main .container .service_bg .service .content .right .list a .text_wrap {}
+main .container .service_bg .service .content .right .list a .text_wrap p {}
+main .container .service_bg .service .content .right .list a .text_wrap p h2 {}
