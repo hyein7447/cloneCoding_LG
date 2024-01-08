@@ -140,12 +140,11 @@
     content: ''; display: inline-block;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg {
-    position: absolute; top: 40px; left: 0; width: 100%; 
-    display: none;
+    position: absolute; top: 40px; left: 0; width: 100%; display: none;
     /* 카테고리별 디자인 시 편하게 보기위해 가리는용 */
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap {
-    display: flex; flex-flow: row nowrap; width: 100%; display: none;
+    display: flex; flex-flow: row nowrap; width: 100%;
 }
 /* 상단 서브 메뉴 한 줄 */
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top {
@@ -439,5 +438,6 @@
 #h_bg header .header_bottom .page_btn .previous_btn img {}
 #h_bg header .header_bottom .page_btn .next_btn {}
 #h_bg header .header_bottom .page_btn .next_btn img {}
+main {display: none;}
 footer {display: none;}
 .bottom_icon {display: none;}
