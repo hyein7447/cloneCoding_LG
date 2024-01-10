@@ -1,37 +1,36 @@
 main {}
 /* 메인 배너 */
 main .container {}
-main .container .main_bnr {}
-main .container .main_bnr .main_bnr_item {
+main .container .main_bnr {
     position: relative;
 }
+main .container .main_bnr .main_bnr_item {
+    display: flex; width: max-content;
+}
 main .container .main_bnr .main_bnr_item li {
-    
+    display: block; width: 1920px; height: 600px;
 }
 /* 메인배너 공통 */
 main .container .main_bnr .main_bnr_item li a {
-    display: block; max-width: 1920px; height: 31.25vw;
+    display: block; height: 100%;
 }
 main .container .main_bnr .main_bnr_item li a h2,
 main .container .main_bnr .main_bnr_item li a p {}
 main .container .main_bnr .main_bnr_item li a h2 {
-    font-size: 2.395833vw;
-    letter-spacing: -.071875vw;
     color: #fff;
 }
 main .container .main_bnr .main_bnr_item li a p {
-    margin-top: 1.041667vw;
-    font-size: .9375vw;
-    letter-spacing: -.01875vw;
     color: #fff;
 }
 main .container .main_bnr .main_bnr_item li a video {}
 /* 메인배너 배경 개별 */
 main .container .main_bnr .main_bnr_item li .main_bnr1 {
     background: url(../images/main_bnr/main_bnr1.png) no-repeat center;
+    background-size: cover;
 }
 main .container .main_bnr .main_bnr_item li .main_bnr2 {
-    background: url(../images/main_bnr/img_main_bnr_05.jpg) no-repeat center; display: none;
+    background: url(../images/main_bnr/img_main_bnr_05.jpg) no-repeat center;
+    background-size: cover;
 }
 main .container .main_bnr .main_bnr_item li .main_bnr2 .txt_box {
     position: absolute; top: 110px; left: 120px;
@@ -55,13 +54,13 @@ main .container .main_bnr .active_btn {
 }
 /* 배너 버튼 왼쪽 */
 main .container .main_bnr .active_btn .left_btn {
-    position: absolute; bottom: 400px;
+    position: absolute; bottom: 35px;
 }
 main .container .main_bnr .active_btn .left_btn #stop_btn {}
 main .container .main_bnr .active_btn .left_btn #stop_btn img {}
 /* 배너 버튼 오른쪽 */
 main .container .main_bnr .active_btn .right_btn {
-    display: flex; position: absolute; bottom: 410px; right: 150px;
+    display: flex; position: absolute; bottom: 35px; right: 13%;
 }
 main .container .main_bnr .active_btn .right_btn .page_btn {
     background: rgba(0,0,0,.35);
@@ -106,40 +105,65 @@ main .container .small_menu {
 }
 main .container .small_menu li {
     display: flex; flex-flow: column nowrap;
-    width: 60px; height: 60px; margin-right: 40px; text-align: center;
+    margin-right: 40px; align-items: center;
 }
 main .container .small_menu li:last-child {
     margin-right: 0;
 }
-main .container .small_menu li .img {}
+main .container .small_menu li .img {
+    width: 60px;
+}
 main .container .small_menu li .img img {
     width: 100%;
 }
 main .container .small_menu li .title {
-    line-height: 24px; width: max-content; white-space: nowrap;
+    line-height: 24px; white-space: nowrap;
 }
 /* 서브 배너 */
-main .container .sub_bnr {}
-main .container .sub_bnr .bnr1 {}
-main .container .sub_bnr .bnr1 img {}
-main .container .sub_bnr .bnr1 .d_day {}
-main .container .sub_bnr .bnr1 .d_day .day {}
-main .container .sub_bnr .bnr1 .d_day .hour {}
-main .container .sub_bnr .bnr1 .d_day .minute {}
-main .container .sub_bnr .bnr1 .d_day .second {}
-main .container .sub_bnr .bnr1 .d_day span {}
-main .container .sub_bnr .bnr2 {}
+main .container .sub_bnr {
+    width: 100%; margin: 0 auto;
+    display: block; height: 180px; max-width: 1476px;
+    padding: 0 48px;
+}
+/* 서브배너 a 공통 */
+main .container .sub_bnr a {
+    display: block; height: 100%;
+}
+/* 서브배너 text box h2 공통 */
+main .container .sub_bnr .bnr1 .sub_bnr_text h2,
+main .container .sub_bnr .bnr2 .sub_bnr_text h2 {
+    font-size: 1.5rem; color: #fff; font-weight: 700;
+    position: absolute; left: 8%; top: 30%;
+}
+/* 서브배너 text box p 공통 */
+main .container .sub_bnr .bnr1 .sub_bnr_text p,
+main .container .sub_bnr .bnr2 .sub_bnr_text p {
+    line-height: 24px; color: #fff;
+    opacity: .7; line-height: 32px;
+    position: absolute; left: 8%; top: 50%;
+}
+main .container .sub_bnr .bnr1 {
+    background: url(../images/sub_bnr_01.jpg) no-repeat center;
+    background-size: cover;  border-radius: 20px;
+    position: relative; margin-top: 40px;
+}
+main .container .sub_bnr .bnr1 .sub_bnr_text {}
+main .container .sub_bnr .bnr1 .sub_bnr_text h2 {}
+main .container .sub_bnr .bnr1 .sub_bnr_text p {}
+main .container .sub_bnr .bnr1 .sub_bnr_text p img {}
+main .container .sub_bnr .bnr2 {
+    background: url(../images/sub_bnr_02.jpg) no-repeat center;
+    background-size: cover; border-radius: 20px;
+    position: relative; margin: 40px 0 52px 0;
+}
 main .container .sub_bnr .bnr2 .sub_bnr_text {}
 main .container .sub_bnr .bnr2 .sub_bnr_text h2 {}
 main .container .sub_bnr .bnr2 .sub_bnr_text p {}
 main .container .sub_bnr .bnr2 .sub_bnr_text p img {}
-main .container .sub_bnr .bnr3 {}
-main .container .sub_bnr .bnr3 .sub_bnr_text {}
-main .container .sub_bnr .bnr3 .sub_bnr_text h2 {}
-main .container .sub_bnr .bnr3 .sub_bnr_text p {}
-main .container .sub_bnr .bnr3 .sub_bnr_text p img {}
 /* 지금 주목해야 할 제품 */
-main .container .sale_item {}
+main .container .sale_item {
+    background-color: aqua;
+}
 main .container .sale_item h1 {}
 main .container .sale_item p {}
 main .container .sale_item .content {}
