@@ -122,12 +122,12 @@ main .container .small_menu li .title {
 /* 서브 배너 */
 main .container .sub_bnr {
     width: 100%; margin: 0 auto;
-    display: block; height: 180px; max-width: 1476px;
+    display: block; max-width: 1476px;
     padding: 0 48px;
 }
 /* 서브배너 a 공통 */
 main .container .sub_bnr a {
-    display: block; height: 100%;
+    display: block; height: 180px; 
 }
 /* 서브배너 text box h2 공통 */
 main .container .sub_bnr .bnr1 .sub_bnr_text h2,
@@ -163,18 +163,49 @@ main .container .sub_bnr .bnr2 .sub_bnr_text p img {}
 /* 지금 주목해야 할 제품 */
 main .container .sale_item {
     background-color: aqua;
+    padding: 80px 48px;
 }
-main .container .sale_item h1 {}
-main .container .sale_item p {}
-main .container .sale_item .content {}
+main .container .sale_item h1 {
+    font-size: 1.75rem;
+}
+main .container .sale_item p {
+    font-size: 1.25rem; margin-top: 8px;
+}
+main .container .sale_item .content {
+    display: flex; width: max-content;
+}
 main .container .sale_item .content .item {}
-main .container .sale_item .content .item .item_img {}
-main .container .sale_item .content .item .item_img img {}
+main .container .sale_item .content .item .item_img {
+    position: relative;
+}
+main .container .sale_item .content .item .item_img::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.035);
+    z-index: 1;
+}
+main .container .sale_item .content .item .item_img img {
+    border-radius:16px;
+}
 main .container .sale_item .content .item .item_img img span {}
-main .container .sale_item .content .item .item_info {}
-main .container .sale_item .content .item .item_info h2 {}
-main .container .sale_item .content .item .item_info h2 span {}
-main .container .sale_item .content .item .item_info .item_number {}
+main .container .sale_item .content .item .item_info {
+    padding: 16px 8px;
+}
+main .container .sale_item .content .item .item_info h2 {
+    font-size: 1.25rem;
+}
+main .container .sale_item .content .item .item_info h2 span {
+    font-size: 1.25rem; font-weight: 700;
+}
+main .container .sale_item .content .item .item_info .item_number {
+    line-height: 1.43; font-size: 1rem;
+    color: #666; margin-top: 2px;
+}
 main .container .sale_item .content .item .item_info .item_price {}
 /* 베스트 랭킹 */
 main .container .best_item {}
