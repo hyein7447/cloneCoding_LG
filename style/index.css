@@ -2,14 +2,15 @@ main {}
 /* 메인 배너 */
 main .container {}
 main .container .main_bnr {}
-main .container .main_bnr .main_bnr_item {}
+main .container .main_bnr .main_bnr_item {
+    position: relative;
+}
 main .container .main_bnr .main_bnr_item li {
     
 }
 /* 메인배너 공통 */
 main .container .main_bnr .main_bnr_item li a {
     display: block; max-width: 1920px; height: 31.25vw;
-    position: relative;
 }
 main .container .main_bnr .main_bnr_item li a h2,
 main .container .main_bnr .main_bnr_item li a p {}
@@ -30,7 +31,7 @@ main .container .main_bnr .main_bnr_item li .main_bnr1 {
     background: url(../images/main_bnr/main_bnr1.png) no-repeat center;
 }
 main .container .main_bnr .main_bnr_item li .main_bnr2 {
-    background: url(../images/main_bnr/img_main_bnr_05.jpg) no-repeat center;
+    background: url(../images/main_bnr/img_main_bnr_05.jpg) no-repeat center; display: none;
 }
 main .container .main_bnr .main_bnr_item li .main_bnr2 .txt_box {
     position: absolute; top: 110px; left: 120px;
@@ -50,38 +51,73 @@ main .container .main_bnr .main_bnr_item li .main_bnr12 {display: none;}
 /* 메인 배너 버튼 공통 */
 main .container .main_bnr .active_btn {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
-    padding: 0 250px;
+    padding: 0 250px; align-items: center;
 }
 /* 배너 버튼 왼쪽 */
-main .container .main_bnr .active_btn .left_btn {}
+main .container .main_bnr .active_btn .left_btn {
+    position: absolute; bottom: 400px;
+}
 main .container .main_bnr .active_btn .left_btn #stop_btn {}
 main .container .main_bnr .active_btn .left_btn #stop_btn img {}
 /* 배너 버튼 오른쪽 */
 main .container .main_bnr .active_btn .right_btn {
-    display: flex; flex-flow: row nowrap;
+    display: flex; position: absolute; bottom: 410px; right: 150px;
 }
 main .container .main_bnr .active_btn .right_btn .page_btn {
-    background-color: #000; 
+    background: rgba(0,0,0,.35);
+    width: 7.1875vw;
+    height: 1.875vw;
+    border-radius: 0.9375vw;
+    text-align: center;
+    display: flex; justify-content: center; align-items: center;
+    
 }
 /* 페이지 버튼 text 공통  */
 main .container .main_bnr .active_btn .right_btn .page_btn span {
-    color: #fff;
+    color: #fff; font-size: 0.75rem; padding: 3px;
 }
 main .container .main_bnr .active_btn .right_btn .page_btn .previous_btn {}
-main .container .main_bnr .active_btn .right_btn .page_btn .previous_btn img {}
+main .container .main_bnr .active_btn .right_btn .page_btn .previous_btn img {
+    width: 1.145833vw;
+    height: 1.145833vw;
+    background-size: 1.25vw;
+}
 main .container .main_bnr .active_btn .right_btn .page_btn .present_page {}
 main .container .main_bnr .active_btn .right_btn .page_btn .all_page {}
 main .container .main_bnr .active_btn .right_btn .page_btn .next_btn {}
-main .container .main_bnr .active_btn .right_btn .page_btn .next_btn img {}
+main .container .main_bnr .active_btn .right_btn .page_btn .next_btn img {
+    width: 1.145833vw;
+    height: 1.145833vw;
+    background-size: 1.25vw;
+}
 main .container .main_bnr .active_btn .right_stop_btn {}
-main .container .main_bnr .active_btn .right_stop_btn .stop_btn {}
-main .container .main_bnr .active_btn .right_stop_btn .stop_btn img {}
+main .container .main_bnr .active_btn .right_stop_btn .stop_btn {
+    margin-left: 0.416667vw;
+    width: 1.875vw;
+    height: 1.875vw;
+}
+main .container .main_bnr .active_btn .right_stop_btn .stop_btn img {
+    width: 1.875vw;
+    height: 1.875vw;
+}
 /* small 메뉴 bar */
-main .container .small_menu {}
-main .container .small_menu li {}
-main .container .small_menu li a {}
-main .container .small_menu li a img {}
-main .container .small_menu li a span {}
+main .container .small_menu {
+    display: flex; padding: 80px 0 88px; justify-content: center; align-items: center;
+}
+main .container .small_menu li {
+    display: flex; flex-flow: column nowrap;
+    width: 60px; height: 60px; margin-right: 40px; text-align: center;
+}
+main .container .small_menu li:last-child {
+    margin-right: 0;
+}
+main .container .small_menu li .img {}
+main .container .small_menu li .img img {
+    width: 100%;
+}
+main .container .small_menu li .title {
+    line-height: 24px; width: max-content; white-space: nowrap;
+}
 /* 서브 배너 */
 main .container .sub_bnr {}
 main .container .sub_bnr .bnr1 {}
