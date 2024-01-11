@@ -183,7 +183,9 @@ main .container .sale_item .content .item .item_img {}
 main .container .sale_item .content .item .item_img img {
     border-radius:16px; width: 100%;
 }
-main .container .sale_item .content .item .item_img img span img {}
+main .container .sale_item .content .item .item_img span img {
+    width: 48px;
+}
 main .container .sale_item .content .item .item_info {
     padding: 16px 8px;
 }
