@@ -236,7 +236,7 @@ main .container .best_item .title .title_left p {
     font-size: 1.25rem;
 }
 main .container .best_item .title .more {}
-main .container .best_item .title .more img {}
+main .container .best_item .title .more img {position: relative; top: 2px;}
 /* 베스트 랭킹 하단 아이콘 */
 main .container .best_item .icon {}
 /* 베스트 랭킹 하단 아이콘 (양 옆 페이지 버튼)*/
@@ -365,10 +365,9 @@ main .container .event_item .event_title .title_left p {
     margin-top: 8px; line-height: 24px; font-size: 1.25rem;
 }
 main .container .event_item .event_title .more {
-    display: flex; align-items: center; 
 }
 main .container .event_item .event_title .more img {
-    width: 16px;
+    width: 16px; position: relative; top: 2px;
 }
 main .container .event_item .content {
     display: flex; flex-flow: row nowrap;
