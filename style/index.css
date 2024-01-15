@@ -2,10 +2,10 @@ main {}
 /* 메인 배너 */
 main .container {}
 main .container .main_bnr {
-    position: relative; 
+    position: relative; width: 1920px; overflow-x: auto;
 }
 main .container .main_bnr .main_bnr_item {
-    display: flex; width: max-content; overflow-x: scroll;
+    display: flex; width: max-content;
 }
 main .container .main_bnr .main_bnr_item li {
     display: block; width: 1920px; height: 600px;
@@ -172,53 +172,56 @@ main .container .sale_item p {
     font-size: 1.25rem; margin: 8px 0 32px;
 }
 main .container .sale_item .content {
-    display: flex; width: max-content; overflow-x: scroll;
+    display: flex; width: max-content;
     justify-content: space-between;
 }
-main .container .sale_item .content .item_contents {
-    display: flex; flex-flow: row nowrap; justify-content: space-between;
-    margin: 0 auto; padding-right: 25px;
+main .container .sale_item .content .item_contents_bg {
+    width: 1400px; overflow-x: auto;
 }
-main .container .sale_item .content .item_contents .item {
+main .container .sale_item .content .item_contents_bg .item_contents {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    margin: 0 auto; padding-right: 25px; width: max-content;
+}
+main .container .sale_item .content .item_contents_bg .item_contents .item {
     display: flex; flex-flow: column nowrap; background-color: red;
     width: calc(100% / 4); margin-right: 10px;
 
 }
-main .container .sale_item .content .item_contents .item:last-child {padding: 0;}
-main .container .sale_item .content .item_contents .item .item_img {position: relative;}
-main .container .sale_item .content .item_contents .item .item_img::after {
+main .container .sale_item .content .item_contents_bg .item_contents .item:last-child {padding: 0;}
+main .container .sale_item .content .item_contents_bg .item_contents .item .item_img {position: relative;}
+main .container .sale_item .content .item_contents_bg .item_contents .item .item_img::after {
     content: ''; display: block;
     width: 100%; height: 100%;
     background: rgba(0, 0, 0, .035);
     position: absolute; left: 0; top: 0;
     z-index: 99; border-radius: 16px;
 }
-main .container .sale_item .content .item_contents .item .item_img img {
+main .container .sale_item .content .item_contents_bg .item_contents .item .item_img img {
     border-radius:16px; width: 100%;
 }
-main .container .sale_item .content .item_contents .item .item_img span {
+main .container .sale_item .content .item_contents_bg .item_contents .item .item_img span {
     position: absolute; left: 78%; top: 7%;
 }
-main .container .sale_item .content .item_contents .item .item_img span img {
+main .container .sale_item .content .item_contents_bg .item_contents .item .item_img span img {
     width: 48px;
 }
-main .container .sale_item .content .item_contents .item .item_info {
+main .container .sale_item .content .item_contents_bg .item_contents .item .item_info {
     padding: 16px 8px;
 }
-main .container .sale_item .content .item_contents .item_contents .item .item_info h2 {
+main .container .sale_item .content .item_contents_bg .item_contents .item_contents .item .item_info h2 {
     font-size: 1.25rem;
 }
-main .container .sale_item .content .item_contents .item .item_info:nth-child(2) h2 {
+main .container .sale_item .content .item_contents_bg .item_contents .item .item_info:nth-child(2) h2 {
     font-weight: 700;
 }
-main .container .sale_item .content .item_contents .item .item_info h2 span {
+main .container .sale_item .content .item_contents_bg .item_contents .item .item_info h2 span {
     font-size: 1.25rem; font-weight: 700;
 }
-main .container .sale_item .content .item_contents .item .item_info .item_number {
+main .container .sale_item .content .item_contents_bg .item_contents .item .item_info .item_number {
     line-height: 1.43; font-size: 1rem;
     color: #666; margin-top: 2px;
 }
-main .container .sale_item .content .item_contents .item .item_info .item_price {}
+main .container .sale_item .content .item_contents_bg .item_contents .item .item_info .item_price {}
 /* 베스트 랭킹 */
 main .container .best_item {
     background-color: #f8f8f8; padding: 100px 48px; margin: 0 auto; max-width: 1476px;
@@ -248,105 +251,115 @@ main .container .best_item .icon .page_btn .previous_btn img {
 main .container .best_item .icon .page_btn .next_btn {}
 main .container .best_item .icon .page_btn .next_btn img {}
 /* 베스트 랭킹 하단 아이콘 (슬라이드 아이콘)*/
-main .container .best_item .icon .slide_icon {
-    background-color: yellow; display: flex; width: 100%; overflow-x: scroll; overflow-y: hidden;
+main .container .best_item .icon .icon_container {
+    width: 1400px; overflow-x: auto;
 }
-main .container .best_item .icon .slide_icon .icon_items {
+main .container .best_item .icon .icon_container .slide_icon {
+    background-color: yellow; display: flex; width: max-content; overflow-y: hidden;
+}
+main .container .best_item .icon .icon_container .slide_icon .icon_items {
     display: flex; background-color: aqua;
 }
-main .container .best_item .icon .slide_icon .icon_items .item {}
+main .container .best_item .icon .icon_container .slide_icon .icon_items .item {}
 main .container .best_item .icon .slide_icon .icon_items .item a {
     display: flex; flex-flow: column nowrap; align-items: center; width: 90px;
     margin: 0 6px 0;
 }
-main .container .best_item .icon .slide_icon .icon_items .item a span {}
-main .container .best_item .icon .slide_icon .icon_items .item a .img {
+main .container .best_item .icon .slide_icon .icon_items .item:last-child {
+    position: relative;
+}
+main .container .best_item .icon .slide_icon .icon_items .item:last-child::after {
+    content: ''; display: inline-block; width: 1px; height: 30px; background-color: #aaa;
+    margin: 0 40px; position: absolute; left: 90%; top: 13%;
+}
+main .container .best_item .icon .icon_container .slide_icon .icon_items .item a span {}
+main .container .best_item .icon .icon_container .slide_icon .icon_items .item a .img {
     background-color: #fff; border-radius: 30px; border: 1px solid #eee;
     display: block; width: 100%; height: 56px;
 }
-main .container .best_item .icon .slide_icon .icon_items .item a .img img {
+main .container .best_item .icon .icon_container .slide_icon .icon_items .item a .img img {
     max-height: 100%;
 }
-main .container .best_item .icon .slide_icon .icon_items .item a .icon_name {
+main .container .best_item .icon .icon_container .slide_icon .icon_items .item a .icon_name {
     margin-top: 8px; text-align: center;
     color: #666; font-weight: 500;
 }
 /* 베스트 랭킹 하단 아이콘 (슬라이드 아이콘 혼수이사/1인가구/베스트추천)*/
 main .container .best_item .icon .slide_icon .event_items {
-    background-color: pink; display: flex;
+    background-color: pink; display: flex; width: 600px; justify-content: center;
     
 }
-main .container .best_item .icon .slide_icon .event_items li {}
-main .container .best_item .icon .slide_icon .event_items li a {
+main .container .best_item .icon .icon_container .slide_icon .event_items li {}
+main .container .best_item .icon .icon_container .slide_icon .event_items li a {
     border-radius: 24px; padding: 13px 13px 0; height: 52px; display: block;
-    position: relative;
+    position: relative; margin: 0 10px;
 }
-main .container .best_item .icon .slide_icon .event_items li a span {
+main .container .best_item .icon .icon_container .slide_icon .event_items li a span {
     color: #fff; line-height: 28px; display: block; 
     text-align: center; 
 }
-main .container .best_item .icon .slide_icon .event_items li a img {
+main .container .best_item .icon .icon_container .slide_icon .event_items li a img {
     position: absolute; left: 40%; bottom: -3px; width: 16px;
 }
 /* 베스트 랭킹 하단 아이콘 (슬라이드 아이콘 혼수이사/1인가구/베스트추천 개별)*/
-main .container .best_item .icon .slide_icon .event_items li:nth-of-type(1) a {
+main .container .best_item .icon .icon_container .slide_icon .event_items li:nth-of-type(1) a {
     background-color: #2C3641;}
-main .container .best_item .icon .slide_icon .event_items li:nth-of-type(2) a {
+main .container .best_item .icon .icon_container .slide_icon .event_items li:nth-of-type(2) a {
     background-color: #882B60;}
-main .container .best_item .icon .slide_icon .event_items li:nth-of-type(3) a {
+main .container .best_item .icon .icon_container .slide_icon .event_items li:nth-of-type(3) a {
     background-color: #5D2323;}
-main .container .best_item .icon .slide_icon .event_items li:nth-of-type(1) a span {}
-main .container .best_item .icon .slide_icon .event_items li:nth-of-type(2) a span {}
-main .container .best_item .icon .slide_icon .event_items li:nth-of-type(3) a span {}
+main .container .best_item .icon .icon_container .slide_icon .event_items li:nth-of-type(1) a span {}
+main .container .best_item .icon .icon_container .slide_icon .event_items li:nth-of-type(2) a span {}
+main .container .best_item .icon .icon_container .slide_icon .event_items li:nth-of-type(3) a span {}
     
 /* 카테고리별 랭킹 */
-main .container .best_item .content_box {
-    display: flex; width: max-content;
+main .container .best_item .item_container .content_box {
+    display: flex; width: 1400px; overflow-x: auto;
 }
-main .container .best_item .content_box .content_item {
+main .container .best_item .item_container .content_box .content_item {
     width: calc((100% - 48px)/ 3); display: flex;
 }
-main .container .best_item .content_box .content_item .lanking {
+main .container .best_item .item_container .content_box .content_item .lanking {
     background-color: #fff; padding: 32px; border-radius: 16px; margin: 20px 24px 0 0;
 }
-main .container .best_item .content_box .content_item .lanking:last-child {
-    margin: 20px 0 0 0;
+main .container .best_item .item_container .content_box .content_item .lanking:last-child {
+    /* margin: 20px 0 0 0; */
 }
-main .container .best_item .content_box .content_item .lanking a {}
-main .container .best_item .content_box .content_item .lanking a .lanking_num {}
-main .container .best_item .content_box .content_item .lanking a .lanking_num img {
+main .container .best_item .item_container .content_box .content_item .lanking a {}
+main .container .best_item .item_container .content_box .content_item .lanking a .lanking_num {}
+main .container .best_item .item_container .content_box .content_item .lanking a .lanking_num img {
     width: 16px; height: 36px;
 }
-main .container .best_item .content_box .content_item .lanking a .lanking_img {}
-main .container .best_item .content_box .content_item .lanking a .lanking_img img {}
-main .container .best_item .content_box .content_item .lanking a .content_badge {}
-main .container .best_item .content_box .content_item .lanking a .content_badge span {
+main .container .best_item .item_container .content_box .content_item .lanking a .lanking_img {}
+main .container .best_item .item_container .content_box .content_item .lanking a .lanking_img img {}
+main .container .best_item .item_container .content_box .content_item .lanking a .content_badge {}
+main .container .best_item .item_container .content_box .content_item .lanking a .content_badge span {
     color: #ea1917; font-size: 0.75rem; font-weight: 400;
     line-height: 18px;
 }
-main .container .best_item .content_box .content_item .lanking a h2 {
+main .container .best_item .item_container .content_box .content_item .lanking a h2 {
     font-size: 1.125rem; line-height: 27px; margin-top: 12px; color: #333;
     font-weight: 700;
 }
-main .container .best_item .content_box .content_item .lanking a h2 span {
+main .container .best_item .item_container .content_box .content_item .lanking a h2 span {
     font-weight: 700; font-size: 1.125rem; line-height: 27px;
 }
-main .container .best_item .content_box .content_item .lanking a h2 em {
+main .container .best_item .item_container .content_box .content_item .lanking a h2 em {
     font-size: 1.125rem; line-height: 27px; color: #333; font-weight: 700;
 }
-main .container .best_item .content_box .content_item .lanking a h2 em::before {
+main .container .best_item .item_container .content_box .content_item .lanking a h2 em::before {
     content: ''; display: inline-block; width: 3px; height: 3px; background-color: #333;
     border-radius: 50%; position: relative; top: -5px; right: 3px; margin: 0 3px;
 }
-main .container .best_item .content_box .content_item .lanking a h2 em::after {
+main .container .best_item .item_container .content_box .content_item .lanking a h2 em::after {
     content: ''; display: inline-block; width: 3px; height: 3px; background-color: #333;
     border-radius: 50%; position: relative; top: -5px; right: 0; margin: 0 5px;
 }
-main .container .best_item .content_box .content_item .lanking a .item_number {
+main .container .best_item .item_container .content_box .content_item .lanking a .item_number {
     color: #666; font-size: 0.75rem; margin-top: 4px;
     line-height: 18px;
 }
-main .container .best_item .content_box .content_item .lanking a .item_price {
+main .container .best_item .item_container .content_box .content_item .lanking a .item_price {
     font-size: 1.25rem; line-height: 28px; font-weight: 700;
 }
 /* 감사를 전하는 연말 선물  */
