@@ -184,7 +184,7 @@ main .container .sale_item .content .item_contents_bg .item_contents {
 }
 main .container .sale_item .content .item_contents_bg .item_contents .item {
     display: flex; flex-flow: column nowrap; background-color: red;
-    width: calc(100% / 4); margin-right: 10px;
+    width: calc(100% / 4); margin-right: 10px; margin-left: 24px;
 
 }
 main .container .sale_item .content .item_contents_bg .item_contents .item:last-child {padding: 0;}
@@ -272,10 +272,9 @@ main .container .best_item .icon .slide_icon .icon_items .item:last-child::after
     content: ''; display: inline-block; width: 1px; height: 30px; background-color: #aaa;
     margin: 0 40px; position: absolute; left: 90%; top: 13%;
 }
-main .container .best_item .icon .icon_container .slide_icon .icon_items .item a span {}
 main .container .best_item .icon .icon_container .slide_icon .icon_items .item a .img {
     background-color: #fff; border-radius: 30px; border: 1px solid #eee;
-    display: block; width: 100%; height: 56px;
+    display: block; width: 100%; height: 56px; text-align: center;
 }
 main .container .best_item .icon .icon_container .slide_icon .icon_items .item a .img img {
     max-height: 100%;
@@ -317,15 +316,14 @@ main .container .best_item .item_container .content_box {
     display: flex; width: 1400px; overflow-x: auto;
 }
 main .container .best_item .item_container .content_box .content_item {
-    width: calc((100% - 48px)/ 3); display: flex;
+    display: flex; width: max-content;
 }
 main .container .best_item .item_container .content_box .content_item .lanking {
-    background-color: #fff; padding: 32px; border-radius: 16px; margin: 20px 24px 0 0;
+    background-color: #fff; padding: 32px; border-radius: 16px; margin-right: 24px;
 }
-main .container .best_item .item_container .content_box .content_item .lanking:last-child {
-    /* margin: 20px 0 0 0; */
+main .container .best_item .item_container .content_box .content_item .lanking a {
+    
 }
-main .container .best_item .item_container .content_box .content_item .lanking a {}
 main .container .best_item .item_container .content_box .content_item .lanking a .lanking_num {}
 main .container .best_item .item_container .content_box .content_item .lanking a .lanking_num img {
     width: 16px; height: 36px;
@@ -485,7 +483,7 @@ main .container .event_item .content .item_right .item_bottom a .item_info .item
 }
 /* 브랜드 쇼룸 */
 main .container .brand_item {
-    max-width: 1476px; margin: 0 auto;
+    width: 1400px; margin: 0 auto;
 }
 main .container .brand_item h1 {
     font-size: 1.75rem; font-weight: 700; margin-bottom: 32px;
@@ -505,17 +503,24 @@ main .container .brand_item .page_btn .next_btn img {
     height: 40px; display: block;
     border-radius: 50%;
 }
-main .container .brand_item .content {
-    display: flex; width: max-content;
+main .container .brand_item .item_container {
+    width: 1400px; overflow-x: auto; 
 }
-main .container .brand_item .content .item {
-    display: flex; flex-flow: column nowrap; width: calc(100% / 4 - 30px / 4);
+main .container .brand_item .item_container .content {
+    display: flex; width:max-content;
+}
+main .container .brand_item .item_container .content .item {
+    display: flex; flex-flow: column nowrap; width: calc(100% / 4);
+    margin-bottom: 32px; background-color: aqua;
+    margin-right: 20px;
 } 
-main .container .brand_item .content .item p {}
-main .container .brand_item .content .item p img {
+main .container .brand_item .item_container .content .item p {}
+main .container .brand_item .item_container .content .item p img {
     width: 100%;
 }
-main .container .brand_item .content .item h2 {}
+main .container .brand_item .item_container .content .item h2 {
+    font-size: 1.25rem; font-weight: 700; margin-top: 20px;
+}
 /* 최신 제품 소식 */
 main .container .latest_item {}
 main .container .latest_item h1 {}
