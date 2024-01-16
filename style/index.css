@@ -236,10 +236,10 @@ main .container .best_item .content_bg .title {
 }
 main .container .best_item .content_bg .title .title_left {}
 main .container .best_item .content_bg .title .title_left h1 {
-    font-size: 1.75rem; font-weight: 700;
+    font-size: 1.75rem; font-weight: 700; margin-bottom: 10px;
 }
 main .container .best_item .content_bg .title .title_left p {
-    font-size: 1.25rem;
+    font-size: 1.25rem; margin-bottom: 32px;
 }
 main .container .best_item .content_bg .title .more {}
 main .container .best_item .content_bg .title .more img {position: relative; top: 2px;}
@@ -546,16 +546,16 @@ main .container .latest_item .container .title {
 }
 main .container .latest_item .container .title h1 {
     font-size: 1.75rem; font-weight: 700; line-height: 36px;
-    padding-right: 100px;
+    padding-right: 190px; padding-top: 50px;
 }
 main .container .latest_item .container .content_bg {
-    width: 1100px; overflow-x: auto; overflow-y: hidden;
+    width: 1000px; overflow-x: auto; overflow-y: hidden;
 }
 main .container .latest_item .container .content_bg .content {
     display: flex; width: max-content;
 }
 main .container .latest_item .container .content_bg .content .item {
-    display: flex; flex-flow: column nowrap; width: 350px; margin-right: 24px;
+    display: flex; flex-flow: column nowrap; width: 310px; margin-right: 24px;
     padding-bottom: 16px;
 }
 main .container .latest_item .container .content_bg .content .item .item_img {}
@@ -567,18 +567,41 @@ main .container .latest_item .container .content_bg .content .item h2 {
     margin-top: 16px; padding: 0 16px 0 8px;
 }
 /* 슬기로운 가전 생활 */
-main .container .review {}
-main .container .review .title {}
-main .container .review .title h1 {}
+main .container .review {
+    width: 1400px; margin: 0 auto; padding: 80px 0;
+}
+main .container .review .title {display: flex; justify-content: space-between; margin-bottom: 32px;}
+main .container .review .title h1 {
+    font-size: 1.75rem; font-weight: 700;
+}
 main .container .review .title .more {}
 main .container .review .title .more img {}
-main .container .review .content {}
-main .container .review .content .item {}
-main .container .review .content .item .item_img {}
-main .container .review .content .item .item_img img {}
-main .container .review .content .item .user_review {}
-main .container .review .content .item .user_review span {}
-main .container .review .content .item .h2 {}
+main .container .review .content_bg .content {
+    display: flex; height: max-content;
+}
+main .container .review .content_bg .content .item {
+    margin-right: 24px;
+}
+main .container .review .content_bg .content .item .item_img {}
+main .container .review .content_bg .content .item .item_img img {
+    width: 100%;
+}
+main .container .review .content_bg .content .item .item_txt {
+    margin-top: 16px; display: block;
+}
+main .container .review .content_bg .content .item .item_txt p {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #767676;
+}
+main .container .review .content_bg .content .item .item_txt h2 {
+    margin-top: 4px;
+    font-size: 1.25rem;
+    line-height: 28px;
+    font-weight: 500;
+}
 /* bottom 배너 */
 main .container .bottom_bnr {}
 main .container .bottom_bnr a {}
@@ -605,7 +628,9 @@ main .container .service_bg .service .content .left h1 {}
 main .container .service_bg .service .content .left p {}
 main .container .service_bg .service .content .right {}
 main .container .service_bg .service .content .right .list {}
-main .container .service_bg .service .content .right .list a {}
+main .container .service_bg .service .content .right .list a {
+    background: url(../images/service/img-bestshop-store_2.svg);
+}
 main .container .service_bg .service .content .right .list a .text_wrap {}
 main .container .service_bg .service .content .right .list a .text_wrap p {}
 main .container .service_bg .service .content .right .list a .text_wrap p h2 {}
