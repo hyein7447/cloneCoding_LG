@@ -184,7 +184,7 @@ main .container .sale_item .content .item_contents_bg .item_contents {
 }
 main .container .sale_item .content .item_contents_bg .item_contents .item {
     display: flex; flex-flow: column nowrap; background-color: red;
-    width: calc(100% / 4); margin-right: 10px; margin-left: 24px;
+    width: calc(100% / 4); margin-right: 24px;
 
 }
 main .container .sale_item .content .item_contents_bg .item_contents .item:last-child {padding: 0;}
@@ -262,7 +262,7 @@ main .container .best_item .content_bg .icon_bg .next_btn {
 main .container .best_item .content_bg .icon_bg .next_btn img {}
 /* 베스트 랭킹 하단 아이콘 (슬라이드 아이콘)*/
 main .container .best_item .content_bg .icon_bg .icon_container {
-    width: 1400px; overflow-x: auto;
+    max-width: 1470px; overflow-x: auto;
 }
 main .container .best_item .content_bg .icon_bg .icon_container .slide_icon {
     background-color: yellow; display: flex; width: max-content; overflow-y: hidden;
@@ -323,7 +323,7 @@ main .container .best_item .content_bg .icon_bg .icon_container .slide_icon .eve
     
 /* 카테고리별 랭킹 */
 main .container .best_item .content_bg .item_container .content_box {
-    display: flex; width: 1400px; overflow-x: auto;
+    display: flex; max-width: 1470px; overflow-x: auto;
 }
 main .container .best_item .content_bg .item_container .content_box .content_item {
     display: flex; width: max-content;
@@ -577,7 +577,7 @@ main .container .review .title h1 {
 main .container .review .title .more {}
 main .container .review .title .more img {}
 main .container .review .content_bg .content {
-    display: flex; height: max-content;
+    display: flex;
 }
 main .container .review .content_bg .content .item {
     margin-right: 24px;
@@ -603,34 +603,117 @@ main .container .review .content_bg .content .item .item_txt h2 {
     font-weight: 500;
 }
 /* bottom 배너 */
-main .container .bottom_bnr {}
-main .container .bottom_bnr a {}
-main .container .bottom_bnr a h2 {}
-main .container .bottom_bnr a p {}
-main .container .bottom_bnr a p img {}
+main .container .bottom_bnr {
+    padding: 0 200px;
+}
+main .container .bottom_bnr a {
+    background: url(https://www.lge.co.kr/kr/dcr/images/main/main-home/img-story-banner-up-pc_0722.jpg) no-repeat center; display: block; height: 180px;
+    background-size: cover;
+    margin: 0 auto;
+    max-width: 1470px;
+    border-radius: 16px;
+}
+main .container .bottom_bnr a h2 {
+    font-size: 1.5rem; font-weight: 700;
+    position: relative; top: 60px; left: 120px;
+}
+main .container .bottom_bnr a p {margin-top: 10px;
+    position: relative; top: 60px; left: 120px;}
+main .container .bottom_bnr a p img {margin-left: 4px; position: relative; top: 2px;}
 /* 놓치면 아쉬운 혜택 */
-main .container .benefit_item {}
-main .container .benefit_item .title {}
-main .container .benefit_item .title h1 {}
+main .container .benefit_item {
+    max-width: 1470px; margin: 0 auto; padding: 80px 0;
+}
+main .container .benefit_item .title {
+    display: flex; justify-content: space-between;
+}
+main .container .benefit_item .title h1 {
+    font-size: 1.75rem; font-weight: 700; margin-bottom: 32px;
+}
 main .container .benefit_item .title .more {}
 main .container .benefit_item .title .more img {}
-main .container .benefit_item .content {}
-main .container .benefit_item .content a {}
-main .container .benefit_item .content a .item_img {}
-main .container .benefit_item .content a .item_img img{}
-main .container .benefit_item .content a .h2 {}
-/* 베스트샵 이용 안내 */
-main .container .service_bg {}
-main .container .service_bg .service {}
-main .container .service_bg .service .content {}
-main .container .service_bg .service .content .left {}
-main .container .service_bg .service .content .left h1 {}
-main .container .service_bg .service .content .left p {}
-main .container .service_bg .service .content .right {}
-main .container .service_bg .service .content .right .list {}
-main .container .service_bg .service .content .right .list a {
-    background: url(../images/service/img-bestshop-store_2.svg);
+main .container .benefit_item .content {
+    display: flex; justify-content: space-between;
 }
-main .container .service_bg .service .content .right .list a .text_wrap {}
-main .container .service_bg .service .content .right .list a .text_wrap p {}
-main .container .service_bg .service .content .right .list a .text_wrap p h2 {}
+main .container .benefit_item .content a {
+    
+}
+main .container .benefit_item .content a .item_img {
+    
+}
+main .container .benefit_item .content a .item_img img{
+    border-radius: 16px;
+}
+main .container .benefit_item .content a h2 {
+    margin-top: 16px; font-size: 1.25rem; font-weight: 700; line-height: 28px;
+}
+/* 베스트샵 이용 안내 */
+main .container .service_bg {
+    background: #f1f1f1;
+}
+main .container .service_bg .service {
+    max-width: 1470px; margin: 0 auto;
+}
+main .container .service_bg .service .content {
+    display: flex; justify-content: space-between; padding: 80px 0;
+}
+main .container .service_bg .service .content .left {}
+main .container .service_bg .service .content .left h1 {
+    font-size: 1.75rem; font-weight: 700;
+}
+main .container .service_bg .service .content .left p {
+    margin-top: 8px; font-size: 1.25rem; font-weight: 500;
+}
+main .container .service_bg .service .content .right {
+    display: grid;
+    grid-template-areas:  
+    'list1 list2'
+    'list3 list4';
+    grid-template-rows: repeat(2, 230px);
+    grid-template-columns: repeat(2, 500px);
+}
+/* list 공통 */
+main .container .service_bg .service .content .right .list {
+    padding: 32px; background-color: #fff; border-radius: 16px;
+    
+}
+/* list 개별 */
+main .container .service_bg .service .content .right .list1 {
+    grid-area: list1; margin-right: 24px; margin-bottom: 24px;
+}
+main .container .service_bg .service .content .right .list2 {
+    grid-area: list2; margin-bottom: 24px;}
+main .container .service_bg .service .content .right .list3 {grid-area: list3; margin-right: 24px;
+}
+main .container .service_bg .service .content .right .list4 {
+    grid-area: list4;
+}
+main .container .service_bg .service .content .right .list a {
+    position: relative;
+}
+main .container .service_bg .service .content .right .list a .list_img {}
+main .container .service_bg .service .content .right .list a .list_img img{
+    
+}
+/* list_img 개별 */
+main .container .service_bg .service .content .right .list:nth-child(1) a .list_img img{
+    position: absolute; right: 0; bottom: -40%;
+}
+main .container .service_bg .service .content .right .list:nth-child(2) a .list_img img{
+    position: absolute; right: 0%; bottom: -18%;
+}
+main .container .service_bg .service .content .right .list:nth-child(3) a .list_img img{
+    position: absolute; right: 0%; bottom: -32%; 
+}
+main .container .service_bg .service .content .right .list:nth-child(4) a .list_img img{
+    position: absolute; right: 0%; bottom: -40%; 
+}
+main .container .service_bg .service .content .right .list a .text_wrap {
+    padding: 32px 0;
+}
+main .container .service_bg .service .content .right .list a .text_wrap p {
+    line-height: 24px; opacity: .7;
+}
+main .container .service_bg .service .content .right .list a .text_wrap h2 {
+    font-weight: 700; margin-top: 4px; font-size: 1.5rem; line-height: 32px;
+}
