@@ -439,20 +439,66 @@
 #h_bg header .header_bottom .page_btn .next_btn {}
 #h_bg header .header_bottom .page_btn .next_btn img {}
 .bottom_icon {display: none;}
-.footer_bg {}
-.footer_bg footer {}
-.footer_bg footer .top {}
-.footer_bg footer .top .lang {}
-.footer_bg footer .top .lang a {}
-.footer_bg footer .top .lang a img {}
+/* footer */
+.footer_bg {
+    padding: 0 40px 48px;
+    background: #f4f4f4;
+}
+.footer_bg footer {
+    max-width: 1284px;
+    margin: 0 auto;
+}
+.footer_bg footer .top {
+}
+.footer_bg footer .top .lang {
+    padding: 8px 0;
+}
+.footer_bg footer .top .lang a {
+    font-size: 0.75rem; font-weight: 500;
+}
+.footer_bg footer .top .lang a img {
+    width: 12px;
+}
 .footer_bg footer .top .lang .lang_sub {}
 /* lang_sub 공통 */
 .footer_bg footer .top .lang .lang_sub a {}
 .footer_bg footer .top .lang .lang_sub .ko {}
 .footer_bg footer .top .lang .lang_sub .en {}
-.footer_bg footer .top .sns {}
-.footer_bg footer .top .sns a {}
-.footer_bg footer .bottom {}
+.footer_bg footer .top .sns {
+    display: flex; align-items: center; justify-content: flex-end;
+}
+.footer_bg footer .top .sns a {
+    margin-right: 20px;
+}
+.footer_bg footer .top .sns a:nth-child(1) {
+    background: url(../images/icon/youtube.png) no-repeat;
+}
+.footer_bg footer .top .sns a:nth-child(2) {
+    background: url(../images/icon/instagram.png) no-repeat;
+}
+.footer_bg footer .top .sns a:nth-child(3) {
+    background: url(../images/icon/facebook.png) no-repeat;
+}
+.footer_bg footer .top .sns a:nth-child(4) {
+    background: url(../images/icon/blog.png) no-repeat;
+}
+.footer_bg footer .top .sns a:nth-child(5) {
+    background: url(../images/icon/youtube.png) no-repeat;
+}
+.footer_bg footer .top .sns a:nth-child(6) {
+    background: url(../images/icon/play.png) no-repeat;
+}
+.footer_bg footer .top .sns a span {
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 16px;
+    color: #666;
+    margin: 0 10px 0 5px;
+}
+.footer_bg footer .bottom {
+    padding-top: 16px;
+    border-top: 1px solid #ddd;
+}
 .footer_bg footer .bottom .law {}
 .footer_bg footer .bottom .law a {}
 .footer_bg footer .bottom .law a em {}
@@ -463,12 +509,10 @@
 .footer_bg footer .bottom .company_info {}
 .footer_bg footer .bottom .company_info span {}
 .footer_bg footer .bottom .company_info a {}
-.footer_bg footer .bottom .Copyright {}
-.footer_bg footer .bottom .right {}
-.footer_bg footer .bottom .right a {}
-.footer_bg footer .bottom .right a .logo_img {}
-.footer_bg footer .bottom .right a .logo_img img {}
-.footer_bg footer .bottom .right a .dl {}
-.footer_bg footer .bottom .right a .dl dt {}
-.footer_bg footer .bottom .right a .dl dd {}
-.footer_bg footer .bottom .right a .dl dd {}
+.footer_bg footer .bottom .Copyright_wrap {}
+.footer_bg footer .bottom .Copyright_wrap .Copyright {}
+.footer_bg footer .bottom .Copyright_wrap .logo_icon {}
+.footer_bg footer .bottom .Copyright_wrap .logo_icon .logo1 {}
+.footer_bg footer .bottom .Copyright_wrap .logo_icon .logo1 img {}
+.footer_bg footer .bottom .Copyright_wrap .logo_icon .logo2 {}
+.footer_bg footer .bottom .Copyright_wrap .logo_icon .logo2 img {}
