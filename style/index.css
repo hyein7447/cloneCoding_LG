@@ -1,3 +1,15 @@
+/* Firefox */
+html {scrollbar-width: 10px;;scrollbar-color: #222 #f1f1f1;}
+/* Opera */
+html::-o-scrollbar {width: 10px;}/*스크롤바 크기*/
+html::-o-scrollbar-thumb {background-color: #222;border-radius: 5px;}/*스크롤 드래그바*/
+html::-o-scrollbar-thumb:hover {background-color: #555;}
+/* Chrome, Safari, Edge 등 웹킷 기반 브라우저 */
+::-webkit-scrollbar {width: 10px; height: 8px;}/*스크롤바 크기*/
+::-webkit-scrollbar-track {background-color: #ccc; border-radius: 50px;}/*스크롤바 배경*/
+::-webkit-scrollbar-thumb {background-color: #111;border-radius: 50px;}/*스크롤 드래그바*/
+::-webkit-scrollbar-thumb:hover {background-color: #555;}
+
 main {}
 /* 메인 배너 */
 main .container {}

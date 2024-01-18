@@ -1,22 +1,59 @@
 /* 검색 팝업 */
-.search_pop_up {display: none;}
+.search_pop_up {}
 .search_pop_up a {}
-.search_pop_up .search {}
+.search_pop_up .search {
+    max-width: 992px;
+    margin: 0 auto 64px;
+    padding: 180px 40px;
+}
 .search_pop_up .search #search_frm {}
-.search_pop_up .search #search_frm fieldset {}
-.search_pop_up .search #search_frm fieldset #user_serach_box {}
+.search_pop_up .search #search_frm fieldset {
+    display: flex; justify-content: space-between;
+    margin-top: 56px;
+}
+.search_pop_up .search #search_frm fieldset #user_serach_box {
+    width: 100%;
+    height: 64px; padding: 16px 62px 16px 32px;
+    border-radius: 40px;
+    background-color: #f4f5f7;
+    font-weight: 400;
+    font-size: 1.5rem; line-height: 32px;
+}
 .search_pop_up .search #search_frm fieldset #search_icon {}
-.search_pop_up .search .search_sub {}
-.search_pop_up .search .search_sub .left {}
-.search_pop_up .search .search_sub .left h2 {}
-.search_pop_up .search .search_sub .left ol {}
-.search_pop_up .search .search_sub .left ol li {}
-.search_pop_up .search .search_sub .left ol li a {}
-.search_pop_up .search .search_sub .left ol li a .ranking_num {}
-.search_pop_up .search .search_sub .left ol li a .keyword {}
-.search_pop_up .search .search_sub .right {}
-.search_pop_up .search .search_sub .right h2 {}
-.search_pop_up .search .search_sub .right a {}
+.search_pop_up .search .search_sub {
+    margin-top: 48px; display: flex; justify-content: space-between;
+}
+.search_pop_up .search .search_sub .left {
+    width: 100%;
+}
+.search_pop_up .search .search_sub .left h2 {
+    font-size: 1.125rem; font-weight: 700; margin-bottom: 24px;
+}
+.search_pop_up .search .search_sub .left .lanking {
+    display: flex; flex-flow: row nowrap; 
+}
+.search_pop_up .search .search_sub .left .lanking ul {}
+.search_pop_up .search .search_sub .left .lanking ul li {}
+.search_pop_up .search .search_sub .left .lanking ul li a {}
+.search_pop_up .search .search_sub .left .lanking ul li a .ranking_num {}
+.search_pop_up .search .search_sub .left .lanking ul li a .keyword {
+    font-weight: 600;
+}
+.search_pop_up .search .search_sub .right {
+    display: flex; flex-flow: column nowrap;
+}
+.search_pop_up .search .search_sub .right h2 {
+    font-size: 1.125rem; font-weight: 700; margin-bottom: 24px;
+}
+.search_pop_up .search .search_sub .right a {
+    margin-bottom: 8px; font-weight: 600;
+}
+.search_pop_up .search .search_sub .right a::before {
+    content: ''; display: inline-block; 
+    width: 4px; height: 4px; background-color: #222;
+    border-radius: 50%; margin-right: 8px;
+    position: relative; top: -3px;
+}
 /* header top */
 #h_bg {}
 #h_bg header {max-width: 1760px; padding: 0 42px;  margin: 0 auto;}
@@ -449,24 +486,44 @@
     margin: 0 auto;
 }
 .footer_bg footer .top {
-    padding-bottom: 16px;
+    padding-bottom: 16px; display: flex; justify-content: space-between;
 }
 .footer_bg footer .top .lang {
-    padding: 8px 0;
+    padding: 8px 0; position: relative;
 }
 .footer_bg footer .top .lang a {
     font-size: 0.75rem; font-weight: 500;
 }
 .footer_bg footer .top .lang a img {
-    width: 12px;
+    width: 14px; position: relative; top: 2px; left: 2px;
 }
-.footer_bg footer .top .lang .lang_sub {}
+.footer_bg footer .top .lang .lang_sub {
+    display: flex; flex-flow: column nowrap;
+    /* padding: 4px 0; */
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 2px 4px 12px 0 rgba(0,0,0,.16);
+    position: absolute; top: 33px; width: max-content;
+    left: 50%; transform: translateX(-50%);
+}
 /* lang_sub 공통 */
-.footer_bg footer .top .lang .lang_sub a {}
-.footer_bg footer .top .lang .lang_sub .ko {}
+.footer_bg footer .top .lang .lang_sub a {
+    display: block;
+    padding: 0 20px;
+    font-size: 0.75rem;
+    line-height: 4;
+    text-align: center;
+    font-weight: 600;
+}
+.footer_bg footer .top .lang .lang_sub .ko {
+    background: #f4f4f4;
+}
 .footer_bg footer .top .lang .lang_sub .en {}
 .footer_bg footer .top .sns {
     display: flex; justify-content: flex-end;
+}
+.footer_bg footer .top .lang .lang_sub .en:hover {
+    background: #f4f4f4;
 }
 .footer_bg footer .top .sns a {
     display: flex; flex-flow: row nowrap; align-items: center;
@@ -489,7 +546,7 @@
 .footer_bg footer .bottom .law {}
 .footer_bg footer .bottom .law a {
     font-size: 0.75rem; line-height: 16px;
-    margin-right: 12px;
+    margin-right: 8px;
 }
 .footer_bg footer .bottom .law a em {
     font-size: 0.75rem; font-weight: 700;
@@ -549,3 +606,16 @@
 .footer_bg footer .bottom .Copyright_wrap .logo_icon .logo1 img {}
 .footer_bg footer .bottom .Copyright_wrap .logo_icon .logo2 {}
 .footer_bg footer .bottom .Copyright_wrap .logo_icon .logo2 img {}
+/* 메인페이지 하단 챗봇, 상단이동 아이콘 */
+.bottom_icon {}
+.bottom_icon .chat {}
+.bottom_icon #chat img {}
+.bottom_icon #top_move {}
+.bottom_icon #top_move img {}
+.bottom_icon .join_benefit {}
+.bottom_icon .join_benefit p {}
+.bottom_icon .join_benefit p em {}
+.bottom_icon .join_benefit p em img {}
+.bottom_icon .join_benefit p em img {}
+.bottom_icon .join_benefit .close {}
+.bottom_icon .join_benefit .close img {}

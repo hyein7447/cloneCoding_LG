@@ -6,6 +6,8 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title>LGE.COM | LG전자</title>
+    <link rel="shortcut icon" href="./images/LG_favicon(2).png" type="image/x-icon">
+    <link rel="icon" href="./images/LG_favicon(2).png" type="image/x-icon">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/common.css">
     <link rel="stylesheet" href="./style/index.css">
@@ -13,80 +15,84 @@
 <body>
     <!-- 검색 눌렀을 때 나오는 팝업 -->
     <div class="search_pop_up">
-        <a href="#"><img src="#" alt="닫기 버튼"></a>
+        <a href="#"><img src="https://www.lge.co.kr/lg5-common/images/icons/btn-close-32.svg" alt="닫기 버튼"></a>
         <div class="search">
             <form action="#" method="get" id="search_frm">
                 <fieldset>
                     <legend class="skip">검색창</legend>
                     <input type="text" name="user_serach_box" id="user_serach_box" placeholder="검색어를 입력해주세요.">
-                    <button type="button" id="search_icon"><img src="#" alt="검색하기"></button>
+                    <button type="button" id="search_icon"><img src="https://www.lge.co.kr/lg5-common/images/icons/icon-search-32.svg" alt="검색하기"></button>
                 </fieldset>
             </form>
             <div class="search_sub">
                 <div class="left">
                     <h2>인기 검색어</h2>
-                    <ol>
-                        <li>
-                            <a href="#">
-                                <span class="ranking_num">1.</span>
-                                <span class="keyword">냉장고</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="ranking_num">2.</span>
-                                <span class="keyword">노트북</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="ranking_num">3.</span>
-                                <span class="keyword">세탁기</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="ranking_num">4.</span>
-                                <span class="keyword">TV</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="ranking_num">5.</span>
-                                <span class="keyword">청소기</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="ranking_num">6.</span>
-                                <span class="keyword">가습기</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="ranking_num">7.</span>
-                                <span class="keyword">식기세척기</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="ranking_num">8.</span>
-                                <span class="keyword">건조기</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="ranking_num">9.</span>
-                                <span class="keyword">김치냉장고</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="ranking_num">10.</span>
-                                <span class="keyword">공기청정기</span>
-                            </a>
-                        </li>
-                    </ol>
+                    <div class="lanking">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="ranking_num">1.</span>
+                                    <span class="keyword">냉장고</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="ranking_num">2.</span>
+                                    <span class="keyword">노트북</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="ranking_num">3.</span>
+                                    <span class="keyword">세탁기</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="ranking_num">4.</span>
+                                    <span class="keyword">TV</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="ranking_num">5.</span>
+                                    <span class="keyword">청소기</span>
+                                </a>
+                            </li>
+                        </ul>    
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="ranking_num">6.</span>
+                                    <span class="keyword">가습기</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="ranking_num">7.</span>
+                                    <span class="keyword">식기세척기</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="ranking_num">8.</span>
+                                    <span class="keyword">건조기</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="ranking_num">9.</span>
+                                    <span class="keyword">김치냉장고</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="ranking_num">10.</span>
+                                    <span class="keyword">공기청정기</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="right">
                     <h2>이번시즌,많이 검색했어요!</h2>
@@ -2692,7 +2698,7 @@
         <a href="#h_bg" id="top_move"><img src="#" alt="상단으로 이동"></a> <!-- 상단이동 아이콘 -->
         <a href="#" id="join_benefit">
             <p>지금 멤버십 가입하고<em>5%</em>할인받으세요<img src="#" alt="바로가기"></p>
-            <p><img src="#" alt="닫기버튼"></p>
+            <p class="close"><img src="#" alt="닫기버튼"></p>
         </a>
     </div>
     <script src="./script/common.js"></script>
