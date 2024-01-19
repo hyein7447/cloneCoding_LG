@@ -490,7 +490,6 @@ height: 100%vh;}
 #h_bg header .header_bottom .page_btn .previous_btn img {}
 #h_bg header .header_bottom .page_btn .next_btn {}
 #h_bg header .header_bottom .page_btn .next_btn img {}
-.bottom_icon {display: none;}
 /* footer */
 .footer_bg {
     padding: 0 40px 48px;
@@ -622,14 +621,12 @@ height: 100%vh;}
 .footer_bg footer .bottom .Copyright_wrap .logo_icon .logo2 {}
 .footer_bg footer .bottom .Copyright_wrap .logo_icon .logo2 img {}
 /* 메인페이지 하단 챗봇, 상단이동 아이콘 */
-.bottom_icon {}
+.bottom_icon {position: fixed; bottom: 0; right: 0; z-index: 999; display: block; }
 .bottom_icon #chat {
-    position: fixed; bottom: 50%; right: 50%;
-    border-radius: 28px; width: 30px; height: 30px;
-    background: #ea1917; display: block; z-index: 999;
+    border-radius: 50%; width: 58px; height: 58px;
+    background: #ea1917;
 }
-.bottom_icon #chat::after {
-    background: url(../images/icon_floating_chatbot.gif) no-repeat;
+.bottom_icon #chat img {
 }
 .bottom_icon #top_move {}
 .bottom_icon #top_move img {}
