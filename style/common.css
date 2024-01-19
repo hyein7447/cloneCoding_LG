@@ -1,6 +1,10 @@
 /* 검색 팝업 */
-.search_pop_up {}
-.search_pop_up a {}
+.search_pop_up {position: relative;
+height: 100%vh;}
+.search_pop_up > a {
+    position: absolute; left: 87%; top: 6%;
+}
+.search_pop_up a img {}
 .search_pop_up .search {
     max-width: 992px;
     margin: 0 auto 64px;
@@ -19,12 +23,14 @@
     font-weight: 400;
     font-size: 1.5rem; line-height: 32px;
 }
-.search_pop_up .search #search_frm fieldset #search_icon {}
+.search_pop_up .search #search_frm fieldset #search_icon {
+    margin-left: 20px;
+}
 .search_pop_up .search .search_sub {
     margin-top: 48px; display: flex; justify-content: space-between;
 }
 .search_pop_up .search .search_sub .left {
-    width: 100%;
+    width: 60%;
 }
 .search_pop_up .search .search_sub .left h2 {
     font-size: 1.125rem; font-weight: 700; margin-bottom: 24px;
@@ -32,21 +38,30 @@
 .search_pop_up .search .search_sub .left .lanking {
     display: flex; flex-flow: row nowrap; 
 }
-.search_pop_up .search .search_sub .left .lanking ul {}
-.search_pop_up .search .search_sub .left .lanking ul li {}
-.search_pop_up .search .search_sub .left .lanking ul li a {}
-.search_pop_up .search .search_sub .left .lanking ul li a .ranking_num {}
+.search_pop_up .search .search_sub .left .lanking ul {
+    padding-right: 110px;
+}
+.search_pop_up .search .search_sub .left .lanking ul li {
+    display: flex; flex-flow: column nowrap; 
+}
+.search_pop_up .search .search_sub .left .lanking ul li a {
+    margin-bottom: 16px;
+}
+.search_pop_up .search .search_sub .left .lanking ul li a .ranking_num {
+    font-weight: 700;
+}
 .search_pop_up .search .search_sub .left .lanking ul li a .keyword {
-    font-weight: 600;
+    font-weight: 400;
 }
 .search_pop_up .search .search_sub .right {
-    display: flex; flex-flow: column nowrap;
+    display: flex; flex-flow: column nowrap; justify-content: flex-start;
+    width: 70%;
 }
 .search_pop_up .search .search_sub .right h2 {
     font-size: 1.125rem; font-weight: 700; margin-bottom: 24px;
 }
 .search_pop_up .search .search_sub .right a {
-    margin-bottom: 8px; font-weight: 600;
+    margin-bottom: 16px; font-weight: 400;
 }
 .search_pop_up .search .search_sub .right a::before {
     content: ''; display: inline-block; 
@@ -483,7 +498,7 @@
 }
 .footer_bg footer {
     max-width: 1284px;
-    margin: 0 auto;
+    margin: 0 auto; padding-top: 24px;
 }
 .footer_bg footer .top {
     padding-bottom: 16px; display: flex; justify-content: space-between;
@@ -608,8 +623,14 @@
 .footer_bg footer .bottom .Copyright_wrap .logo_icon .logo2 img {}
 /* 메인페이지 하단 챗봇, 상단이동 아이콘 */
 .bottom_icon {}
-.bottom_icon .chat {}
-.bottom_icon #chat img {}
+.bottom_icon #chat {
+    position: fixed; bottom: 50%; right: 50%;
+    border-radius: 28px; width: 30px; height: 30px;
+    background: #ea1917; display: block; z-index: 999;
+}
+.bottom_icon #chat::after {
+    background: url(../images/icon_floating_chatbot.gif) no-repeat;
+}
 .bottom_icon #top_move {}
 .bottom_icon #top_move img {}
 .bottom_icon .join_benefit {}
