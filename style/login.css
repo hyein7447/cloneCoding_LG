@@ -1,0 +1,107 @@
+main {background-color: #f2f3f7;
+    padding: 100px 15px ; min-height: 100vh; 
+
+}
+main .login_bg {
+    min-height: 100vh; 
+}
+main .login_bg .login_c {
+    margin: 0 auto; max-width: 486px; border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 30px 0 55px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
+}
+main .login_bg .login_c .title {
+    display: flex; align-items: center; padding: 0 20px 8px; justify-content: flex-start;
+}
+main .login_bg .login_c .title a {}
+main .login_bg .login_c .title a img {
+    width: 40px; height: 40px; position: relative; top: 2px;
+}
+main .login_bg .login_c .title h1 {
+    font-size: 1.5rem; font-weight: 400;
+    line-height: 2.25rem; letter-spacing: -0.5px;
+}
+main .login_bg .login_c #login_frm {}
+main .login_bg .login_c #login_frm fieldset {
+    padding: 10px 30px;
+}
+main .login_bg .login_c #login_frm fieldset .logo {
+    margin-top: 24px; width: 145px;
+    height: 39px; text-align: left; /* padding: 0 15px; */
+}
+main .login_bg .login_c #login_frm fieldset .logo img {width: 100%;}
+main .login_bg .login_c #login_frm fieldset .login_id {
+    margin: 32px 0 20px; 
+}
+/* input_label 공통 */
+main .login_bg .login_c #login_frm fieldset .login_id .id_input_label,
+main .login_bg .login_c #login_frm fieldset .login_pw .pw_input_label {
+    color: #767676; font-size: 0.875rem; letter-spacing: -0.5px;
+    line-height: 20px; font-weight: 400; 
+}
+/* login id_pw 공통 */
+main .login_bg .login_c #login_frm fieldset .login_id #user_id,
+main .login_bg .login_c #login_frm fieldset .login_pw #user_pw {
+    border-bottom: 1px solid #ddd; display: block; width: 100%;
+    margin-top: 8px; padding-bottom: 10px; letter-spacing: -0.5px;
+}
+main .login_bg .login_c #login_frm fieldset .login_pw {
+    margin-bottom: 32px;
+}
+main .login_bg .login_c #login_frm fieldset .login_id .id_input_label {}
+main .login_bg .login_c #login_frm fieldset .login_pw .pw_input_label {}
+main .login_bg .login_c #login_frm fieldset .login_id #user_id {}
+main .login_bg .login_c #login_frm fieldset .login_pw #user_pw {}
+main .login_bg .login_c #login_frm fieldset .login_btn_bg {
+    padding: 14px 16px; background-color: #e4e4e4;
+    border: 1px solid #e4e4e4; border-radius: 8px;
+    text-align: center; max-width: 100%;
+    margin: 0 45px; 
+}
+main .login_bg .login_c #login_frm fieldset .login_btn_bg #login_btn {
+    color: #999; letter-spacing: -0.5; font-weight: 400;
+}
+main .login_bg .login_c .id_pw_search {
+    display: flex; justify-content: center; margin-top: 8px;
+}
+main .login_bg .login_c .id_pw_search a {
+    font-size: 0.875rem; font-weight: 500; line-height: 20px;
+    color: #767676; text-align: center; letter-spacing: -0.5px;
+}
+main .login_bg .login_c .id_pw_search a:first-child::after {
+    content: ''; display: inline-block; width: 1px; height: 10px;
+    background-color: #eee; margin: 0 8px;
+}
+main .login_bg .login_c .join {
+    text-decoration: underline; font-size: 0.875rem; font-family: 500;
+    color: #767676; display: flex; justify-content: center;
+    margin: 5px 0 32px; letter-spacing: -0.5px;
+}
+main .login_bg .login_c p {
+    font-size: 0.875rem; color: #767676;
+    display: flex; justify-content: center;
+    margin: 0 90px; position: relative; letter-spacing: -0.2px;
+    
+
+}
+main .login_bg .login_c p::before {
+    content: ''; display: inline-block; width: 15px; height: 1px;
+    background-color: #eee; min-width: calc(50% - 23px);
+    position: absolute; left: 0 ; top: 9px;
+}
+main .login_bg .login_c p::after {
+    content: ''; display: inline-block; width: 15px; height: 1px;
+    background-color: #eee; min-width: calc(50% - 23px);
+    position: absolute; right: 0 ; top: 9px;
+}
+main .login_bg .login_c .sub_login {
+    border: 1px solid #ddd; padding: 12px 16px;
+    border-radius: 8px; text-align: center;
+    margin: 50px 75px 0; 
+}
+main .login_bg .login_c .sub_login #other_login_btn {
+    color: #333; font-weight: 400; line-height: 1.5px;
+    letter-spacing: -0.5;
+}

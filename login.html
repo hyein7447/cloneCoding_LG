@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디 입력 | 로그인</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/login.css">
+</head>
+<body>
+    <main>
+        <div class="login_bg">
+            <section class="login_c">
+                <div class="title">
+                    <a href="#"><img src="data:image/svg+xml,%3csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3e%3cg stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' fill='none' fill-rule='evenodd'%3e%3cpath d='M28 20H12M18 26l-6-6 6-6'/%3e%3c/g%3e%3c/svg%3e" alt="뒤로가기"></a>
+                    <h1>로그인</h1>
+                </div>
+                <form action="#" id="login_frm">
+                    <fieldset>
+                        <legend class="skip">로그인 양식</legend>
+                        <div class="logo">
+                            <img src="./images/logo/lgacc-logo-basic.svg" alt="LG전자">
+                        </div>
+                        <div class="login_id">
+                            <label for="user_id" class="id_input_label">LG전자 아이디 (이메일 또는 휴대폰번호)</label>
+                            <input type="text" id="user_id" placeholder="아이디를 입력해 주세요">
+                        </div>
+                        <div class="login_pw">
+                            <label for="user_pw" class="pw_input_label">비밀번호</label>
+                            <input type="text" id="user_pw" placeholder="비밀번호를 입력해 주세요">
+                        </div>
+                        <div class="login_btn_bg">
+                            <button type="button" id="login_btn">로그인</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="id_pw_search">
+                    <a href="#">아이디 찾기</a>
+                    <a href="#">비밀번호 재설정</a>
+                </div>
+                <a href="#" class="join">LG전자 회원가입</a>
+                <p>OR</p>
+                <div class="sub_login">
+                    <button type="button" id="other_login_btn">다른 계정으로 로그인</button>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
