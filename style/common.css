@@ -1,6 +1,7 @@
 /* 검색 팝업 */
 .search_pop_up {position: relative;
-height: 100%vh;}
+height: 100%vh; display: none;
+}
 .search_pop_up > a {
     position: absolute; left: 87%; top: 6%;
 }
@@ -166,7 +167,7 @@ height: 100%vh;}
 }
 /* -----------------------------header bottom -------------------------------------------------*/
 #h_bg header .header_bottom {
-    background-color: red; position: relative;
+    position: relative;
 }
 #h_bg header .header_bottom nav {
     display: flex; flex-flow: row nowrap; position: relative;

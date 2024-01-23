@@ -1,0 +1,145 @@
+/* nav 아래 경로 */
+* {letter-spacing: -0.5px;}
+header .header_bottom .path {
+    display: flex; padding: 8px 0; text-align: center;
+}
+header .header_bottom .path a {
+    font-size: 0.75rem; font-weight: 700; line-height: 22px;
+}
+header .header_bottom .path img {
+    margin: 0 4px; position: relative; top: 1px;
+}
+header .header_bottom .path span {
+    font-size: 0.75rem; font-weight: 700; line-height: 22px;
+}
+
+/* main */
+main {}
+main .all_title {
+    margin: 0 auto; max-width: 1460px; padding: 16px 40px 24px;
+    text-align: center;
+}
+main .all_title h1 {
+    font-size: 1.5rem; line-height: 34px;
+    font-weight: 700;
+}
+main .all_title p {
+    margin-top: 12px; line-height: 26px;
+}
+main .menu { position: relative; margin: 0 auto; max-width: 1460px;
+    margin-bottom: 48px; padding: 0 40px; display: flex;
+} 
+main .menu::after {
+    content: ''; display: inline-block; height: 1px; width: calc(100% - 80px); padding: 0 40px;
+    background: #ddd; position: absolute; left: 0; bottom: 0px;
+}
+main .menu a {
+    padding-bottom: 12px; font-weight: 700; font-size: 1.125rem; line-height: 28px;
+    margin-right: 34px; color: #767676; position: relative;
+}
+main .menu a:last-child {margin: 0;}
+main .container {
+    max-width: 1460px; margin: 0 auto; 
+    padding: 0 40px 60px;
+}
+main .menu a:first-child {color:#000;}
+main .menu a:first-child::after {
+    content: ''; display: inline-block; width: 100%; height: 5px; position: absolute ;
+    bottom: 0; left: 0; 
+    background: #000; border-top-left-radius: 5px; border-top-right-radius: 5px;
+}
+main .container > span {
+    display: block; padding-bottom: 12px; font-weight: 700; font-size: 0.875rem;
+}
+main .container .list {}
+main .container .list ul {
+    display: flex; flex-flow: row wrap; justify-content: space-between;
+    margin-left: -24px
+}
+main .container .list ul .item {
+    width: 50%; margin-bottom: 12px; padding-left: 24px;
+}
+main .container .list ul .item a {
+    width: 100%; height: 100%;
+    padding: 24px 32px; box-shadow: 0 4px 12px 0 rgba(0,0,0,.15);
+    border-radius: 8px; background-color: #fff;
+    display: flex; justify-content: space-between;
+}
+main .container .list ul .item a .left {}
+main .container .list ul .item a .left img {
+    width: 100%;
+}
+main .container .list ul .item a .right {
+    display: flex; flex-flow: column nowrap;
+    padding-left: 40px; 
+}
+main .container .list ul .item a .right > span {
+    font-size: 0.75rem; line-height: 22px; color: #ea1917; font-weight: 700;
+}
+main .container .list ul .item a .right .title {
+    font-weight: 700; margin: 3px ;
+}
+main .container .list ul .item a .right .desc {
+    max-width: 680px;
+    margin-bottom: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 0.875rem;
+    line-height: 24px;
+    display: -webkit-box; /* line, box-orient 필수보조속성 */
+    display: -moz-box;
+    display: -o-box;
+    -webkit-line-clamp:2; /* 한번에 보이는 줄 수 */
+    -moz-line-clamp:2;
+    -o-line-clamp:2;
+    -webkit-box-orient:vertical; /* horizontal */
+    -moz-box-orient:vertical;
+    -o-box-orient:vertical;
+    overflow: hidden;/* 해당 영역안에서만 보이게하는 추가옵션기능 */ 
+}
+main .container .list ul .item a .right .desc .desc_sub {}
+main .container .list ul .item a .right > .desc_sub .tag {
+    color: #000; font-size: 0.875rem; line-height: 24px;
+    font-weight: 700;
+}
+main .container .list ul .item a .right > .desc_sub .tag::after {
+    content: ''; display: inline-block; width: 1px; height: 10px;
+    background: #ddd; margin: 0 6px;
+}
+main .container .list ul .item a .right > .desc_sub .date {
+    color: #666; font-size: 0.875rem; line-height: 24px;
+}
+main .container .list .page_nation {
+    display: flex; justify-content: center;
+    margin-top: 32px; align-items: center;
+}
+main .container .list .page_nation .left_btn {}
+/* 버튼 공통 묶음 */
+main .container .list .page_nation .left_btn .first_btn,
+main .container .list .page_nation .left_btn .prev_btn,
+main .container .list .page_nation .right_btn .next_btn,
+main .container .list .page_nation .right_btn .last_btn {
+    border: 1px solid #ddd; padding: 8px; display: inline-block;
+    border-radius: 4px; width: 32px; height: 32px; text-align: center;
+}
+/* 버튼 이미지 공통 묶음 */
+main .container .list .page_nation .left_btn .first_btn img,
+main .container .list .page_nation .left_btn .prev_btn img,
+main .container .list .page_nation .right_btn .next_btn img,
+main .container .list .page_nation .right_btn .last_btn img {
+    width: 100% ; position: relative; top: -2px;
+}
+/* 버튼 개별 */
+main .container .list .page_nation .left_btn .first_btn {}
+main .container .list .page_nation .left_btn .first_btn img {}
+main .container .list .page_nation .left_btn .prev_btn {}
+main .container .list .page_nation .left_btn .prev_btn img {}
+main .container .list .page_nation .page_num {}
+main .container .list .page_nation .page_num a {
+    padding: 4px 15px; font-size: 0.875rem; font-weight: 700;
+}
+main .container .list .page_nation .right_btn {}
+main .container .list .page_nation .right_btn .next_btn {}
+main .container .list .page_nation .right_btn .next_btn img {}
+main .container .list .page_nation .right_btn .last_btn {}
+main .container .list .page_nation .right_btn .last_btn img {}

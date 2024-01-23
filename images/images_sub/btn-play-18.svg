@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+    <defs>
+        <filter id="vkq4s23zna">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 1.000000 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g filter="url(#vkq4s23zna)" transform="translate(-1619 -595) translate(0 110) translate(1388 90) translate(144 396)">
+                            <g transform="translate(88)">
+                                <circle cx="8" cy="8" r="8" stroke="#000"/>
+                                <path fill="#FFF" stroke="#FFF" stroke-width=".857" d="M5.43 4.821l.066 6.674c.01.007.023.012.035.016.035.01.074.007.108-.011l6.303-3.517c0-.008-.003-.016-.005-.024-.01-.032-.031-.062-.062-.08L5.43 4.82z"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg id="ic_left_16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+        </style>
+    </defs>
+    <path id="baackground" style="fill:none" d="M0 0h16v16H0z"/>
+    <g id="ic" transform="translate(3.5 4)">
+        <path id="Arrow" class="cls-2" d="m0 0 5 5-5 5" transform="translate(5 -.5)"/>
+        <path id="Arrow-2" data-name="Arrow" class="cls-2" d="m0 0 5 5-5 5" transform="translate(-1 -.5)"/>
+    </g>
+</svg>

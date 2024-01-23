@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>btn_arrow_right_32</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-287.000000, -141.000000)">
+            <g id="btn_arrow_right_32" transform="translate(295.000000, 149.000000) scale(1, -1) rotate(-360.000000) translate(-295.000000, -149.000000) translate(287.000000, 141.000000)">
+                <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                <g id="ic" transform="translate(6.000000, 4.500000)" stroke="#222222" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                    <polyline id="Path" transform="translate(2.000000, 4.000000) rotate(-90.000000) translate(-2.000000, -4.000000) " points="6 2 2 6 -2 2"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
