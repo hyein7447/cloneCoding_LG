@@ -164,6 +164,7 @@ height: 100%vh; display: none;
     font-size: 0.875rem; display: inline-block; text-align: center;
 }
 #h_bg header .header_top .header_right > a img {
+    position: relative; top: 3px; margin-left: 2px;
 }
 /* -----------------------------header bottom -------------------------------------------------*/
 #h_bg header .header_bottom {

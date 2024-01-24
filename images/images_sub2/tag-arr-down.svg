@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <path style="fill:none" d="M0 0h48v48H0z"/>
+    <g transform="translate(4 4)" style="stroke-miterlimit:10;stroke-width:2px;fill:#fff;stroke:#ddd">
+        <circle cx="20" cy="20" r="20" style="stroke:none"/>
+        <circle cx="20" cy="20" r="19" style="fill:none"/>
+    </g>
+    <path d="M10 0 0 10l10 9.983" transform="rotate(-90 22 8)" style="stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px;fill:none"/>
+</svg>

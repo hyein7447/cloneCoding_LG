@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <g data-name="@guide" style="opacity:.2">
+        <path data-name="Rectangle" transform="translate(4 4)" style="fill:none" d="M0 0h40v40H0z"/>
+    </g>
+    <g data-name="타원 194" transform="translate(30.805 10.224)" style="stroke:#000;stroke-width:1.5px;fill:none">
+        <circle cx="3.5" cy="3.5" r="3.5" style="stroke:none"/>
+        <circle cx="3.5" cy="3.5" r="2.75" style="fill:none"/>
+    </g>
+    <path data-name="패스 48562" d="m40.813-49.359-15.328-.031L4.031-27.984l15.438 15.39 21.39-21.422z" style="stroke:#000;stroke-width:1.5px;fill:none" transform="translate(-.195 56.224)"/>
+    <path data-name="패스 48563" d="M23.844-39.687v15.422" style="fill:#fff;stroke:#000;stroke-width:1.5px" transform="translate(-.195 56.224)"/>
+    <g data-name="타원 192" transform="translate(15.805 20.224)" style="stroke:#000;stroke-width:1.5px;fill:none">
+        <circle cx="3" cy="3" r="3" style="stroke:none"/>
+        <circle cx="3" cy="3" r="2.25" style="fill:none"/>
+    </g>
+    <g data-name="타원 193" transform="translate(25.805 21.224)" style="stroke:#000;stroke-width:1.5px;fill:none">
+        <circle cx="3" cy="3" r="3" style="stroke:none"/>
+        <circle cx="3" cy="3" r="2.25" style="fill:none"/>
+    </g>
+    <path data-name="패스 48564" d="M38.313-49.547s2.078-2.234 3.594-2.625 2.641 1.516 2.188 2.906-9.531 6.641-9.531 6.641" style="stroke:#000;stroke-width:1.5px;fill:none" transform="translate(-.195 56.224)"/>
+</svg>

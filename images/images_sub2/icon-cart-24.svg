@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: red;
+        opacity: 0.2;
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 1.2px;
+      }
+
+      .cls-3 {
+        stroke-linecap: square;
+      }
+    </style>
+  </defs>
+  <g id="img_Cart_24" transform="translate(-866 -603.1)">
+    <g id="_guide" data-name="@guide" class="cls-1" transform="translate(866 602.702)">
+      <rect id="Rectangle" class="cls-2" width="24" height="24" transform="translate(0 0.398)"/>
+      <rect id="Rectangle-2" data-name="Rectangle" class="cls-2" width="20" height="20" transform="translate(2 2.398)"/>
+    </g>
+    <g id="ic" transform="translate(868.045 604.747)">
+      <path id="패스_48346" data-name="패스 48346" class="cls-3" d="M-22036-1268.246h2.549l3.928,14.9h11.469" transform="translate(22035.998 1268.6)"/>
+      <path id="패스_48347" data-name="패스 48347" class="cls-4" d="M-22027.441-1262.326h16.209l-1.85,9.088h-12.145" transform="translate(22031.168 1265.392)"/>
+      <circle id="타원_157" data-name="타원 157" class="cls-3" cx="1.5" cy="1.5" r="1.5" transform="translate(5.955 17.354)"/>
+      <circle id="타원_158" data-name="타원 158" class="cls-3" cx="1.5" cy="1.5" r="1.5" transform="translate(15.955 17.354)"/>
+    </g>
+  </g>
+</svg>
