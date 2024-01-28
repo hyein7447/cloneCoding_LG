@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>아이디 입력 | 로그인</title>
+    <link rel="shortcut icon" href="./images/LG_favicon(2).png" type="image/x-icon">
+    <link rel="icon" href="./images/LG_favicon(2).png" type="image/x-icon">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -24,10 +27,12 @@
                         <div class="login_id">
                             <label for="user_id" class="id_input_label">LG전자 아이디 (이메일 또는 휴대폰번호)</label>
                             <input type="text" id="user_id" placeholder="아이디를 입력해 주세요">
+                            <span></span><!-- js error message -->
                         </div>
                         <div class="login_pw">
                             <label for="user_pw" class="pw_input_label">비밀번호</label>
-                            <input type="text" id="user_pw" placeholder="비밀번호를 입력해 주세요">
+                            <input type="password" id="user_pw" placeholder="비밀번호를 입력해 주세요">
+                            <span></span><!-- js error message -->
                         </div>
                         <div class="login_btn_bg">
                             <button type="button" id="login_btn">로그인</button>
@@ -46,5 +51,6 @@
             </section>
         </div>
     </main>
+    <script src="./script/login.js"></script>
 </body>
 </html>

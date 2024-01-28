@@ -172,7 +172,11 @@ height: 100%vh; display: none;
 }
 #h_bg header .header_bottom nav {
     display: flex; flex-flow: row nowrap; position: relative;
-    align-items: center; height: 40px; border-bottom: 1px solid #eee;
+    align-items: center; height: 40px; position: relative;
+}
+#h_bg header .header_bottom nav::after {
+    width: 100vw; height: 1px; background: #eee; content: ''; display:inline-block;
+    position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
 }
 #h_bg header .header_bottom nav .gnb_left {
     display: flex; flex-flow: row nowrap;
@@ -194,20 +198,21 @@ height: 100%vh; display: none;
     content: ''; display: inline-block;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg {
-    position: absolute; top: 40px; left: 0; width: 100%; display: none;
-    /* 카테고리별 디자인 시 편하게 보기위해 가리는용 */
+    position: absolute; top: 40px; left: 50%; width: 100vw; z-index: 999;
+    transform: translateX(-50%); background: #000;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap {
-    display: flex; flex-flow: row nowrap; width: 100%;
+    display: flex; flex-flow: row nowrap; width: 100%; background: #fff;
+    position: relative;
 }
 /* 상단 서브 메뉴 한 줄 */
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top {
-    display: flex; flex-flow: row nowrap; background-color: aqua;
-    border: 1px solid #ccc;
-    width: 100%; padding: 25px 0;
+    display: flex; flex-flow: row nowrap; background-color: #fff;
+    max-width: 1760px; margin: 0 auto; 
+    width: 100%; padding: 25px 42px;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top a {
-    margin-right: 20px; background-color: yellow;
+    margin-right: 20px; background-color: #fff;
     font-size: 0.875rem; text-align: left; color: #666;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top a:hover {
@@ -225,12 +230,13 @@ height: 100%vh; display: none;
 }
 /* lnb btm 공통 */
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm {
-    display: block; display: flex; flex-flow: row nowrap; position: absolute; top: 55px;
-    background-color: mediumvioletred; width: 100%; display: none;
+    display: flex; flex-flow: row nowrap; position: absolute; top: 55px;
+    background-color:#fff; width: 100%; padding: 0 42px;
+    left: 50%; transform: translateX(-50%);
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left {
-    background-color: bisque; width: calc(100% - 400px); margin: 28px 0 40px;
-    display: grid;
+    background-color: #fff; width: calc(100% - 400px); margin: 28px 0 40px 80px;
+    display: grid; 
     grid-template-areas:
     'lnb1 lnb3 lnb5'
     'lnb2 lnb4 lnb5';
@@ -258,7 +264,7 @@ height: 100%vh; display: none;
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb21 {grid-area: lnb21;}
 
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb {
-    background-color: pink;  display: block;  width: 100%; display: flex; flex-flow: column nowrap;
+    background-color: #fff;  display: block;  width: 100%; display: flex; flex-flow: column nowrap;
     margin-bottom: 32px;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb h2 {
@@ -283,7 +289,7 @@ height: 100%vh; display: none;
     font-size: 0.875rem;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right {
-    background-color: orange; margin: 28px 0 64px 0; width:400px; padding: 0 10px;
+    background-color: #fff; margin: 28px 0 64px 0; width:400px; padding: 0 10px;
     text-align: center; 
     
 }
@@ -479,6 +485,9 @@ height: 100%vh; display: none;
 /* lnb_btm_3 right 추가 배너 */
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .ad_bnr img {}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .ad_bnr span {font-weight: 600;}
+#h_bg header .header_bottom nav .gnb_right {
+    margin-right: 80px;
+}
 #h_bg header .header_bottom nav .gnb_right li {}
 #h_bg header .header_bottom nav .gnb_right li a img {}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .ad_bnr {
