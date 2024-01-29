@@ -54,16 +54,6 @@ main .container .main_bnr .main_bnr_item li .main_bnr2 .txt_box h2 {
 main .container .main_bnr .main_bnr_item li .main_bnr2 .txt_box p {
     font-size: 1.25rem; margin-top: 12px;
 }
-main .container .main_bnr .main_bnr_item li .main_bnr3 {display: none;}
-main .container .main_bnr .main_bnr_item li .main_bnr4 {display: none;}
-main .container .main_bnr .main_bnr_item li .main_bnr5 {display: none;}
-main .container .main_bnr .main_bnr_item li .main_bnr6 {display: none;}
-main .container .main_bnr .main_bnr_item li .main_bnr7 {display: none;}
-main .container .main_bnr .main_bnr_item li .main_bnr8 {display: none;}
-main .container .main_bnr .main_bnr_item li .main_bnr9 {display: none;}
-main .container .main_bnr .main_bnr_item li .main_bnr10 {display: none;}
-main .container .main_bnr .main_bnr_item li .main_bnr11 {display: none;}
-main .container .main_bnr .main_bnr_item li .main_bnr12 {display: none;}
 /* 메인 배너 버튼 공통 */
 main .container .main_bnr .active_btn {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
