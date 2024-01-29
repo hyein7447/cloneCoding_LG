@@ -39,4 +39,20 @@ lnb_top.forEach((t,i)=>{
     })
 })
 
+gnb[1].addEventListener('mouseover',()=>{
+    lnb_btm[11].style.display='flex'
+})
+gnb[2].addEventListener('mouseover',()=>{
+    lnb_btm[12].style.display='flex'
+})
+gnb[3].addEventListener('mouseover',()=>{
+    lnb_btm[17].style.display='flex'
+})
+gnb[4].addEventListener('mouseover',()=>{
+    lnb_btm[18].style.display='flex'
+})
+gnb[5].addEventListener('mouseover',()=>{
+    lnb_btm[19].style.display='flex'
+})
+
 // 마우스 아웃 후 다시 gnb 마우스오버시 하단 lnb출력 오류
