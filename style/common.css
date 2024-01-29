@@ -323,9 +323,9 @@ height: 100%vh; display: none;
 }
 #h_bg header .header_bottom nav .gnb_right li .right4 {padding-right: 0;}
 
-/* 카테고리 개별 선택 보이게 하는 선택자 */
+/* 카테고리 개별 선택 보이게 하는 선택자 *//* 
 #h_bg header .header_bottom nav .gnb_left li:nth-child(1) .lnb_bg {display: block;}
-#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_1 {display: flex;}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_1 {display: flex;} */
 
 /* 제품 소모품 lnb_btm_left 개별 선택자 */
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_2 .lnb_btm_left {
@@ -482,12 +482,12 @@ height: 100%vh; display: none;
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_left .lnb h2 a img {}
 
 /*  lnb_btm_right 공통*/
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right {
+    margin-right: 60px;
+}
 /* lnb_btm_3 right 추가 배너 */
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .ad_bnr img {}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .ad_bnr span {font-weight: 600;}
-#h_bg header .header_bottom nav .gnb_right {
-    margin-right: 80px;
-}
 #h_bg header .header_bottom nav .gnb_right li {}
 #h_bg header .header_bottom nav .gnb_right li a img {}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm .lnb_btm_right .ad_bnr {

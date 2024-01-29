@@ -8,16 +8,35 @@ console.log(gnb, lnb, lnb_top,lnb_btm)
 // 초기 모두 숨김처리
 for(let i of lnb){i.style.display ='none'}
 
-//gnb 에 마우스 오버 시 하단 lnb
+// lnb_btm 부분 초기 모두 숨김처리, 첫번째 lnb_btm 출력
+for(let l of lnb_btm){l.style.display = 'none'}
+lnb_btm[0].style.display ='flex'
+lnb_btm[11].style.display ='flex'
+lnb_btm[12].style.display ='flex'
+lnb_btm[17].style.display ='flex'
+lnb_btm[18].style.display ='flex'
+lnb_btm[19].style.display ='flex'
+console.log(lnb_btm[0],lnb_btm[12])
+
+//gnb 에 마우스 오버 시 하단 lnb 출력
 gnb.forEach((t, i)=>{
     t.addEventListener('mouseover',()=>{
         for(let j of lnb){j.style.display='none'}
         lnb[i].style.display='block'
-    })
-    lnb_top.forEach((t,i)=>{
-        t.addEventListener('mouseover',()=>{
-            for(let j of lnb_btm){j.style.display='none'}
-            lnb_btm[i].style.display='flex'
-        })
+    }) //gnb 마우스 아웃 시 하단 lnb 숨김
+    t.addEventListener('mouseout',()=>{
+        for(let j of lnb){j.style.display='none'}
     })
 })
+ // lnb에 마우스 오버시 lnb_btm 출력
+lnb_top.forEach((t,i)=>{
+    t.addEventListener('mouseover',()=>{
+        for(let j of lnb_btm){j.style.display='none'}
+        lnb_btm[i].style.display='flex'
+    }) // lnb에 마우스 아웃 lnb_btm 숨김
+    t.addEventListener('mousout',()=>{
+        for(let j of lnb_btm){j.style.display='none'}
+    })
+})
+
+// 마우스 아웃 후 다시 gnb 마우스오버시 하단 lnb출력 오류

@@ -45,10 +45,15 @@ main .container .main_bnr .main_bnr_item li .main_bnr2 {
     background-size: cover;
 }
 main .container .main_bnr .main_bnr_item li .main_bnr2 .txt_box {
-    position: absolute; top: 110px; left: 120px;
+    max-width: 1476px; margin: 0 auto;
+    padding: 140px;
 }
-main .container .main_bnr .main_bnr_item li .main_bnr2 .txt_box h2 {}
-main .container .main_bnr .main_bnr_item li .main_bnr2 .txt_box p {}
+main .container .main_bnr .main_bnr_item li .main_bnr2 .txt_box h2 {
+    font-size: 2.5rem; line-height: 1.5; letter-spacing: -0.5px;
+}
+main .container .main_bnr .main_bnr_item li .main_bnr2 .txt_box p {
+    font-size: 1.25rem; margin-top: 12px;
+}
 main .container .main_bnr .main_bnr_item li .main_bnr3 {display: none;}
 main .container .main_bnr .main_bnr_item li .main_bnr4 {display: none;}
 main .container .main_bnr .main_bnr_item li .main_bnr5 {display: none;}
