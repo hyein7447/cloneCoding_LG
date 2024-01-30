@@ -1,9 +1,10 @@
 // gnb_left 카테고리에 마우스 오버 시 하단 lnb_bg 팝업 출력
 const gnb = document.querySelectorAll('.gnb_left li')
 const lnb = document.querySelectorAll('.gnb_left .lnb_bg')
-const lnb_top = document.querySelectorAll('.lnb_top a')
+const lnb_top = document.querySelectorAll('.lnb_top div')
 const lnb_btm = document.querySelectorAll('.lnb_btm')
-console.log(gnb, lnb, lnb_top,lnb_btm)
+const lnb_top_h = document.querySelectorAll('.lnb_top h2')
+console.log(gnb, lnb, lnb_top,lnb_btm, lnb_top_h)
 
 // 초기 모두 숨김처리
 for(let i of lnb){i.style.display ='none'}
@@ -16,13 +17,20 @@ lnb_btm[12].style.display ='flex'
 lnb_btm[17].style.display ='flex'
 lnb_btm[18].style.display ='flex'
 lnb_btm[19].style.display ='flex'
-console.log(lnb_btm[0],lnb_btm[12])
 
 //gnb 에 마우스 오버 시 하단 lnb 출력
 gnb.forEach((t, i)=>{
     t.addEventListener('mouseover',()=>{
         for(let j of lnb){j.style.display='none'}
         lnb[i].style.display='block'
+        lnb_btm[0].style.display ='flex'
+
+        lnb_btm[11].style.display ='flex'
+        lnb_btm[12].style.display ='flex'
+        lnb_btm[17].style.display ='flex'
+        lnb_btm[18].style.display ='flex'
+        lnb_btm[19].style.display ='flex'
+        
     }) //gnb 마우스 아웃 시 하단 lnb 숨김
     t.addEventListener('mouseout',()=>{
         for(let j of lnb){j.style.display='none'}
@@ -38,21 +46,3 @@ lnb_top.forEach((t,i)=>{
         for(let j of lnb_btm){j.style.display='none'}
     })
 })
-
-gnb[1].addEventListener('mouseover',()=>{
-    lnb_btm[11].style.display='flex'
-})
-gnb[2].addEventListener('mouseover',()=>{
-    lnb_btm[12].style.display='flex'
-})
-gnb[3].addEventListener('mouseover',()=>{
-    lnb_btm[17].style.display='flex'
-})
-gnb[4].addEventListener('mouseover',()=>{
-    lnb_btm[18].style.display='flex'
-})
-gnb[5].addEventListener('mouseover',()=>{
-    lnb_btm[19].style.display='flex'
-})
-
-// 마우스 아웃 후 다시 gnb 마우스오버시 하단 lnb출력 오류

@@ -211,11 +211,11 @@ height: 100%vh; display: none;
     max-width: 1760px; margin: 0 auto; 
     width: 100%; padding: 25px 42px;
 }
-#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top a {
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top div a {
     margin-right: 20px; background-color: #fff;
     font-size: 0.875rem; text-align: left; color: #666;
 }
-#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top a:hover {
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top div a:hover {
     border-bottom: 2px solid #000; color: #000;
 }
 /* 고객지원, 이벤트/멤버십, 스토리, 베스트샵 공통*/
