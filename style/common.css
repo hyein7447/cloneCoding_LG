@@ -185,11 +185,8 @@ height: 100%vh; display: none;
     padding: 7px 24px 12px 0;
 }
 #h_bg header .header_bottom nav .gnb_left li > a {
-    font-weight: 600; padding-bottom: 8px;
+    font-weight: 600; padding-bottom: 8px; position: relative;
 }
-
-#h_bg header .header_bottom nav .gnb_left li > a:hover{border-bottom: 4px solid #000;}
-#h_bg header .header_bottom nav .gnb_left li > a:hover .lnb_bg {display: flex;}
 #h_bg header .header_bottom nav .gnb_left li .gnb_left_point {}
 #h_bg header .header_bottom nav .gnb_left li .gnb_left_point::after {
     position: absolute; top: 6px; right: 19px;
@@ -212,12 +209,10 @@ height: 100%vh; display: none;
     width: 100%; padding: 25px 42px;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top div a {
-    margin-right: 20px; background-color: #fff;
+    margin-right: 20px; background-color: #fff; position: relative;
     font-size: 0.875rem; text-align: left; color: #666;
 }
-#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top div a:hover {
-    border-bottom: 2px solid #000; color: #000;
-}
+
 /* 고객지원, 이벤트/멤버십, 스토리, 베스트샵 공통*/
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top h2 {
     font-size: 1.25rem; font-weight: 700;
@@ -670,3 +665,13 @@ height: 100%vh; display: none;
     position: relative; top: 2px; margin: 0;
 }
 .bottom_icon #join_benefit_bg .text_box .close img {}
+
+
+/* js 호출용 디자인 */
+#h_bg header .header_bottom nav .gnb_left li > a::after .active_gnb {
+    content: ''; display: inline-block; width: 100%; height: 4px;
+    background-color: #000; position: absolute; bottom: -2px; left: 0;
+}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top div a::after .active_lnb {
+    content: ''; display: inline-block; width: 100%; height: 2px;
+    background-color: #000; position: absolute; bottom: -3px; left: 0;}

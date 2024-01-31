@@ -4,10 +4,11 @@ const lnb = document.querySelectorAll('.gnb_left .lnb_bg')
 const lnb_top = document.querySelectorAll('.lnb_top div')
 const lnb_btm = document.querySelectorAll('.lnb_btm')
 const lnb_top_h = document.querySelectorAll('.lnb_top h2')
-console.log(gnb, lnb, lnb_top,lnb_btm, lnb_top_h)
+console.log(gnb, lnb, lnb_top,lnb_btm, lnb_top_h,)
 
 // 초기 모두 숨김처리
 for(let i of lnb){i.style.display ='none'}
+let active_h = ()=>{for(let h of gnb){h.children[0].classList.remove('active_gnb')}}
 
 // lnb_btm 부분 초기 모두 숨김처리, 첫번째 lnb_btm 출력
 for(let l of lnb_btm){l.style.display = 'none'}
@@ -31,7 +32,10 @@ gnb.forEach((t, i)=>{
         lnb_btm[18].style.display ='flex'
         lnb_btm[19].style.display ='flex'
         
-    }) //gnb 마우스 아웃 시 하단 lnb 숨김
+        console.log( gnb[i].children[0])
+        gnb[i].children[0].classList.add('.active_bg')
+    })
+     //gnb 마우스 아웃 시 하단 lnb 숨김
     t.addEventListener('mouseout',()=>{
         for(let j of lnb){j.style.display='none'}
     })
@@ -46,3 +50,4 @@ lnb_top.forEach((t,i)=>{
         for(let j of lnb_btm){j.style.display='none'}
     })
 })
+

@@ -37,8 +37,17 @@ main .container .main_bnr .main_bnr_item li a p {
 main .container .main_bnr .main_bnr_item li a video {}
 /* 메인배너 배경 개별 */
 main .container .main_bnr .main_bnr_item li .main_bnr1 {
-    background: url(../images/main_bnr/main_bnr1.png) no-repeat center;
+    background: url(../images/main_bnr/Hero_Kitchen_PC.avif) no-repeat center;
     background-size: cover;
+}
+main .container .main_bnr .main_bnr_item li .main_bnr1 .txt_box {
+    max-width: 1680px; margin: 0 auto; padding: 150px;
+}
+main .container .main_bnr .main_bnr_item li .main_bnr1 .txt_box h2 {
+    font-size: 2.75rem; color: #222;
+}
+main .container .main_bnr .main_bnr_item li .main_bnr1 .txt_box p {
+    color: #222; margin-top: 12px; font-size: 1.125rem;
 }
 main .container .main_bnr .main_bnr_item li .main_bnr2 {
     background: url(../images/main_bnr/img_main_bnr_05.jpg) no-repeat center;
