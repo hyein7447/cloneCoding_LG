@@ -668,10 +668,10 @@ height: 100%vh; display: none;
 
 
 /* js 호출용 디자인 */
-#h_bg header .header_bottom nav .gnb_left li > a::after .active_gnb {
+#h_bg header .header_bottom nav .gnb_left li > .active_gnb::after {
     content: ''; display: inline-block; width: 100%; height: 4px;
     background-color: #000; position: absolute; bottom: -2px; left: 0;
 }
-#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top div a::after .active_lnb {
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_top div .active_lnb::after {
     content: ''; display: inline-block; width: 100%; height: 2px;
     background-color: #000; position: absolute; bottom: -3px; left: 0;}

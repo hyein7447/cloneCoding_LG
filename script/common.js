@@ -33,11 +33,13 @@ gnb.forEach((t, i)=>{
         lnb_btm[19].style.display ='flex'
         
         console.log( gnb[i].children[0])
-        gnb[i].children[0].classList.add('.active_bg')
+        gnb[i].children[0].classList.add('active_gnb')
+        console.log('active_gnb')
     })
      //gnb 마우스 아웃 시 하단 lnb 숨김
     t.addEventListener('mouseout',()=>{
         for(let j of lnb){j.style.display='none'}
+        gnb[i].children[0].classList.remove('active_gnb')
     })
 })
  // lnb에 마우스 오버시 lnb_btm 출력
@@ -45,6 +47,9 @@ lnb_top.forEach((t,i)=>{
     t.addEventListener('mouseover',()=>{
         for(let j of lnb_btm){j.style.display='none'}
         lnb_btm[i].style.display='flex'
+
+        lnb_top[i].children.classList.add('active_lnb')
+        
     }) // lnb에 마우스 아웃 lnb_btm 숨김
     t.addEventListener('mousout',()=>{
         for(let j of lnb_btm){j.style.display='none'}
