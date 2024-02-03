@@ -46,4 +46,4 @@ main .page {
 main .swiper-button-prev {background:url(https://www.lge.co.kr/lg5-common/images/icons/btn-arr-36x36-rt.svg)}
 main .swiper-button-next {background:url(https://www.lge.co.kr/lg5-common/images/icons/btn-arr-36x36-rt.svg)}
 main .swiper-button-prev::after {display: none;}
-main .swiper-button-next::after {display: none;}
+main .swiper-button-next::after {display: none; }
