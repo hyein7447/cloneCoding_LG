@@ -38,10 +38,14 @@
                 <button type="button" id="pause">일시정지</button> <!-- a기능 -->
                 <button type="button" id="start">다시시작</button> <!-- a기능 -->
             </div>
-            <div class="swiper-pagination"></div> <!-- 페이지번호표시용 -->
-            <div class="pagination_progress"></div> <!-- 페이지 로딩 표시 -->
-            <div class="swiper-button-prev"></div> <!-- 이전버튼 -->
-            <div class="swiper-button-next"></div> <!-- 다음버튼 -->
+            <div class="page">
+                <div class="swiper-pagination">
+                    <span></span><!-- 현재 페이지 -->
+                    <span class="total">2</span> <!-- 총 페이지 -->
+                </div> <!-- 페이지번호표시용 -->
+                <div class="swiper-button-prev"></div> <!-- 이전버튼 -->
+                <div class="swiper-button-next"></div> <!-- 다음버튼 -->
+            </div>
         </div>
     </main>
     <script>

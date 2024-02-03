@@ -40,8 +40,10 @@ main .btn #pause {}
 main .btn #start {}
 main .swiper-pagination {}
 main .pagination_progress {}
-main .swiper-button-prev {
-    background:url(https://www.lge.co.kr/lg5-common/images/icons/btn-arr-36x36-rt.svg)
-    
+main .page {
+    display: flex; width: 400px; background: #000; position: fixed; z-index: 999;
 }
-main .swiper-button-next {}
+main .swiper-button-prev {background:url(https://www.lge.co.kr/lg5-common/images/icons/btn-arr-36x36-rt.svg)}
+main .swiper-button-next {background:url(https://www.lge.co.kr/lg5-common/images/icons/btn-arr-36x36-rt.svg)}
+main .swiper-button-prev::after {display: none;}
+main .swiper-button-next::after {display: none;}
