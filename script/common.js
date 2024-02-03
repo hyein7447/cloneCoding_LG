@@ -170,3 +170,5 @@ lnb_btm[15].addEventListener('mouseout',()=>{
 lnb_btm[16].addEventListener('mouseout',()=>{
     lnb_top_active[15].classList.remove('active_lnb')
 })
+
+// 작업중
