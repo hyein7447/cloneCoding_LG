@@ -9,7 +9,7 @@
     'use strict';
     if (typeof define === 'function' && define.amd) {
         define(['jquery'], function($) {
-          return factory($, global, global.document, global.Math);
+        return factory($, global, global.document, global.Math);
         });
     } else if (typeof exports === "object" && exports) {
         module.exports = factory(require('jquery'), global, global.document, global.Math);
