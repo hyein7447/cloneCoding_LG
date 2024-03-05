@@ -14,6 +14,11 @@ console.log(regex_num.test('010844555800'))
 user_id.addEventListener('blur',()=>{
     if(regex_mail.test(user_id.value)){
         error.style.display = 'none'
+        if(regex_num.test(user_id.value)){
+            error.style.display = 'none'
+        }else{
+            error.innerHTML = '휴대폰 번호 아이디를 정확하게 입력해 주세요.'
+        }
     }else{
         error.innerHTML = '이메일 아이디를 정확하게 입력해 주세요.'
     }

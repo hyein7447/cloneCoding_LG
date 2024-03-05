@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+    <defs>
+        <style>
+            .cls-3{fill:#fff}
+        </style>
+    </defs>
+    <g id="btn_정지" transform="translate(-632 -562)">
+        <rect id="사각형_35" data-name="사각형 35" width="46" height="46" rx="23" transform="translate(632 562)" style="opacity:.35"/>
+        <g id="btn_PC_playStop" transform="translate(643 573)">
+            <path id="사각형_855" data-name="사각형 855" style="fill:none" d="M0 0h24v24H0z"/>
+            <rect id="사각형_33" data-name="사각형 33" class="cls-3" width="3" height="18" rx="1.5" transform="translate(6 3)"/>
+            <rect id="사각형_34" data-name="사각형 34" class="cls-3" width="3" height="18" rx="1.5" transform="translate(15 3)"/>
+        </g>
+    </g>
+</svg>

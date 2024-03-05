@@ -6,12 +6,19 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title>LGE.COM | LG전자</title>
+    <!-- favicon -->
     <link rel="shortcut icon" href="./images/LG_favicon(2).png" type="image/x-icon">
     <link rel="icon" href="./images/LG_favicon(2).png" type="image/x-icon">
+    <!-- style -->
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/common.css">
     <link rel="stylesheet" href="./style/index.css">
+    <!-- font-family -->
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
     <!-- 검색 눌렀을 때 나오는 팝업 -->
@@ -1149,9 +1156,9 @@
     </div>
     <main>
         <div class="container">
-            <section class="main_bnr">
-                <ul class="main_bnr_item">
-                    <li>
+            <section class="swiper-container main_bnr" id="main_silde">
+                <ul class="swiper-wrapper main_bnr_item" id="main_sldie_wrap">
+                    <li class="swiper-slide slide slide1">
                         <a href="#" class="main_bnr1">
                             <div class="txt_box">
                                 <h2>새해 맞이 혜택 가득<br>주방가전 할인 페스타</h2>
@@ -1159,7 +1166,7 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="swiper-slide slide slide2">
                         <a href="#" class="main_bnr2">
                             <div class="txt_box">
                                 <h2>엘지전자 라이프 쇼핑대축제<br>행운의 복권 이벤트</h2>
@@ -1168,21 +1175,16 @@
                         </a>
                     </li>
                 </ul>
-                <div class="active_btn">
-                    <div class="left_btn">
-                        <button type="button" id="stop_btn"><img src="https://www.lge.co.kr/lg5-common/images/MA/mainRenewal/icon-video-button-pause.svg" alt="일시정지"></button>
-                    </div>
-                    <div class="right_btn">
-                        <div class="page_btn">
-                            <button type="button" class="previous_btn"><img src="https://www.lge.co.kr/lg5-common/images/icons/btn-arr-36x36-lt.svg" alt="이전으로"></button>
-                            <span class="present_page">1 /</span>
-                            <span class="all_page">2</span>
-                            <button type="button" class="next_btn"><img src="https://www.lge.co.kr/lg5-common/images/icons/btn-arr-36x36-rt.svg" alt="다음으로"></button>
-                        </div>
-                        <div class="right_stop_btn">
-                            <button type="button" class="stop_btn"><img src="https://www.lge.co.kr/lg5-common/images/icons/btn-carousel-46-pause.svg" alt="재생하기"></button>
-                        </div>
-                    </div>
+                <div class="page">
+                    <div class="pagination">
+                        <span class="current">1</span> <!--현재 페이지 js -->
+                        <span class="total">/2</span> <!-- 총 페이지js -->
+                    </div> <!-- 페이지번호표시용 -->
+                    <div class="swiper-button-prev" id="main_prev_btn"></div> <!-- 이전버튼 -->
+                    <div class="swiper-button-next" id="main_next_btn"></div> <!-- 다음버튼 -->
+                </div>
+                <div class="play-pause-btn">
+                    <img src="./images/icon/pause.svg" alt="일시정지">
                 </div>
             </section>
             <ul class="small_menu">
@@ -1433,12 +1435,10 @@
                         <a href="#" class="more">더보기<img src="https://www.lge.co.kr/lg5-common/images/MA/mainRenewal/icon-arrow-right-g-16.svg" alt="더보기 바로가기"></a>
                     </div>
                     <div class="icon_bg">
-                        <a href="#" class="previous_btn"><img src="https://www.lge.co.kr/lg5-common/images/icons/btn-arr-72x72.svg" alt="이전버튼"></a><!-- 처음에는 숨겨져있음 -->
-                        <a href="#" class="next_btn"><img src="https://www.lge.co.kr/lg5-common/images/icons/btn-arr-72x72.svg" alt="다음버튼"></a>
                         <div class="icon_container">
-                            <div class="slide_icon">
-                                <ul class="icon_items">
-                                    <li class="item">
+                            <div class="swiper-container slide_icon" id="best_silde">
+                                <ul class="swiper-wrapper icon_items" id="best_slide_wrap">
+                                    <li class="swiper-slide item item1">
                                         <a href="#">
                                             <span class="img">
                                                 <img src="./images/slide_icon/img_BestRanking_CT50000072_tab.png" alt="김치냉장고">
@@ -1446,105 +1446,105 @@
                                             <span class="icon_name">김치냉장고</span>
                                         </a>
                                     </li>
-                                    <li class="item">
+                                    <li class="swiper-slide item item2">
                                         <a href="#">
                                             <span class="img"><img src="./images/slide_icon/img_BestRanking_CT50000025_tab.png" alt="TV"></span>
                                             <span class="icon_name">TV</span>
                                         </a>
                                     </li>
-                                    <li class="item">
+                                    <li class="swiper-slide item item3">
                                         <a href="#">
                                             <span class="img"><img src="./images/slide_icon/img_BestRanking_CT50000110_tab.png" alt="워시타워"></span>
                                             <span class="icon_name">워시타워</span>
                                         </a>
                                     </li>
-                                    <li class="item">
+                                    <li class="swiper-slide item item4">
                                         <a href="#">
                                             <span class="img"><img src="./images/slide_icon/img_BestRanking_CT50000143_tab.png" alt="공기청정기"></span>
                                             <span class="icon_name">공기청정기</span>
                                         </a>
                                     </li>
-                                    <li class="item">
+                                    <li class="swiper-slide item item5">
                                         <a href="#">
                                             <span class="img"><img src="./images/slide_icon/img_BestRanking_CT50000046_tab.png" alt="노트북/태블릿"></span>
                                             <span class="icon_name">노트북/<br>태블릿</span>
                                         </a>
                                     </li>
-                                    <li class="item">
+                                    <li class="swiper-slide item item6">
                                         <a href="#">
                                             <span class="img"><img src="./images/slide_icon/img_BestRanking_CT50000065_tab.png" alt="냉장고"></span>
                                             <span class="icon_name">냉장고</span>
                                         </a>
                                     </li>
-                                    <li class="item">
+                                    <li class="swiper-slide item item7">
                                         <a href="#">
                                             <span class="img"><img src="./images/slide_icon/img_BestRanking_CT50000101_tab.png" alt="세탁기"></span>
                                             <span class="icon_name">세탁기</span>
                                         </a>
                                     </li>
-                                    <li class="item">
+                                    <li class="swiper-slide item item8">
                                         <a href="#">
                                             <span class="img"><img src="./images/slide_icon/img_BestRanking_CT50000111_tab.png" alt="청소기"></span>
                                             <span class="icon_name">청소기</span>
                                         </a>
                                     </li>
-                                    <li class="item">
+                                    <li class="swiper-slide item item9">
                                         <a href="#">
                                             <span class="img"><img src="./images/slide_icon/img_BestRanking_CT50000131_tab.png" alt="에어컨"></span>
                                             <span class="icon_name">에어컨</span>
                                         </a>
                                     </li>
-                                    <li class="item">
+                                    <li class="swiper-slide item item10">
                                         <a href="#">
                                             <span class="img"><img src="./images/slide_icon/img_BestRanking_CT50000055_tab.png" alt="모니터"></span>
                                             <span class="icon_name">모니터</span>
                                         </a>
                                     </li>
-                                    <li class="item">
+                                    <li class="swiper-slide item item11">
                                         <a href="#">
                                             <span class="img"><img src="./images/slide_icon/img_BestRanking_CT50000106_tab.png" alt="의류관리기"></span>
                                             <span class="icon_name">의류관리기</span>
                                         </a>
                                     </li>
-                                    <li class="item">
+                                    <li class="swiper-slide item item12">
                                         <a href="#">
                                             <span class="img"><img src="./images/slide_icon/img_BestRanking_CT50000107_tab.png" alt="의류건조기"></span>
                                             <span class="icon_name">의류건조기</span>
                                         </a>
                                     </li>
-                                    <li class="item">
+                                    <li class="swiper-slide item item13">
                                         <a href="#">
                                             <span class="img"><img src="./images/slide_icon/img_BestRanking_CT50019018_tab.png" alt="광파오븐 / 전자레인지"></span>
                                             <span class="icon_name">광파오븐 / 전자레인지</span>
                                         </a>
                                     </li>
-                                    <li class="item">
+                                    <li class="swiper-slide item item14">
                                         <a href="#">
                                             <span class="img"><img src="./images/slide_icon/img_BestRanking_CT50000076_tab.png" alt="전자레인지"></span>
                                             <span class="icon_name">전자레인지</span>
                                         </a>
                                     </li>
-                                </ul>
-                                <ul class="event_items">
-                                    <li>
+                                    <li class="swiper-slide item item15">
                                         <a href="#">
                                             <span class="item1">혼수/이사 패키지</span>
                                             <img src="https://www.lge.co.kr/kr/images/BRK/arr_right_24.svg" alt=""> <!-- 밑에 화살표 이미지처리 -->
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="swiper-slide item item16">
                                         <a href="#">
                                             <span class="item2">1인 가구 필수가전</span>
                                             <img src="https://www.lge.co.kr/kr/images/BRK/arr_right_24.svg" alt=""> <!-- 밑에 화살표 이미지처리 -->
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="swiper-slide item item17">
                                         <a href="#">
                                             <span class="item3">베스트 추천선물</span>
                                             <img src="https://www.lge.co.kr/kr/images/BRK/arr_right_24.svg" alt=""> <!-- 밑에 화살표 이미지처리 -->
                                         </a>
                                     </li>
                                 </ul>
+                                <div class="swiper-button-prev" id="best_prev_btn"></div> <!-- 이전버튼 -->
+                                <div class="swiper-button-next" id="best_next_btn"></div> <!-- 다음버튼 -->
                             </div>
                         </div>
                     </div>
@@ -2649,5 +2649,37 @@
     </div>
     <script src="./script/common.js"></script>
     <script src="./script/index.js"></script>
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+
+        // 메인배너 슬라이드
+        const main_bnr_swiper = new Swiper('#main_silde',{
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        autoplay:{delay:2000},
+        navigation:{
+            nextEl: "#main_next_btn",
+            prevEl: "#main_prev_btn",
+        },
+        pagination: {
+        el: "#main_silde .pagination",
+        type: "fraction",
+        },
+    });
+
+    //  베스트 아이템 슬라이드
+        const best_swiper = new Swiper('#best_silde',{
+        slidesPerView: 10,
+        spaceBetween: 10,
+        navigation:{
+            nextEl: "#best_next_btn",
+            prevEl: "#best_prev_btn",
+        },
+        mousewheel: true,
+    })
+    </script>
 </body>
 </html>
