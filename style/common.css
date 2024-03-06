@@ -315,6 +315,7 @@ height: 100%vh; display: none;
 }
 #h_bg header .header_bottom nav .gnb_right li a {
     padding-right: 14px; display: block;
+    height: 18px;
 }
 #h_bg header .header_bottom nav .gnb_right li .right4 {padding-right: 0;}
 
@@ -323,6 +324,9 @@ height: 100%vh; display: none;
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_1 {display: flex;} */
 
 /* 제품 소모품 lnb_btm_left 개별 선택자 */
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_2 {
+    height: 600px;
+}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_2 .lnb_btm_left {
     grid-template-areas: 
     'lnb1 lnb3 lnb4'
@@ -346,6 +350,9 @@ height: 100%vh; display: none;
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_4 .lnb_btm_left .col1 {
     display: flex; flex-flow: column nowrap;
 }
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_5 {
+    height: 600px;
+}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_5 .lnb_btm_left .col1 {
     display: flex; flex-flow: column nowrap;
 }
@@ -363,10 +370,19 @@ height: 100%vh; display: none;
     font-weight: 500; padding: 7px 8px; margin-bottom: 8px; display: block;
     font-size: 0.875rem; text-align: center;
 }
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_6 {
+    height: 600px;
+}
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_6 .lnb_btm_left .tag a {
     color: #666; border: 1px solid #ddd; border-radius: 8px;
     font-weight: 500; padding: 7px 8px; margin-bottom: 8px; display: inline-block;
     font-size: 0.875rem;
+}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_7 {
+    height: 600px;
+}
+#h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_8 {
+    height: 600px;
 }
 #h_bg header .header_bottom nav .gnb_left li .lnb_bg .lnb_wrap .lnb_btm_8 .lnb_btm_left {
     grid-template-rows: repeat(2, 50px);

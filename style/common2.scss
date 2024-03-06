@@ -1,0 +1,84 @@
+@mixin flex-row-btw-ct {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flex-row-btw-st {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+@mixin flex-row-end-ct {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+@mixin flex-row-ct-ct {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-row-ct {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+@mixin flex-row-end {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+@mixin flex-row-ct-st {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+@mixin flex-row-st {
+    display:flex;
+    flex-flow:row nowrap;
+    align-items: flex-start;
+}
+@mixin flex-row-st-ct {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+@mixin flex-col-btw-ct {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flex-col-ct-ct {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-col-st {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+}
+@mixin flex-col-lf {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+@mixin flex-col-rt {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+}
+@mixin flex-col-end {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}

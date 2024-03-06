@@ -1,22 +1,33 @@
-/* header path */
-* {letter-spacing: -0.5px;}
-header .header_bottom .path {
-    display: flex; padding: 8px 0; text-align: center;
+body {
+    overflow-x: hidden;
 }
-header .header_bottom .path a {
-    font-size: 0.75rem; font-weight: 700; line-height: 22px;
+main {
+    overflow-x: hidden;
+    margin: 0 auto;
 }
-header .header_bottom .path img {
+main .path {
+    display: flex;
+    max-width: 1760px;
+    margin: 0 auto;
+    padding: 8px 42px;
+}
+main .path a {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 22px;
+}
+main .path span {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 22px;
+}
+main .path img {
     margin: 0 4px; position: relative; top: 1px;
 }
-header .header_bottom .path span {
-    font-size: 0.75rem; font-weight: 700; line-height: 22px;
-}
 
-main {}
 main .bnr {
     background: url(../images/images_sub2/img-membership-hero-pc.jpg) no-repeat center;
-    height: 600px; width: 1920px;
+    height: 600px;
     background-size: cover; position: relative;
 }
 main .bnr_text {

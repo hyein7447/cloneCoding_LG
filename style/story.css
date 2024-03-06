@@ -1,20 +1,27 @@
-/* nav 아래 경로 */
-* {letter-spacing: -0.5px;}
-header .header_bottom .path {
-    display: flex; padding: 8px 0; text-align: center;
+body {
+    overflow-x: hidden;
 }
-header .header_bottom .path a {
-    font-size: 0.75rem; font-weight: 700; line-height: 22px;
-}
-header .header_bottom .path img {
-    margin: 0 4px; position: relative; top: 1px;
-}
-header .header_bottom .path span {
-    font-size: 0.75rem; font-weight: 700; line-height: 22px;
-}
-
 /* main */
 main {}
+main .path {
+    display: flex;
+    max-width: 1760px;
+    margin: 0 auto;
+    padding: 8px 42px;
+}
+main .path a {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 22px;
+}
+main .path img {
+    margin: 0 4px; position: relative; top: 1px;
+}
+main .path span {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 22px;
+}
 main .all_title {
     margin: 0 auto; max-width: 1460px; padding: 16px 40px 24px;
     text-align: center;

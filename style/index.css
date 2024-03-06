@@ -292,18 +292,17 @@ main .container .best_item .content_bg .icon_bg .next_btn {
 }
 main .container .best_item .content_bg .icon_bg .next_btn img {}
 /* 베스트 랭킹 하단 아이콘 (슬라이드 아이콘)*/
-main .container .best_item .content_bg .icon_bg .icon_container {
-    max-width: 1470px; overflow-x: auto;
-}
+main .container .best_item .content_bg .icon_bg .icon_container {}
 main .container .best_item .content_bg .icon_bg .icon_container .slide_icon {
-    display: flex; overflow: hidden;
+    overflow: hidden;
 }
 main .container .best_item .content_bg .icon_bg .icon_container .slide_icon .icon_items {
     display: flex;
     justify-content: flex-start;
+    width: max-content;
 }
 main .container .best_item .content_bg .icon_bg .icon_container .slide_icon .icon_items .item {
-    width: 90px; height: auto; margin-right: 10px;
+    width: 90px !important; height: auto;
 }
 main .container .best_item .content_bg .icon_bg .slide_icon .icon_items .item a {
     display: flex; flex-flow: column nowrap; align-items: center; width: 90px;
@@ -333,7 +332,7 @@ main .container .best_item .content_bg .icon_bg .icon_container .slide_icon .ico
 main .container .best_item .content_bg .icon_bg .icon_container .slide_icon .icon_items .item15,
 main .container .best_item .content_bg .icon_bg .icon_container .slide_icon .icon_items .item16,
 main .container .best_item .content_bg .icon_bg .icon_container .slide_icon .icon_items .item17 {
-    width: 150px;
+    width: 150px !important;
 }
 
 
@@ -376,8 +375,45 @@ main .container .best_item .content_bg .icon_bg .icon_container .slide_icon .ico
     background-color: #5D2323;
     color: #fff;
 }
+main .container .best_item .content_bg .icon_bg .icon_container .slide_icon #best_prev_btn {
+    background-color: aqua ;
+    
+}
+main .container .best_item .content_bg .icon_bg .icon_container .slide_icon #best_prev_btn {
+    
+}
+main .container .best_item .content_bg .icon_bg .icon_container .slide_icon #best_prev_btn::before,
+main .container .best_item .content_bg .icon_bg .icon_container .slide_icon #best_next_btn::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 100%;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+main .container .best_item .content_bg .icon_bg .icon_container .slide_icon #best_next_btn::before {
+    right: 0;
+    background-image: linear-gradient(to left, #f8f8f8 57%, rgba(244, 244, 244, 0));
+    
+}
+main .container .best_item .content_bg .icon_bg .icon_container .slide_icon #best_next_btn {
+    width: 72px;
+    height: 120px;
+    background-color: red;
+    background: url(../images/icon/btn-arr-72x72.svg) no-repeat center;
+    top: 0;
+    right: 0;
+    z-index: 99;
+}
+main .container .best_item .content_bg .icon_bg .icon_container .slide_icon #best_next_btn {
+}
 
-
+main .container .best_item .content_bg .icon_bg .icon_container .slide_icon #best_prev_btn::after,
+main .container .best_item .content_bg .icon_bg .icon_container .slide_icon #best_next_btn::after {
+    display: none;
+}
 
     
 /* 카테고리별 랭킹 */
