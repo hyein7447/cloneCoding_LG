@@ -1,0 +1,24 @@
+<svg id="img_Heart_line_fill_24" data-name="img_Heart line_fill_24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #da0f47;
+        opacity: 0.2;
+      }
+
+      .cls-3 {
+        fill: #ea1917;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="_guide" data-name="@guide" class="cls-1">
+    <rect id="Rectangle_Copy_16" data-name="Rectangle Copy 16" class="cls-2" width="24" height="24"/>
+    <rect id="Rectangle_Copy_16-2" data-name="Rectangle Copy 16" class="cls-2" width="20" height="20" transform="translate(2 2)"/>
+  </g>
+  <path id="패스_48554" data-name="패스 48554" class="cls-3" d="M11.312,21.2l1.088.958,1.088-.958q2.474-2.156,4.082-3.714a27.386,27.386,0,0,0,2.548-2.768,8.647,8.647,0,0,0,1.311-2.2,5.745,5.745,0,0,0,.371-2.024,4.563,4.563,0,0,0-1.423-3.415A4.868,4.868,0,0,0,16.853,5.7a5.366,5.366,0,0,0-2.449.587,5.647,5.647,0,0,0-1.56,1.167,6.417,6.417,0,0,0-.444.523,6.417,6.417,0,0,0-.444-.523A5.648,5.648,0,0,0,10.4,6.286,5.366,5.366,0,0,0,7.947,5.7,4.868,4.868,0,0,0,4.423,7.077,4.563,4.563,0,0,0,3,10.491a5.745,5.745,0,0,0,.371,2.024,8.646,8.646,0,0,0,1.311,2.2A27.387,27.387,0,0,0,7.23,17.487Q8.838,19.045,11.312,21.2ZM7.7,17" transform="translate(-0.4 -1.93)"/>
+</svg>
