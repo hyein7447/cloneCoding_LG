@@ -1,1 +1,160 @@
 @import 'common2';
+
+main {
+    .path {
+        display: flex;
+        max-width: 1760px;
+        margin: 0 auto;
+        padding: 8px 42px;
+        a {
+            font-size: 0.75rem;
+            font-weight: 700;
+            line-height: 22px;
+        }
+        img {
+            margin: 0 4px;
+            position: relative; 
+            top: 1px;
+        }
+        span {
+            font-size: 0.75rem;
+            font-weight: 700;
+            line-height: 22px;
+        }
+    }
+    .container {
+        .product {
+            @include flex-row-btw-ct;
+            .left {
+                .thumb {
+                    img {}
+                }
+                .thumb_wrap {
+                    span {
+                        img {}
+                    }
+                }
+            }
+            .right {
+                .title {
+                    h2 {}
+                    .icon {
+                        .wish {
+                            #wish_icon {}
+                            label {}
+                        }
+                        .share {
+                            .share_icon {
+                                img {}
+                            }
+                            .share_open {
+                                .top {
+                                    span {}
+                                    img {}
+                                }
+                                .link {
+                                    a {
+                                        img {}
+                                        span {}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .model {
+                    .left {
+                        img {}
+                        .num {}
+                        .review {
+                            img {}
+                        }
+                    }
+                    .right {
+                        a {
+                            img {}
+                        }
+                    }
+                }
+                .price {
+                    .origin_p {}
+                    .dis_p {
+                        .left {
+                            span {
+                                a {
+                                    img {}
+                                }
+                            }
+                        }
+                        .right {
+                            .rate {}
+                            .discount {}
+                        }
+                    }
+                    .benefit {
+                        img {}
+                    }
+                    .benefit_open {
+                        .price {
+                            dt {}
+                            dd{}
+                        }
+                        .member_p {
+                            dt {}
+                            dd {}
+                        }
+                        .total_p {
+                            dt {}
+                            dd {}
+                        }
+                    }
+                    .notice {
+                        em {}
+                    }
+                }
+                .bnr {
+                    .left {
+                        span {
+                            img {}
+                        }
+                    }
+                    .right {
+                        img {}
+                    }
+                }
+                .buy_benefit {
+                    p {}
+                    .card {
+                        span {}
+                    }
+                }
+                .delivery {
+                    .icon {
+                        img {}
+                    }
+                    p {}
+                }
+                .option {
+                    .num {
+                        span {}
+                        .num_btn {
+                            #minus_btn {}
+                            #number {}
+                            #plus_btn {}
+                        }
+                    }
+                    .total {
+                        span {}
+                    }
+                    .btn {
+                        #wish_btm {}
+                        label {}
+                        #cart_btn {}
+                        #buy_btn {}
+                    }
+                }
+            }
+        }
+        .cate_bset {}
+    }
+}
