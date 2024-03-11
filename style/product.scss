@@ -559,11 +559,26 @@ main {
             }
         }
         .banner {
-            img {}
+            max-width: 1440px;
+            padding: 120px 30px 120px;
+            margin: 0 auto;
+            a {
+                img {
+                    border-radius: 16px;
+                }
+            }
         }
         .detail {
             .menu_tab {
-                a {}
+                max-width: 1380px;
+                margin: 0 auto;
+                padding-bottom: 14px;
+                border-bottom: 1px solid #ddd;
+                a {
+                    padding: 14px 20px 0 0;
+                    font-size: $px18;
+                    color: #666;
+                }
             }
             .menu_tab_scroll {
                 .title {

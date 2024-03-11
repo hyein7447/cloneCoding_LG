@@ -556,4 +556,23 @@ main .container .cate_bset .contents_box .content .item .price {
 }
 main .container .cate_bset .contents_box .content .item10 {
   margin-right: 0;
+}
+main .container .banner {
+  max-width: 1440px;
+  padding: 120px 30px 120px;
+  margin: 0 auto;
+}
+main .container .banner a img {
+  border-radius: 16px;
+}
+main .container .detail .menu_tab {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #ddd;
+}
+main .container .detail .menu_tab a {
+  padding: 14px 20px 0 0;
+  font-size: 1.125rem;
+  color: #666;
 }/*# sourceMappingURL=product.css.map */
