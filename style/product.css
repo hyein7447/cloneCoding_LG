@@ -575,4 +575,56 @@ main .container .detail .menu_tab a {
   padding: 14px 20px 0 0;
   font-size: 1.125rem;
   color: #666;
+}
+main .container .detail .menu_tab_scroll .title {
+  padding: 0 40px;
+  width: 1460px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+main .container .detail .menu_tab_scroll .title h2 {
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+main .container .detail .menu_tab_scroll .title .tab {
+  display: flex;
+  align-items: center;
+}
+main .container .detail .menu_tab_scroll .title .tab a {
+  display: block;
+  font-size: 1.125rem;
+  color: #666;
+  font-weight: 500;
+  padding: 16px 17px 14px;
+}
+main .container .detail .menu_tab_scroll .title .tab a:last-child {
+  background-color: #ea1917;
+  font-size: 0.875rem;
+  padding: 12px 24px;
+  border-radius: 26px;
+  color: #fff;
+}
+main .container .detail .menu_tab_scroll .desc_tab {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
+main .container .detail .menu_tab_scroll .desc_tab .tab_open {
+  display: none;
+}
+main .container .detail .menu_tab_scroll .desc_tab a {
+  display: block;
+  padding: 20px 10px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: calc(50% - 40px);
+  padding-left: 40px;
 }/*# sourceMappingURL=product.css.map */

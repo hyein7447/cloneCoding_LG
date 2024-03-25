@@ -582,18 +582,61 @@ main {
             }
             .menu_tab_scroll {
                 .title {
-                    h2 {}
-                    .tab {
-                        a {}
+                    padding: 0 40px;
+                    width: 1460px;
+                    margin: 0 auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #ddd;
+                    background-color: #fff;
+                    h2 {
+                        font-size: $px22;
+                        font-weight: 700;
                     }
-                    a {}
+                    .tab {
+                        display: flex;
+                        align-items: center;
+                        a {
+                            display: block;
+                            font-size: $px18;
+                            color: #666;
+                            font-weight: 500;
+                            padding: 16px 17px 14px;
+
+                            &:last-child {
+                                background-color: #ea1917;
+                                font-size: $px14;
+                                padding: 12px 24px;
+                                border-radius: 26px;
+                                color: #fff;
+                            }
+                        }
+                    }
                 }
                 .desc_tab {
-                    a {
+                    display: flex;
+                    width: 100%;
+                    // border-top: 1px solid #ddd;
+                    background: #fff;
+                    box-shadow: 0 4px 6px 0 rgba(0,0,0,.1);
+                    .tab_open {
+                        display: none;
                         img {}
                     }
-                }
+                    a {
+                        display: block;
+                        padding: 20px 10px;
+                        font-size: $px14;
+                        font-weight: 700;
+                        text-align: center;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        width: calc(50% - 40px);
+                        padding-left: 40px;
+                    }
+                } 
             }
-        } 
-    }
-}
+        }  
+    } 
+} 
